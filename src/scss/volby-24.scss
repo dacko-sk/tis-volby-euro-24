@@ -1,0 +1,10 @@
+@use 'sass:map';
+@import 'variables';
+@import 'bootstrap_custom';
+@import 'volby-common';
+
+header {
+  background-image: url('./../../public/img/foto_europarlament_tasr_duotone_1920_1026.jpg');
+  background-position-x: center;
+  background-position-y: 20%;
+}

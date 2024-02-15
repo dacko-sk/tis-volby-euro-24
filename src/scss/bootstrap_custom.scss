@@ -1,0 +1,67 @@
+@use 'sass:map';
+@import 'variables';
+
+/* import bootstrap to apply variables changes */
+@import '~bootstrap/scss/bootstrap';
+
+/* bootstrap changes */
+.navbar-brand img {
+  height: 38px;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+}
+
+.btn-outline-primary {
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+}
+
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-hover-bg: #{$tis-dark-blue};
+  --bs-btn-hover-border-color: #{$tis-dark-blue};
+}
+
+.btn-outline-secondary {
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+}
+
+.btn-success {
+  --bs-btn-hover-bg: #{$tis-orange};
+  --bs-btn-hover-border-color: #{$tis-orange};
+}
+
+.table {
+  --bs-table-bg: transparent;
+}
+
+.tabs-scrollable {
+  @extend .overflow-auto;
+  .nav-tabs {
+    @extend .flex-nowrap;
+  }
+  .nav-link {
+    @extend #{'.text-nowrap', '.position-relative'};
+    // fix unnecessary scrollbar caused by the overflow-auto of wrapper and negative bottom margin of BS tab
+    margin-bottom: 0;
+    bottom: calc(-1 * var(--bs-nav-tabs-border-width));
+    border-bottom: var(--bs-nav-tabs-border-width) solid
+      var(--bs-nav-tabs-border-color);
+  }
+}
+
+@media (max-width: map.get($grid-breakpoints, 'lg')) {
+  .navbar-nav {
+    --bs-nav-link-padding-x: 0.5em;
+  }
+  .navbar-collapse .btn {
+    margin: 0.5em 0;
+  }
+}

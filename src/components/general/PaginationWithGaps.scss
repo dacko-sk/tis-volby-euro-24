@@ -1,0 +1,8 @@
+.pagination .page-link {
+  min-width: calc(2 * var(--bs-pagination-padding-x) + 1.25em);
+  text-align: center;
+}
+.pagination-gap {
+  line-height: 1em;
+  padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+}

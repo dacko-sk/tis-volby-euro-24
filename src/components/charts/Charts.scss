@@ -1,0 +1,98 @@
+@use 'sass:map';
+@import './../../scss/variables';
+
+.chart-outer.scrollable {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.chart {
+  width: 100%;
+  aspect-ratio: 2/1;
+  margin: 0 auto;
+  font-size: 13px;
+  &.avg-diff .recharts-legend-icon {
+    fill: transparent;
+    stroke: #000;
+  }
+}
+
+tspan {
+  &.name,
+  text.recharts-cartesian-axis-tick-value[type='category'] & {
+    font-weight: $fw-bold;
+    &.elected {
+      paint-order: stroke;
+      stroke: $tis-light-blue;
+      stroke-linejoin: round;
+      stroke-width: 5px;
+      a {
+        fill: #fff;
+      }
+    }
+  }
+  &.cat-regional {
+    fill: $tis-orange;
+  }
+  &.cat-local {
+    fill: $tis-light-blue;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.recharts-tooltip-wrapper {
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.recharts-default-tooltip {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid rgb(204, 204, 204);
+  white-space: nowrap;
+}
+
+.recharts-tooltip-label,
+.recharts-tooltip-item-list {
+  margin: 0;
+  padding: 0;
+}
+
+.recharts-tooltip-item {
+  display: block;
+  padding: 4px 0;
+}
+
+.recharts-tooltip-cursor {
+  fill: $tis-grey;
+  opacity: 0.5;
+}
+
+.pie-chart {
+  .chart {
+    svg {
+      overflow: visible;
+    }
+    @media (max-width: map.get($grid-breakpoints, 'sm')) {
+      min-height: 400px;
+    }
+  }
+}
+
+.pie-inactive {
+  opacity: 0.5;
+}
+
+.recharts-pie {
+  // hide labels of all but first pie
+  & + & .recharts-pie-labels {
+    visibility: hidden;
+  }
+}

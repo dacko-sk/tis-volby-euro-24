@@ -1,0 +1,25 @@
+{
+  "short_name": "Euro voľby 2024",
+  "name": "Euro voľby 2024 : Transparency International Slovensko",
+  "icons": [
+    {
+      "src": "img/logo.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "img/logo_30.png",
+      "type": "image/png",
+      "sizes": "30x30"
+    },
+    {
+      "src": "img/logo_160.png",
+      "type": "image/png",
+      "sizes": "160x160"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

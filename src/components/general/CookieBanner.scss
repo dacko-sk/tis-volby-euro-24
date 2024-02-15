@@ -1,0 +1,15 @@
+@import './../../scss/variables';
+
+.cookie-banner {
+  background-color: $tis-light-blue;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 401;
+  a {
+    --bs-link-color-rgb: #fff;
+    --bs-link-hover-color-rgb: #fff;
+  }
+}

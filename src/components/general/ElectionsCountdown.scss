@@ -1,0 +1,29 @@
+@import './../../scss/variables';
+
+.countdown {
+  padding-bottom: 20px;
+}
+
+[class^='countdown-bg'] {
+  background-color: $tis-grey;
+  padding: 5px 10px 20px;
+  position: relative;
+  &::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    font-size: 13px;
+    font-weight: $fw-regular;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+}
+
+.countdown-bg-o {
+  background-color: $tis-orange;
+  color: white;
+  &::after {
+    content: 'dní';
+  }
+}

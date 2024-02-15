@@ -1,0 +1,91 @@
+$tis-light-blue: rgb(43, 172, 226);
+$tis-light-blue-rgb: #{red($tis-light-blue), green($tis-light-blue),
+  blue($tis-light-blue)};
+$tis-dark-blue: rgb(27, 51, 95);
+$tis-orange: rgb(240, 108, 80);
+$tis-grey: rgb(233, 242, 249);
+$tis-score-green: rgb(0, 205, 42);
+$tis-score-orange: rgb(255, 179, 0);
+$tis-score-red: rgb(215, 20, 26);
+$tis-score-unknown: rgb(168, 168, 168);
+$tis-banner-bg: rgb(230, 229, 227);
+
+$font-family: 'Ubuntu';
+$font-color: #333;
+$fw-regular: 400;
+$fw-bold: 700;
+
+// bootstrap variables customizations
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+) !default;
+
+$container-min-widths-inner: (
+  lg: 910px,
+) !default;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$h1-font-size: $font-size-base * 3.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$primary: $tis-light-blue;
+$secondary: $tis-orange;
+$success: $tis-dark-blue;
+$light: $tis-grey;
+$info: $tis-grey;
+$link-color: $tis-orange;
+$link-decoration: underline !default;
+$link-hover-color: $tis-orange;
+$link-hover-decoration: none;
+
+$pagination-color: $tis-dark-blue;
+$pagination-hover-color: $tis-dark-blue;
+$pagination-border-radius: 0;
+
+$navbar-padding-y: 0;
+$navbar-light-color: $tis-dark-blue;
+$navbar-light-active-color: white;
+$navbar-brand-padding-y: 0.75rem;
+$nav-link-color: $tis-dark-blue;
+$nav-link-hover-color: $tis-light-blue;
+$nav-tabs-link-active-color: $tis-light-blue;
+$nav-tabs-border-radius: 0;
+$nav-pills-border-radius: 0;
+$dropdown-border-radius: 0;
+$dropdown-spacer: 0;
+$dropdown-link-hover-color: white;
+$dropdown-link-hover-bg: $tis-light-blue;
+$dropdown-min-width: 3rem;
+
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+
+$form-check-input-checked-bg-color: $tis-dark-blue;
+$input-bg: white;
+$input-focus-bg: white;
+$input-group-addon-bg: white;
+$input-border-radius: 0;
+$input-border-radius-sm: 0;
+$form-select-border-radius-sm: 0;
+
+$alert-border-radius: 0;
+$accordion-border-radius: 0;
