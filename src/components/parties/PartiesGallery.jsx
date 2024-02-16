@@ -1,3 +1,5 @@
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 import { Link } from 'react-router-dom';
 
 import { partyData } from '../../helpers/constants';
@@ -11,9 +13,10 @@ import Loading from '../general/Loading';
 
 import './Parties.scss';
 
-function PartiesGallery() {
+function PartiesGallery({ compact = false }) {
     const { allAccountsNames, getPartyAccountData } = useAccountsData();
-    const { getAllPartiesNames, getPartyAdsData } = useAdsData();
+    const { getAllPartiesNames, getPartyAdsData, getPartyFulltName } =
+        useAdsData();
 
     const allParties = getAllPartiesNames(allAccountsNames);
 
@@ -23,25 +26,53 @@ function PartiesGallery() {
             {allParties === null ? (
                 <Loading />
             ) : (
-                allParties.map((name) => {
-                    const accountData = getPartyAccountData(name);
-                    const adsData = getPartyAdsData(name);
-                    const party = partyData(name, accountData, adsData);
-                    return (
-                        <div key={party.name}>
-                            <Link
-                                className="party-logo-link hover-bg d-flex align-items-center"
-                                to={routes.party(party.name)}
-                            >
-                                <figure className="flex-shrink-0 me-3">
-                                    <img src={party.image} />
-                                </figure>
+                <Row className={compact ? '' : 'gy-4'}>
+                    {allParties.map((name) => {
+                        const accountData = getPartyAccountData(name);
+                        const adsData = getPartyAdsData(name);
+                        const party = partyData(name, accountData, adsData);
+                        const fullName = getPartyFulltName(name);
+                        const img =
+                            party.image ?? false ? (
+                                <img src={party.image} alt={party.name} />
+                            ) : null;
+                        return compact ? (
+                            <Col key={party.name} xs={12}>
+                                <Link
+                                    className="party-logo-link hover-bg d-flex align-items-center"
+                                    to={routes.party(party.name)}
+                                >
+                                    <figure className="flex-shrink-0 me-3">
+                                        {img}
+                                    </figure>
+                                    <h3 className="my-2">{fullName}</h3>
+                                </Link>
+                            </Col>
+                        ) : (
+                            <Col key={party.name} xs={6} sm={4} md={3} xl={2}>
+                                <Link
+                                    id={party.name}
+                                    className="article analysis-preview"
+                                    to={routes.party(party.name)}
+                                >
+                                    <div className="thumb">
+                                        <figure className="text-center">
+                                            {img}
+                                        </figure>
 
-                                <h3 className="my-2">{party.name}</h3>
-                            </Link>
-                        </div>
-                    );
-                })
+                                        {img === null && (
+                                            <div className="name text-center">
+                                                <span className="badge">
+                                                    {fullName}
+                                                </span>
+                                            </div>
+                                        )}
+                                    </div>
+                                </Link>
+                            </Col>
+                        );
+                    })}
+                </Row>
             )}
         </div>
     );

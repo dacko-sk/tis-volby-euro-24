@@ -9,9 +9,9 @@ import { wpCat } from '../helpers/wp';
 import Top10 from '../components/accounts/Top10';
 import TotalSpending from '../components/accounts/TotalSpending';
 // import Top10Ads from '../components/ads/Top10Ads';
-// import CandidatesGallery from '../components/candidates/CandidatesGallery';
 import DonateButton from '../components/general/DonateButton';
 import ElectionsCountdown from '../components/general/ElectionsCountdown';
+import PartiesGallery from '../components/parties/PartiesGallery';
 import Title from '../components/structure/Title';
 import Posts, { templates } from '../components/wp/Posts';
 
@@ -42,7 +42,7 @@ function Home() {
                 <DonateButton long xl />
             </div>
 
-            {/* <CandidatesGallery /> */}
+            <PartiesGallery />
 
             {/* <Posts
                 categories={[wpCat.featured]}

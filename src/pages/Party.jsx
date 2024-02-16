@@ -15,7 +15,8 @@ function Party() {
     const { slug } = useParams();
     const navigate = useNavigate();
     const { getPartyAccountData } = useAccountsData();
-    const { getPartyAccountName, getPartyAdsData } = useAdsData();
+    const { getPartyAccountName, getPartyAdsData, getPartyFulltName } =
+        useAdsData();
 
     const name = decodeSlug(slug);
     const accountData = getPartyAccountData(getPartyAccountName(name));
@@ -36,7 +37,18 @@ function Party() {
 
     return (
         <section className="party-page">
-            <Title secondaryWords={1}>{name}</Title>
+            <Title>
+                {(party.image ?? false) && (
+                    <div className="logo mb-2 mx-auto">
+                        <div className="img-aspect">
+                            <figure>
+                                <img src={party.image} />
+                            </figure>
+                        </div>
+                    </div>
+                )}
+                {getPartyFulltName(name)}
+            </Title>
             <div className="tabs-scrollable">
                 <Nav variant="tabs">
                     <Nav.Link as={NavLink} to={routes.party(name)} end>

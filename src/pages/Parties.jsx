@@ -11,7 +11,7 @@ function Parties() {
         <section>
             <Title>{t(labels.parties.navTitle)}</Title>
 
-            <PartiesGallery />
+            <PartiesGallery compact />
         </section>
     );
 }

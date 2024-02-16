@@ -11,7 +11,8 @@ export const sheetsId = '1HH5RdyPynYm3vNolZaTmBmh7GzDAGeDNdL7AXmemYX4';
 export const csvConfig = {
     ACCOUNTS: {
         columns: {
-            PARTY: 'Strana',
+            SHORT_NAME: 'Skratka',
+            FULL_NAME: 'Plný názov strany',
             FB: 'FB Účty',
             GOOGLE: 'Google účty',
             TA_NAME: 'Transparentný účet',
@@ -87,24 +88,30 @@ export const processDataSheets = (data) => {
             switch (sheet.id ?? '') {
                 case csvConfig.ACCOUNTS.name: {
                     sheet.data.forEach((row) => {
-                        pd.parties[row[csvConfig.ACCOUNTS.columns.PARTY]] = {
-                            [csvConfig.ACCOUNTS.columns.FB]:
-                                row[csvConfig.ACCOUNTS.columns.FB] ?? false
-                                    ? row[csvConfig.ACCOUNTS.columns.FB]
-                                          .replaceAll(' ', '')
-                                          .split(',')
-                                    : [],
-                            [csvConfig.ACCOUNTS.columns.GOOGLE]:
-                                row[csvConfig.ACCOUNTS.columns.GOOGLE] ?? false
-                                    ? row[csvConfig.ACCOUNTS.columns.GOOGLE]
-                                          .replaceAll(' ', '')
-                                          .split(',')
-                                    : [],
-                            [csvConfig.ACCOUNTS.columns.TA_NAME]:
-                                row[csvConfig.ACCOUNTS.columns.TA_NAME] ?? null,
-                            [csvConfig.ACCOUNTS.columns.WP]:
-                                row[csvConfig.ACCOUNTS.columns.WP] ?? null,
-                        };
+                        pd.parties[row[csvConfig.ACCOUNTS.columns.SHORT_NAME]] =
+                            {
+                                [csvConfig.ACCOUNTS.columns.FULL_NAME]:
+                                    row[csvConfig.ACCOUNTS.columns.FULL_NAME] ??
+                                    null,
+                                [csvConfig.ACCOUNTS.columns.FB]:
+                                    row[csvConfig.ACCOUNTS.columns.FB] ?? false
+                                        ? row[csvConfig.ACCOUNTS.columns.FB]
+                                              .replaceAll(' ', '')
+                                              .split(',')
+                                        : [],
+                                [csvConfig.ACCOUNTS.columns.GOOGLE]:
+                                    row[csvConfig.ACCOUNTS.columns.GOOGLE] ??
+                                    false
+                                        ? row[csvConfig.ACCOUNTS.columns.GOOGLE]
+                                              .replaceAll(' ', '')
+                                              .split(',')
+                                        : [],
+                                [csvConfig.ACCOUNTS.columns.TA_NAME]:
+                                    row[csvConfig.ACCOUNTS.columns.TA_NAME] ??
+                                    null,
+                                [csvConfig.ACCOUNTS.columns.WP]:
+                                    row[csvConfig.ACCOUNTS.columns.WP] ?? null,
+                            };
                     });
                     break;
                 }
@@ -212,9 +219,11 @@ export const AdsDataProvider = function ({ children }) {
 
     const findPartyByName = (name) =>
         Object.entries(sheetsData.parties).find(([shortName, party]) =>
-            [shortName, party[csvConfig.ACCOUNTS.columns.TA_NAME]].includes(
-                name
-            )
+            [
+                shortName,
+                party[csvConfig.ACCOUNTS.columns.FULL_NAME],
+                party[csvConfig.ACCOUNTS.columns.TA_NAME],
+            ].includes(name)
         );
 
     const getPartyAccountName = (name) => {
@@ -225,6 +234,11 @@ export const AdsDataProvider = function ({ children }) {
     const getPartyShortName = (name) => {
         const found = findPartyByName(name);
         return found ? found[0] : name;
+    };
+
+    const getPartyFulltName = (name) => {
+        const found = findPartyByName(name);
+        return found ? found[1][csvConfig.ACCOUNTS.columns.FULL_NAME] : '';
     };
 
     const getAllPartiesNames = (transparentAccountNames = []) => {
@@ -253,6 +267,7 @@ export const AdsDataProvider = function ({ children }) {
             findPartyForMetaAccount,
             getPartyAccountName,
             getPartyShortName,
+            getPartyFulltName,
             getAllPartiesNames,
         }),
         [sheetsData, metaApiData]

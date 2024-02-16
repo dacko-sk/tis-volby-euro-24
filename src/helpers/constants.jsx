@@ -1,7 +1,5 @@
 import { csvConfig } from '../hooks/AdsData';
 
-import dummy from '../../public/img/user_grey.png';
-
 // import all csv files from the accounts folder via webpack
 const partiesImages = require.context('../../public/img/parties');
 
@@ -14,7 +12,7 @@ export const partyImage = (name) => {
                     key.endsWith(`${name}.${ext}`)
                 )
         );
-    return file ? partiesImages(file) : dummy;
+    return file ? partiesImages(file) : null;
 };
 
 export const partyData = (name, accountData, adsData) => {
@@ -29,7 +27,7 @@ export const partyData = (name, accountData, adsData) => {
     data.hasGoogle =
         adsData && !!data[csvConfig.ACCOUNTS.columns.GOOGLE].length;
     data.hasWp = adsData && !!data[csvConfig.ACCOUNTS.columns.WP];
-    data.isValid = data.image !== dummy || data.hasAccount || adsData !== false;
+    data.isValid = data.hasAccount || adsData !== false;
 
     return data;
 };
