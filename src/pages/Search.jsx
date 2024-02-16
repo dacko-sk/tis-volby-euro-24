@@ -9,7 +9,8 @@ import { contains } from '../helpers/helpers';
 import { routes } from '../helpers/routes';
 import { wpCat } from '../helpers/wp';
 
-import useAccountsData, { aggregatedKeys as agk } from '../hooks/AccountsData';
+import useAccountsData from '../hooks/AccountsData';
+import useAdsData from '../hooks/AdsData';
 
 import AlertWithIcon from '../components/general/AlertWithIcon';
 import Title from '../components/structure/Title';
@@ -20,25 +21,32 @@ function Search() {
     const query = params.query ?? null;
     const navigate = useNavigate();
 
-    const { accountsData } = useAccountsData();
+    const { allAccountsNames } = useAccountsData();
+    const {
+        getAllPartiesNames,
+        getPartyAccountName,
+        getPartyFulltName,
+        getPartyShortName,
+    } = useAdsData();
 
-    const parties = (accountsData.data ?? [])
+    const allParties = getAllPartiesNames(allAccountsNames) ?? [];
+
+    const parties = allParties
         .filter(
-            (row) =>
-                contains(row[agk.name], query) ||
-                contains(row.fbName, query) ||
-                contains(row.fullName, query) ||
-                contains(row.slug, query)
+            (name) =>
+                contains(getPartyShortName(name), query) ||
+                contains(getPartyFulltName(name), query) ||
+                contains(getPartyAccountName(name), query)
         )
-        .map((row) => {
-            const link = routes.party(row[agk.name]);
+        .map((name) => {
+            const link = routes.party(getPartyShortName(name));
             return (
-                <Col key={row[agk.name]} className="d-flex" sm>
+                <Col key={link} className="d-flex" sm>
                     <Link
                         to={link}
                         className="d-flex flex-column justify-content-between w-100 cat-local"
                     >
-                        <h3>{row[agk.name]}</h3>
+                        <h3>{getPartyFulltName(name)}</h3>
                     </Link>
                 </Col>
             );

@@ -114,8 +114,7 @@ export const routes = {
     home: (lang) => languageRoot(lang),
     news: (lang) => languageRoot(lang) + urlSegment(segments.NEWS, lang),
     online: (lang) => languageRoot(lang) + urlSegment(segments.ONLINE, lang),
-    parties: (lang) =>
-        languageRoot(lang) + urlSegment(segments.PARTIES, lang),
+    parties: (lang) => languageRoot(lang) + urlSegment(segments.PARTIES, lang),
     party: (slug, subpage, lang) => {
         const niceSlug =
             slug === true

@@ -226,11 +226,6 @@ export const AdsDataProvider = function ({ children }) {
             ].includes(name)
         );
 
-    const getPartyAccountName = (name) => {
-        const found = findPartyByName(name);
-        return found ? found[1][csvConfig.ACCOUNTS.columns.TA_NAME] : name;
-    };
-
     const getPartyShortName = (name) => {
         const found = findPartyByName(name);
         return found ? found[0] : name;
@@ -238,7 +233,22 @@ export const AdsDataProvider = function ({ children }) {
 
     const getPartyFulltName = (name) => {
         const found = findPartyByName(name);
-        return found ? found[1][csvConfig.ACCOUNTS.columns.FULL_NAME] : '';
+        if (found) {
+            return (
+                // return full name if not empty, otherwise short name
+                found[1][csvConfig.ACCOUNTS.columns.FULL_NAME] || found[0]
+            );
+        }
+        return '';
+    };
+
+    const getPartyAccountName = (name) => {
+        const found = findPartyByName(name);
+        if (found) {
+            // return transparent account name if not empty, otherwise short name
+            return found[1][csvConfig.ACCOUNTS.columns.TA_NAME] || found[0];
+        }
+        return name;
     };
 
     const getAllPartiesNames = (transparentAccountNames = []) => {
