@@ -257,7 +257,7 @@ export const AdsDataProvider = function ({ children }) {
         }
         return Array.from(
             new Set([
-                ...transparentAccountNames.map((name) =>
+                ...(transparentAccountNames ?? []).map((name) =>
                     getPartyShortName(name)
                 ),
                 ...Object.keys(sheetsData.parties),
