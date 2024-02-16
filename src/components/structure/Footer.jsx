@@ -119,7 +119,7 @@ function Footer() {
                                 <SocialIcon
                                     bgColor={colorOrange}
                                     className="me-2"
-                                    url="https://twitter.com/transparencysk"
+                                    url="https://x.com/transparencysk"
                                 />
                                 <SocialIcon
                                     bgColor={colorOrange}
