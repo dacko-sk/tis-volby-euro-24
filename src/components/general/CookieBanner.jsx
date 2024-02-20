@@ -120,27 +120,24 @@ function CookieBanner() {
                                 </Accordion.Item>
                             </Accordion>
 
-                            <div className="d-flex justify-content-center flex-column flex-sm-row">
+                            <div className="d-flex justify-content-center flex-column flex-sm-row gap-3">
                                 <Button
-                                    className="mb-2 mb-sm-0 me-0 me-sm-3"
-                                    variant="success"
-                                    onClick={rejectAllClick}
+                                    variant="secondary"
+                                    onClick={acceptAllClick}
                                 >
-                                    {t(labels.cookies.reject)}
+                                    {t(labels.cookies.accept)}
                                 </Button>
                                 <Button
-                                    className="mb-2 mb-sm-0 me-0 me-sm-3"
-                                    variant="success"
+                                    variant="secondary"
                                     onClick={acceptSelectionClick}
                                 >
                                     {t(labels.cookies.selected)}
                                 </Button>
                                 <Button
-                                    // className="m-2"
-                                    variant="secondary"
-                                    onClick={acceptAllClick}
+                                    variant="success"
+                                    onClick={rejectAllClick}
                                 >
-                                    {t(labels.cookies.accept)}
+                                    {t(labels.cookies.reject)}
                                 </Button>
                             </div>
                         </Col>

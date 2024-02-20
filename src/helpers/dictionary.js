@@ -21,10 +21,7 @@ export const labels = {
             'Show all transactions',
         ],
         balance: ['Zostatok', 'Balance'],
-        partySpending: [
-            'Priebežné výdavky strany',
-            'Party spending',
-        ],
+        partySpending: ['Priebežné výdavky strany', 'Party spending'],
         download: ['Stiahnuť ako CSV', 'Download as CSV'],
         expensesAmount: ['Počet výdavkov', 'Number of expenses'],
         incomesAmount: ['Počet príjmov', 'Number of incomes'],
@@ -50,10 +47,7 @@ export const labels = {
             'Súčet výdavkov na transparentných účtoch všetkých strán.',
             'Sum of spendings on accounts of all parties.',
         ],
-        totalSpending: [
-            'Celkové výdavky strán',
-            'Total parties spending',
-        ],
+        totalSpending: ['Celkové výdavky strán', 'Total parties spending'],
     },
     ads: {
         google: {
@@ -549,8 +543,8 @@ export const labels = {
     ],
     followUs: ['Sledujte nás', 'Follow us'],
     home: {
-        navTitle: ['Euro 2024', 'Euro 2024'],
-        pageTitle: ['Euro\nvoľby 2024', 'Euro\nelections 2024'],
+        navTitle: ['Eurovoľby 2024', 'Euro elections 2024'],
+        pageTitle: ['Európske\nvoľby 2024', 'European\nelections 2024'],
     },
     learnMore: ['Zistiť viac', 'Learn more'],
     lastUpdate: ['Naposledy aktualizované', 'Last updated on'],

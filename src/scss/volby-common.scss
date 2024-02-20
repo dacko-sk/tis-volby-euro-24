@@ -46,14 +46,15 @@ header {
 
 h1 {
   text-align: center;
-  color: $tis-dark-blue;
   font-weight: $fw-bold;
 }
 
+h1,
 h2,
 h3,
 h4 {
-  color: $tis-light-blue;
+  color: $tis-dark-blue;
+  text-transform: uppercase;
 }
 
 h5,
@@ -242,16 +243,17 @@ th a {
     background-color: $tis-grey;
     margin: 0 calc(-0.5 * var(--bs-gutter-x));
     padding: calc(0.5 * var(--bs-gutter-x));
-    h2 {
-      text-decoration: none;
+    h2,
+    h3 {
+      text-decoration: underline;
     }
     .fade-image {
       filter: saturate(100%);
     }
   }
-  h2 {
+  h2,
+  h3 {
     color: $tis-orange;
-    text-decoration: underline;
   }
 }
 

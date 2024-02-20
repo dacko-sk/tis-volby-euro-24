@@ -187,7 +187,7 @@ function Footer() {
             <div className="footer-bottom py-3">
                 <Container>
                     <Row>
-                        <Col>© 2023 {t(labels.tis)}</Col>
+                        <Col>© 2024 {t(labels.tis)}</Col>
                         <Col xs="auto">
                             <a href="https://github.com/dacko-sk/tis-volby-landing">
                                 {t(labels.webDev)}

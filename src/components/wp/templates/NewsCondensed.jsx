@@ -17,7 +17,7 @@ function NewsCondensed({ article, clickHandler, keyUpHandler }) {
                 role="link"
                 tabIndex={0}
             >
-                <h2 className="d-none d-xxl-block">{article.title.rendered}</h2>
+                <h3 className="d-none d-xxl-block">{article.title.rendered}</h3>
 
                 <Row className="align-items-center align-items-xxl-start">
                     <Col xxl="auto" className="align-self-xxl-start">
@@ -31,9 +31,9 @@ function NewsCondensed({ article, clickHandler, keyUpHandler }) {
                         </div>
                     </Col>
                     <Col>
-                        <h2 className="d-block d-xxl-none">
+                        <h3 className="d-block d-xxl-none">
                             {article.title.rendered}
-                        </h2>
+                        </h3>
                         <div className="article-date my-2">
                             {dateTimeFormat(article.date)}
                         </div>

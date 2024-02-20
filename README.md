@@ -1,4 +1,4 @@
-# [Euro voľby 2024](https://volby.transparency.sk/euro2024/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/dacko-sk/tis-volby-prezident-24/blob/main/LICENSE)
+# [Európske voľby 2024](https://volby.transparency.sk/euro2024/) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-yellow.svg)](https://github.com/dacko-sk/tis-volby-prezident-24/blob/main/LICENSE)
 
 ### Built with
 
@@ -25,7 +25,7 @@
 
 [![TIS logo](https://transparency.sk/wp-content/uploads/2020/11/tis_full-1.svg)](https://transparency.sk)
 
-[Euro voľby 2024](https://volby.transparency.sk/euro2024/) is a website dedicated to elections to European parliament in Slovakia in the year 2024.
+[Európske voľby 2024](https://volby.transparency.sk/euro2024/) is a website dedicated to elections to European parliament in Slovakia in the year 2024.
 
 Created and maintained by [Transparency International Slovakia](https://transparency.sk/), developed by [Dalibor Hrtánek](https://github.com/dacko-sk) and hosted on https://volby.transparency.sk/euro2024/.
 
