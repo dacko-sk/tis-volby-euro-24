@@ -41,9 +41,7 @@ function Party() {
                 {(party.image ?? false) && (
                     <div className="logo mb-2 mx-auto">
                         <div className="img-aspect">
-                            <figure>
-                                <img src={party.image} />
-                            </figure>
+                            <figure>{party.image}</figure>
                         </div>
                     </div>
                 )}

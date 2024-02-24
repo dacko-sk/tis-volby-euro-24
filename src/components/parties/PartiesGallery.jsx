@@ -32,10 +32,6 @@ function PartiesGallery({ compact = false }) {
                         const adsData = getPartyAdsData(name);
                         const party = partyData(name, accountData, adsData);
                         const fullName = getPartyFulltName(name);
-                        const img =
-                            party.image ?? false ? (
-                                <img src={party.image} alt={party.name} />
-                            ) : null;
                         return compact ? (
                             <Col key={party.name} xs={12}>
                                 <Link
@@ -43,7 +39,7 @@ function PartiesGallery({ compact = false }) {
                                     to={routes.party(party.name)}
                                 >
                                     <figure className="flex-shrink-0 me-3">
-                                        {img}
+                                        {party.image}
                                     </figure>
                                     <h3 className="my-2">{fullName}</h3>
                                 </Link>
@@ -57,10 +53,10 @@ function PartiesGallery({ compact = false }) {
                                 >
                                     <div className="thumb">
                                         <figure className="text-center">
-                                            {img}
+                                            {party.image}
                                         </figure>
 
-                                        {img === null && (
+                                        {party.image === null && (
                                             <div className="name text-center">
                                                 <span className="badge">
                                                     {fullName}

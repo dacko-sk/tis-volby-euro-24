@@ -29,7 +29,8 @@
   &.analysis-preview {
     &:hover,
     &:focus {
-      img {
+      img,
+      svg {
         filter: saturate(100%);
       }
       figure {
@@ -79,7 +80,8 @@
       width: 100%;
       height: 100%;
     }
-    img {
+    img,
+    svg {
       position: relative;
       top: 50%;
       transform: translateY(-50%);

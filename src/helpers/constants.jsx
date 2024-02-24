@@ -1,24 +1,43 @@
 import { csvConfig } from '../hooks/AdsData';
 
 // import all csv files from the accounts folder via webpack
-const partiesImages = require.context('../../public/img/parties');
+const partiesImages = require.context(
+    '../../public/img/parties',
+    false,
+    /\.(jpg|png)$/
+);
+const partiesSvgs = require.context(
+    '!@svgr/webpack!../../public/img/parties',
+    false,
+    /\.(svg)$/
+);
 
 export const partyImage = (name) => {
     const file = partiesImages
         .keys()
         .find(
             (key) =>
-                !!['jpg', 'png', 'svg'].find((ext) =>
-                    key.endsWith(`${name}.${ext}`)
-                )
+                !!['jpg', 'png'].find((ext) => key.endsWith(`${name}.${ext}`))
         );
-    return file ? partiesImages(file) : null;
+    if (file) {
+        return <img src={partiesImages(file)} alt={name} />;
+    }
+    return null;
+};
+
+export const partySvg = (name) => {
+    const svg = partiesSvgs.keys().find((key) => key.endsWith(`${name}.svg`));
+    if (svg) {
+        const PartySvg = partiesSvgs(svg).default;
+        return <PartySvg />;
+    }
+    return null;
 };
 
 export const partyData = (name, accountData, adsData) => {
     const data = {
         name,
-        image: partyImage(name),
+        image: partySvg(name) ?? partyImage(name),
         account: accountData,
         ...(adsData ?? {}),
     };
