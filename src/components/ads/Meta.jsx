@@ -5,23 +5,25 @@ import Row from 'react-bootstrap/Row';
 
 import { setTitle } from '../../helpers/browser';
 import {
-    ageColors,
-    attributionColors,
-    attributionKeys,
-    partyChartLabel,
+    chartKeys,
     columnVariants,
-    genderColors,
-    genderKeys,
-    regionOptions,
-    regionKeys,
+    partyChartLabel,
 } from '../../helpers/charts';
 import { colors } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
 import { sortByName, sortByNumericProp } from '../../helpers/helpers';
+import {
+    ageColors,
+    attributionColors,
+    attributionKeys,
+    genderColors,
+    genderKeys,
+    regionOptions,
+    regionKeys,
+} from '../../helpers/online';
 import { segments } from '../../helpers/routes';
 
 import useAdsData from '../../hooks/AdsData';
-import { aggregatedKeys } from '../../hooks/AccountsData';
 
 import FbRangesChart from '../charts/FbRangesChart';
 import TisBarChart from '../charts/TisBarChart';
@@ -31,7 +33,7 @@ import Loading from '../general/Loading';
 import TisPieChart from '../charts/TisPieChart';
 
 function Meta({
-    chartKeys = {
+    accKeys = {
         SPENDING: 'SPENDING',
         RANGES: 'RANGES',
         AMOUNTS: 'AMOUNTS',
@@ -40,8 +42,8 @@ function Meta({
         ATTRIBUTION: 'ATTRIBUTION',
     },
 }) {
-    const [activeKeys, setActiveKeys] = useState([chartKeys.SPENDING]);
-    const [loadedCharts, setLoadedCharts] = useState([chartKeys.SPENDING]);
+    const [activeKeys, setActiveKeys] = useState([accKeys.SPENDING]);
+    const [loadedCharts, setLoadedCharts] = useState([accKeys.SPENDING]);
 
     const {
         metaApiData,
@@ -61,10 +63,10 @@ function Meta({
                 if (!(spendingAggr[candidate] ?? false)) {
                     spendingAggr[candidate] = {
                         name: partyChartLabel(candidate, segments.ONLINE),
-                        [aggregatedKeys.outgoing]: 0,
+                        [chartKeys.OUTGOING]: 0,
                     };
                 }
-                spendingAggr[candidate][aggregatedKeys.outgoing] +=
+                spendingAggr[candidate][chartKeys.OUTGOING] +=
                     pageProps.outgoing;
             }
         });
@@ -104,7 +106,7 @@ function Meta({
             if (candidate) {
                 totalAmount += pageProps.spend.num;
 
-                if (loadedCharts.includes(chartKeys.RANGES)) {
+                if (loadedCharts.includes(accKeys.RANGES)) {
                     if (partiesAggr[candidate] ?? false) {
                         partiesAggr[candidate].range[0] += pageProps.spend.min;
                         partiesAggr[candidate].range[1] += pageProps.spend.max;
@@ -118,18 +120,19 @@ function Meta({
                     }
                 }
 
-                if (loadedCharts.includes(chartKeys.AMOUNTS)) {
+                if (loadedCharts.includes(accKeys.AMOUNTS)) {
                     if (amountsAggr[candidate] ?? false) {
-                        amountsAggr[candidate].num += pageProps.spend.num;
+                        amountsAggr[candidate][chartKeys.AMOUNT] +=
+                            pageProps.spend.num;
                     } else {
                         amountsAggr[candidate] = {
                             name: chartLabel,
-                            num: pageProps.spend.num,
+                            [chartKeys.AMOUNT]: pageProps.spend.num,
                         };
                     }
                 }
 
-                if (loadedCharts.includes(chartKeys.REGIONS)) {
+                if (loadedCharts.includes(accKeys.REGIONS)) {
                     // create initial object for party
                     if (!(regionsAggr[chartLabel] ?? false)) {
                         regionsAggr[chartLabel] = {};
@@ -146,7 +149,7 @@ function Meta({
                     });
                 }
 
-                if (loadedCharts.includes(chartKeys.DEMOGRAPHY)) {
+                if (loadedCharts.includes(accKeys.DEMOGRAPHY)) {
                     // create initial objects for party
                     if (!(genderAggr[chartLabel] ?? false)) {
                         genderAggr[chartLabel] = {};
@@ -166,7 +169,7 @@ function Meta({
                     );
                 }
 
-                if (loadedCharts.includes(chartKeys.ATTRIBUTION)) {
+                if (loadedCharts.includes(accKeys.ATTRIBUTION)) {
                     // create initial object for party
                     if (!(attributionsAggr[chartLabel] ?? false)) {
                         attributionsAggr[chartLabel] = {};
@@ -184,7 +187,7 @@ function Meta({
                 }
             }
 
-            if (loadedCharts.includes(chartKeys.ATTRIBUTION)) {
+            if (loadedCharts.includes(accKeys.ATTRIBUTION)) {
                 Object.keys(attributionKeys).forEach((key) => {
                     if (pageProps.attribution.mandatory[key] ?? false) {
                         attributions[key] =
@@ -302,19 +305,19 @@ function Meta({
     }
 
     const charts = {
-        [chartKeys.SPENDING]: loadedCharts.includes(chartKeys.SPENDING) ? (
+        [accKeys.SPENDING]: loadedCharts.includes(accKeys.SPENDING) ? (
             <TisBarChart
                 bars={columnVariants.spending}
                 currency
                 data={Object.values(spendingAggr).sort(
-                    sortByNumericProp(aggregatedKeys.outgoing)
+                    sortByNumericProp(chartKeys.OUTGOING)
                 )}
                 subtitle={t(labels.ads.meta.spending.disclaimer)}
                 timestamp={sheetsData.lastUpdateFb}
                 vertical
             />
         ) : null,
-        [chartKeys.RANGES]: (
+        [accKeys.RANGES]: (
             <FbRangesChart
                 data={Object.values(partiesAggr).sort(sortByNumericProp('est'))}
                 subtitle={t(labels.ads.meta.ranges.disclaimer)}
@@ -322,16 +325,18 @@ function Meta({
                 vertical
             />
         ),
-        [chartKeys.AMOUNTS]: loadedCharts.includes(chartKeys.AMOUNTS) ? (
+        [accKeys.AMOUNTS]: loadedCharts.includes(accKeys.AMOUNTS) ? (
             <TisBarChart
                 bars={columnVariants.amount}
-                data={Object.values(amountsAggr).sort(sortByNumericProp('num'))}
+                data={Object.values(amountsAggr).sort(
+                    sortByNumericProp(chartKeys.AMOUNT)
+                )}
                 subtitle={t(labels.ads.meta.amount.disclaimer)}
                 timestamp={timestamp}
                 vertical
             />
         ) : null,
-        [chartKeys.REGIONS]: loadedCharts.includes(chartKeys.REGIONS) ? (
+        [accKeys.REGIONS]: loadedCharts.includes(accKeys.REGIONS) ? (
             <TisBarChart
                 bars={regionsBars}
                 data={regionsPercentages}
@@ -341,7 +346,7 @@ function Meta({
                 vertical
             />
         ) : null,
-        [chartKeys.DEMOGRAPHY]: loadedCharts.includes(chartKeys.DEMOGRAPHY) ? (
+        [accKeys.DEMOGRAPHY]: loadedCharts.includes(accKeys.DEMOGRAPHY) ? (
             <Row className="gy-3">
                 <Col>
                     <TisBarChart
@@ -369,9 +374,7 @@ function Meta({
                 </Col>
             </Row>
         ) : null,
-        [chartKeys.ATTRIBUTION]: loadedCharts.includes(
-            chartKeys.ATTRIBUTION
-        ) ? (
+        [accKeys.ATTRIBUTION]: loadedCharts.includes(accKeys.ATTRIBUTION) ? (
             <Row className="gy-3">
                 <Col xl={6}>
                     <TisPieChart
@@ -398,12 +401,12 @@ function Meta({
     };
 
     const accordions = [
-        [chartKeys.SPENDING, labels.ads.meta.spending.accountsTitle],
-        [chartKeys.RANGES, labels.ads.meta.ranges.accountsTitle],
-        [chartKeys.AMOUNTS, labels.ads.meta.amount.title],
-        [chartKeys.REGIONS, labels.ads.meta.regions.title],
-        [chartKeys.DEMOGRAPHY, labels.ads.meta.demography.title],
-        [chartKeys.ATTRIBUTION, labels.ads.meta.attribution.title],
+        [accKeys.SPENDING, labels.ads.meta.spending.accountsTitle],
+        [accKeys.RANGES, labels.ads.meta.ranges.accountsTitle],
+        [accKeys.AMOUNTS, labels.ads.meta.amount.title],
+        [accKeys.REGIONS, labels.ads.meta.regions.title],
+        [accKeys.DEMOGRAPHY, labels.ads.meta.demography.title],
+        [accKeys.ATTRIBUTION, labels.ads.meta.attribution.title],
     ].map(([key, label]) => (
         <Accordion.Item key={key} eventKey={key}>
             <Accordion.Header>{t(label)}</Accordion.Header>

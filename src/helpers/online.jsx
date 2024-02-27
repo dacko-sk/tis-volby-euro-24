@@ -1,5 +1,5 @@
 import { colors } from './constants';
-// import { csvConfig } from '../hooks/AdsData';
+import { csvConfig } from '../hooks/AdsData';
 
 export const regionKeys = {
     BA: 'BA',
@@ -60,9 +60,9 @@ export const ageColors = {
     '65+': colors.colorOrange,
 };
 
-// const googleColumns = csvConfig.GOOGLE.columns;
-// export const formatDefs = {
-//     [googleColumns.VIDEO]: colors.colorOrange,
-//     [googleColumns.IMAGE]: colors.colorDarkBlue,
-//     [googleColumns.TEXT]: colors.colorLightBlue,
-// };
+const googleColumns = csvConfig.GOOGLE.columns;
+export const formatDefs = {
+    [googleColumns.VIDEO]: colors.colorOrange,
+    [googleColumns.IMAGE]: colors.colorDarkBlue,
+    [googleColumns.TEXT]: colors.colorLightBlue,
+};

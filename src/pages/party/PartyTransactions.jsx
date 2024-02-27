@@ -37,21 +37,15 @@ function PartyTransactions() {
                 <tbody>
                     <tr>
                         <td>{t(labels.charts.incoming)}</td>
-                        <td>
-                            {currencyFormat(party.account?.[agk.incoming])}
-                        </td>
+                        <td>{currencyFormat(party.account?.[agk.incoming])}</td>
                     </tr>
                     <tr>
                         <td>{t(labels.charts.outgoing)}</td>
-                        <td>
-                            {currencyFormat(party.account?.[agk.outgoing])}
-                        </td>
+                        <td>{currencyFormat(party.account?.[agk.outgoing])}</td>
                     </tr>
                     <tr>
                         <td>{t(labels.account.balance)}</td>
-                        <td>
-                            {currencyFormat(party.account?.[agk.balance])}
-                        </td>
+                        <td>{currencyFormat(party.account?.[agk.balance])}</td>
                     </tr>
                     <tr>
                         <td>{t(labels.account.incomesAmount)}</td>

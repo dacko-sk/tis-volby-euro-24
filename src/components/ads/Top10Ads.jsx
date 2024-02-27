@@ -1,10 +1,13 @@
-import { partyChartLabel, columnVariants } from '../../helpers/charts';
+import {
+    partyChartLabel,
+    columnVariants,
+    chartKeys,
+} from '../../helpers/charts';
 import { labels, t } from '../../helpers/dictionary';
 import { sortByNumericProp } from '../../helpers/helpers';
 import { routes, segments } from '../../helpers/routes';
 
 import useAdsData from '../../hooks/AdsData';
-import { aggregatedKeys } from '../../hooks/AccountsData';
 
 import TisBarChart from '../charts/TisBarChart';
 
@@ -24,11 +27,10 @@ function Top10Ads({
                 if (!(spendingFb[candidate] ?? false)) {
                     spendingFb[candidate] = {
                         name: partyChartLabel(candidate, segments.ONLINE),
-                        [aggregatedKeys.outgoing]: 0,
+                        [chartKeys.OUTGOING]: 0,
                     };
                 }
-                spendingFb[candidate][aggregatedKeys.outgoing] +=
-                    pageProps.outgoing;
+                spendingFb[candidate][chartKeys.OUTGOING] += pageProps.outgoing;
             }
         });
     }
@@ -45,11 +47,11 @@ function Top10Ads({
     //         const outgoing = fixNumber(pageData[googleColumns.SPENDING]);
     //         if (parentPartyName) {
     //             if (spendingGgl[parentPartyName] ?? false) {
-    //                 spendingGgl[parentPartyName].outgoing += outgoing;
+    //                 spendingGgl[parentPartyName][chartKeys.OUTGOING] += outgoing;
     //             } else {
     //                 spendingGgl[parentPartyName] = {
     //                     name: partyChartLabel,
-    //                     outgoing,
+    //                     [chartKeys.OUTGOING]: outgoing,
     //                 };
     //             }
     //         }
@@ -57,7 +59,7 @@ function Top10Ads({
     // }
 
     const columnsFb = Object.values(spendingFb)
-        .sort(sortByNumericProp(aggregatedKeys.outgoing))
+        .sort(sortByNumericProp(chartKeys.OUTGOING))
         .slice(0, maxItems);
     // const columnsGgl = Object.values(spendingGgl)
     //     .sort(sortBySpending)

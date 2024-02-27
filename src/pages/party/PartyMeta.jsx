@@ -24,15 +24,15 @@ import HeroNumber from '../../components/general/HeroNumber';
 import Loading from '../../components/general/Loading';
 
 function PartyMeta({
-    chartKeys = {
+    accKeys = {
         REGIONS: 'REGIONS',
         DEMOGRAPHY: 'DEMOGRAPHY',
         ATTRIBUTION: 'ATTRIBUTION',
     },
 }) {
     const party = useOutletContext();
-    const [activeKeys, setActiveKeys] = useState([chartKeys.REGIONS]);
-    const [loadedCharts, setLoadedCharts] = useState([chartKeys.REGIONS]);
+    const [activeKeys, setActiveKeys] = useState([accKeys.REGIONS]);
+    const [loadedCharts, setLoadedCharts] = useState([accKeys.REGIONS]);
 
     const {
         findPartyForMetaAccount,
@@ -135,7 +135,7 @@ function PartyMeta({
                     }
                 });
 
-                if (loadedCharts.includes(chartKeys.DEMOGRAPHY)) {
+                if (loadedCharts.includes(accKeys.DEMOGRAPHY)) {
                     Object.entries(pageProps.demography).forEach(
                         ([key, size]) => {
                             const [gender, age] = key.split('|');
@@ -145,7 +145,7 @@ function PartyMeta({
                     );
                 }
 
-                if (loadedCharts.includes(chartKeys.ATTRIBUTION)) {
+                if (loadedCharts.includes(accKeys.ATTRIBUTION)) {
                     Object.keys(attributionKeys).forEach((key) => {
                         if (pageProps.attribution.mandatory[key] ?? false) {
                             attributions[key] =
@@ -210,7 +210,7 @@ function PartyMeta({
     }
 
     const charts = {
-        [chartKeys.REGIONS]: loadedCharts.includes(chartKeys.REGIONS) ? (
+        [accKeys.REGIONS]: loadedCharts.includes(accKeys.REGIONS) ? (
             <Row className="gy-3">
                 <Col xl={6}>
                     <TisPieChart
@@ -238,7 +238,7 @@ function PartyMeta({
                 </Col>
             </Row>
         ) : null,
-        [chartKeys.DEMOGRAPHY]: loadedCharts.includes(chartKeys.DEMOGRAPHY) ? (
+        [accKeys.DEMOGRAPHY]: loadedCharts.includes(accKeys.DEMOGRAPHY) ? (
             <Row className="gy-3">
                 <Col xl={6}>
                     <TisPieChart
@@ -260,9 +260,7 @@ function PartyMeta({
                 </Col>
             </Row>
         ) : null,
-        [chartKeys.ATTRIBUTION]: loadedCharts.includes(
-            chartKeys.ATTRIBUTION
-        ) ? (
+        [accKeys.ATTRIBUTION]: loadedCharts.includes(accKeys.ATTRIBUTION) ? (
             <Row className="gy-3">
                 <Col xl={6}>
                     <TisPieChart
@@ -278,9 +276,9 @@ function PartyMeta({
     };
 
     const accordions = [
-        [chartKeys.REGIONS, labels.ads.meta.regions.title],
-        [chartKeys.DEMOGRAPHY, labels.ads.meta.demography.title],
-        [chartKeys.ATTRIBUTION, labels.ads.meta.attribution.title],
+        [accKeys.REGIONS, labels.ads.meta.regions.title],
+        [accKeys.DEMOGRAPHY, labels.ads.meta.demography.title],
+        [accKeys.ATTRIBUTION, labels.ads.meta.attribution.title],
     ].map(([key, label]) => (
         <Accordion.Item key={key} eventKey={key}>
             <Accordion.Header>{t(label)}</Accordion.Header>
