@@ -16,11 +16,11 @@ import Analyses from './pages/Analyses';
 import Article from './pages/Article';
 import Home from './pages/Home';
 import News from './pages/News';
-// import Online from './pages/Online';
+import Online from './pages/Online';
 import Parties from './pages/Parties';
 import Party from './pages/Party';
 import PartyNews from './pages/party/PartyNews';
-// import PartyOnline from './pages/party/PartyOnline';
+import PartyOnline from './pages/party/PartyOnline';
 import PartyOverview from './pages/party/PartyOverview';
 import PartyTransactions from './pages/party/PartyTransactions';
 import Search from './pages/Search';
@@ -41,7 +41,7 @@ function App() {
                                 [routes.analyses(lang), Analyses],
                                 [routes.article(true, lang), Article],
                                 [routes.news(lang), News],
-                                // [routes.online(lang), Online],
+                                [routes.online(lang), Online],
                                 [routes.parties(lang), Parties],
                                 [
                                     routes.party(true, '', lang),
@@ -49,7 +49,7 @@ function App() {
                                     [
                                         ['', PartyOverview],
                                         [segments.NEWS, PartyNews],
-                                        // [segments.ONLINE, PartyOnline],
+                                        [segments.ONLINE, PartyOnline],
                                         [
                                             segments.TRANSACTIONS,
                                             PartyTransactions,

@@ -60,7 +60,7 @@ function Party() {
                             {t(labels.parties.funding)}
                         </Nav.Link>
                     )}
-                    {/* {(party.hasWp) && (
+                    {/* {party.hasWp && (
                         <Nav.Link
                             as={NavLink}
                             to={routes.party(name, segments.ANALYSIS)}
@@ -68,12 +68,12 @@ function Party() {
                             {t(labels.analysis.navTitle)}
                         </Nav.Link>
                     )} */}
-                    {/* <Nav.Link
+                    <Nav.Link
                         as={NavLink}
                         to={routes.party(name, segments.ONLINE)}
                     >
                         {t(labels.online.navTitle)}
-                    </Nav.Link> */}
+                    </Nav.Link>
                     {party.hasWp && (
                         <Nav.Link
                             as={NavLink}

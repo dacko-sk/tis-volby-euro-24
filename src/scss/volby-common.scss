@@ -238,6 +238,7 @@ th a {
 .hover-bg {
   cursor: pointer;
   padding: calc(0.5 * var(--bs-gutter-x)) 0;
+  text-decoration: none;
   &:hover,
   &:focus {
     background-color: $tis-grey;

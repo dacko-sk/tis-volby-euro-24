@@ -35,15 +35,18 @@ import TisPieChart from '../charts/TisPieChart';
 function Meta({
     accKeys = {
         SPENDING: 'SPENDING',
+        SPENDING_ACCOUNTS: 'SPENDING_ACCOUNTS',
         RANGES: 'RANGES',
+        RANGES_ACCOUNTS: 'RANGES_ACCOUNTS',
         AMOUNTS: 'AMOUNTS',
+        AMOUNTS_ACCOUNTS: 'AMOUNTS_ACCOUNTS',
         REGIONS: 'REGIONS',
         DEMOGRAPHY: 'DEMOGRAPHY',
         ATTRIBUTION: 'ATTRIBUTION',
     },
 }) {
-    const [activeKeys, setActiveKeys] = useState([accKeys.SPENDING]);
-    const [loadedCharts, setLoadedCharts] = useState([accKeys.SPENDING]);
+    const [activeKeys, setActiveKeys] = useState([accKeys.RANGES]);
+    const [loadedCharts, setLoadedCharts] = useState([accKeys.RANGES]);
 
     const {
         metaApiData,
@@ -54,27 +57,35 @@ function Meta({
 
     // parse data from sheets
     let totalSpending = 0;
+    let spending = [];
     const spendingAggr = {};
     if (sheetsData.lastUpdateFb) {
         Object.entries(mergedWeeksData).forEach(([pageId, pageProps]) => {
-            const candidate = findPartyForMetaAccount(pageId);
-            if (candidate) {
+            const p = findPartyForMetaAccount(pageId);
+            if (p) {
                 totalSpending += pageProps.outgoing;
-                if (!(spendingAggr[candidate] ?? false)) {
-                    spendingAggr[candidate] = {
-                        name: partyChartLabel(candidate, segments.ONLINE),
+                if (!(spendingAggr[p] ?? false)) {
+                    spendingAggr[p] = {
+                        name: partyChartLabel(p, segments.ONLINE),
                         [chartKeys.OUTGOING]: 0,
                     };
                 }
-                spendingAggr[candidate][chartKeys.OUTGOING] +=
-                    pageProps.outgoing;
+                spendingAggr[p][chartKeys.OUTGOING] += pageProps.outgoing;
             }
         });
+        if (loadedCharts.includes(accKeys.SPENDING_ACCOUNTS)) {
+            spending = Object.values(mergedWeeksData).map((pageProps) => ({
+                ...pageProps,
+                [chartKeys.OUTGOING]: pageProps.outgoing,
+            }));
+        }
     }
 
     // parse data from API
     let totalAmount = 0;
+    const pages = [];
     const partiesAggr = {};
+    const amounts = [];
     const amountsAggr = {};
     const regionsAggr = {};
     const regionsPercentages = [];
@@ -100,19 +111,19 @@ function Meta({
 
     if (metaApiData.lastUpdate) {
         Object.entries(metaApiData.pages).forEach(([pageId, pageProps]) => {
-            const candidate = findPartyForMetaAccount(pageId);
-            const chartLabel = partyChartLabel(candidate, segments.ONLINE);
+            const p = findPartyForMetaAccount(pageId);
+            const chartLabel = partyChartLabel(p, segments.ONLINE);
 
-            if (candidate) {
+            if (p) {
                 totalAmount += pageProps.spend.num;
 
                 if (loadedCharts.includes(accKeys.RANGES)) {
-                    if (partiesAggr[candidate] ?? false) {
-                        partiesAggr[candidate].range[0] += pageProps.spend.min;
-                        partiesAggr[candidate].range[1] += pageProps.spend.max;
-                        partiesAggr[candidate].est += pageProps.spend.est;
+                    if (partiesAggr[p] ?? false) {
+                        partiesAggr[p].range[0] += pageProps.spend.min;
+                        partiesAggr[p].range[1] += pageProps.spend.max;
+                        partiesAggr[p].est += pageProps.spend.est;
                     } else {
-                        partiesAggr[candidate] = {
+                        partiesAggr[p] = {
                             name: chartLabel,
                             range: [pageProps.spend.min, pageProps.spend.max],
                             est: pageProps.spend.est,
@@ -121,11 +132,10 @@ function Meta({
                 }
 
                 if (loadedCharts.includes(accKeys.AMOUNTS)) {
-                    if (amountsAggr[candidate] ?? false) {
-                        amountsAggr[candidate][chartKeys.AMOUNT] +=
-                            pageProps.spend.num;
+                    if (amountsAggr[p] ?? false) {
+                        amountsAggr[p][chartKeys.AMOUNT] += pageProps.spend.num;
                     } else {
-                        amountsAggr[candidate] = {
+                        amountsAggr[p] = {
                             name: chartLabel,
                             [chartKeys.AMOUNT]: pageProps.spend.num,
                         };
@@ -185,6 +195,23 @@ function Meta({
                         }
                     });
                 }
+            }
+
+            if (loadedCharts.includes(accKeys.RANGES_ACCOUNTS)) {
+                pages.push({
+                    id: pageId,
+                    name: pageProps.name,
+                    range: [pageProps.spend.min, pageProps.spend.max],
+                    est: pageProps.spend.est,
+                });
+            }
+
+            if (loadedCharts.includes(accKeys.AMOUNTS_ACCOUNTS)) {
+                amounts.push({
+                    id: pageId,
+                    name: pageProps.name,
+                    [chartKeys.AMOUNT]: pageProps.spend.num,
+                });
             }
 
             if (loadedCharts.includes(accKeys.ATTRIBUTION)) {
@@ -305,33 +332,66 @@ function Meta({
     }
 
     const charts = {
-        [accKeys.SPENDING]: loadedCharts.includes(accKeys.SPENDING) ? (
-            <TisBarChart
-                bars={columnVariants.spending}
-                currency
-                data={Object.values(spendingAggr).sort(
-                    sortByNumericProp(chartKeys.OUTGOING)
-                )}
-                subtitle={t(labels.ads.meta.spending.disclaimer)}
-                timestamp={sheetsData.lastUpdateFb}
-                vertical
-            />
-        ) : null,
-        [accKeys.RANGES]: (
+        // [accKeys.SPENDING]: loadedCharts.includes(accKeys.SPENDING) ? (
+        //     <TisBarChart
+        //         bars={columnVariants.spending}
+        //         currency
+        //         data={Object.values(spendingAggr).sort(
+        //             sortByNumericProp(chartKeys.OUTGOING)
+        //         )}
+        //         subtitle={t(labels.ads.meta.spending.partiesDisclaimer)}
+        //         timestamp={sheetsData.lastUpdateFb}
+        //         vertical
+        //     />
+        // ) : null,
+        // [accKeys.SPENDING_ACCOUNTS]: loadedCharts.includes(
+        //     accKeys.SPENDING_ACCOUNTS
+        // ) ? (
+        //     <TisBarChart
+        //         bars={columnVariants.spending}
+        //         currency
+        //         data={spending.sort(sortByNumericProp(chartKeys.OUTGOING))}
+        //         subtitle={t(labels.ads.meta.spending.disclaimer)}
+        //         timestamp={sheetsData.lastUpdateFb}
+        //         vertical
+        //     />
+        // ) : null,
+        [accKeys.RANGES]: loadedCharts.includes(accKeys.RANGES) ? (
             <FbRangesChart
                 data={Object.values(partiesAggr).sort(sortByNumericProp('est'))}
                 subtitle={t(labels.ads.meta.ranges.disclaimer)}
                 timestamp={timestamp}
                 vertical
             />
-        ),
+        ) : null,
+        [accKeys.RANGES_ACCOUNTS]: loadedCharts.includes(
+            accKeys.RANGES_ACCOUNTS
+        ) ? (
+            <FbRangesChart
+                data={pages.sort(sortByNumericProp('est'))}
+                subtitle={t(labels.ads.meta.ranges.disclaimer)}
+                timestamp={timestamp}
+                vertical
+            />
+        ) : null,
         [accKeys.AMOUNTS]: loadedCharts.includes(accKeys.AMOUNTS) ? (
             <TisBarChart
                 bars={columnVariants.amount}
                 data={Object.values(amountsAggr).sort(
                     sortByNumericProp(chartKeys.AMOUNT)
                 )}
-                subtitle={t(labels.ads.meta.amount.disclaimer)}
+                subtitle={t(labels.ads.amount.disclaimer)}
+                timestamp={timestamp}
+                vertical
+            />
+        ) : null,
+        [accKeys.AMOUNTS_ACCOUNTS]: loadedCharts.includes(
+            accKeys.AMOUNTS_ACCOUNTS
+        ) ? (
+            <TisBarChart
+                bars={columnVariants.amount}
+                data={amounts.sort(sortByNumericProp(chartKeys.AMOUNT))}
+                subtitle={t(labels.ads.amount.disclaimer)}
                 timestamp={timestamp}
                 vertical
             />
@@ -401,9 +461,12 @@ function Meta({
     };
 
     const accordions = [
-        [accKeys.SPENDING, labels.ads.meta.spending.accountsTitle],
-        [accKeys.RANGES, labels.ads.meta.ranges.accountsTitle],
-        [accKeys.AMOUNTS, labels.ads.meta.amount.title],
+        // [accKeys.SPENDING, labels.ads.meta.spending.partiesTitle],
+        // [accKeys.SPENDING_ACCOUNTS, labels.ads.meta.spending.accountsTitle],
+        [accKeys.RANGES, labels.ads.meta.ranges.partiesTitle],
+        [accKeys.RANGES_ACCOUNTS, labels.ads.meta.ranges.accountsTitle],
+        [accKeys.AMOUNTS, labels.ads.amount.partiesTitle],
+        [accKeys.AMOUNTS_ACCOUNTS, labels.ads.amount.accountsTitle],
         [accKeys.REGIONS, labels.ads.meta.regions.title],
         [accKeys.DEMOGRAPHY, labels.ads.meta.demography.title],
         [accKeys.ATTRIBUTION, labels.ads.meta.attribution.title],
@@ -449,7 +512,7 @@ function Meta({
             <AlertWithIcon className="my-4" variant="primary">
                 {t(labels.ads.meta.disclaimer)}
             </AlertWithIcon>
-            <Row className="gy-3 gy-lg-0 my-4">
+            {/* <Row className="gy-3 gy-lg-0 my-4">
                 <Col lg={6}>
                     <HeroNumber
                         disclaimer={t(labels.ads.meta.totalDisclaimer)}
@@ -462,14 +525,14 @@ function Meta({
                 <Col lg={6}>
                     <HeroNumber
                         currency={false}
-                        disclaimer={t(labels.ads.meta.amount.disclaimer)}
+                        disclaimer={t(labels.ads.amount.disclaimer)}
                         lastUpdate={timestamp || null}
                         loading={!metaApiData.loaded}
                         number={totalAmount}
-                        title={t(labels.ads.meta.amount.title)}
+                        title={t(labels.ads.amount.title)}
                     />
                 </Col>
-            </Row>
+            </Row> */}
             {content}
         </div>
     );

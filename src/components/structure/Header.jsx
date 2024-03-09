@@ -37,9 +37,9 @@ function Header() {
                         <Nav.Link as={NavLink} to={routes.parties()}>
                             {t(labels.parties.navTitle)}
                         </Nav.Link>
-                        {/* <Nav.Link as={NavLink} to={routes.online()}>
+                        <Nav.Link as={NavLink} to={routes.online()}>
                             {t(labels.online.navTitle)}
-                        </Nav.Link> */}
+                        </Nav.Link>
                         <Nav.Link as={NavLink} to={routes.news()}>
                             {t(labels.news.navTitle)}
                         </Nav.Link>

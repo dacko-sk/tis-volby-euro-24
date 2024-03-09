@@ -4,19 +4,21 @@ import Accordion from 'react-bootstrap/Accordion';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
+import { chartKeys, columnVariants } from '../../helpers/charts';
+import { colors } from '../../helpers/constants';
+import { labels, t } from '../../helpers/dictionary';
+import { sortByNumericProp } from '../../helpers/helpers';
 import {
     ageColors,
     attributionColors,
     attributionKeys,
     genderColors,
     regionOptions,
-} from '../../helpers/charts';
-import { colors } from '../../helpers/constants';
-import { labels, t } from '../../helpers/dictionary';
-import { sortByNumericProp } from '../../helpers/helpers';
+} from '../../helpers/online';
 
 import useAdsData from '../../hooks/AdsData';
 
+import FbRangesChart from '../../components/charts/FbRangesChart';
 import TisBarChart from '../../components/charts/TisBarChart';
 import TisPieChart from '../../components/charts/TisPieChart';
 import AlertWithIcon from '../../components/general/AlertWithIcon';
@@ -25,14 +27,17 @@ import Loading from '../../components/general/Loading';
 
 function PartyMeta({
     accKeys = {
+        // SPENDING: 'SPENDING',
+        RANGES: 'RANGES',
+        AMOUNTS: 'AMOUNTS',
         REGIONS: 'REGIONS',
         DEMOGRAPHY: 'DEMOGRAPHY',
         ATTRIBUTION: 'ATTRIBUTION',
     },
 }) {
     const party = useOutletContext();
-    const [activeKeys, setActiveKeys] = useState([accKeys.REGIONS]);
-    const [loadedCharts, setLoadedCharts] = useState([accKeys.REGIONS]);
+    const [activeKeys, setActiveKeys] = useState([accKeys.RANGES]);
+    const [loadedCharts, setLoadedCharts] = useState([accKeys.RANGES]);
 
     const {
         findPartyForMetaAccount,
@@ -43,10 +48,15 @@ function PartyMeta({
 
     // parse data from sheets
     let totalSpending = 0;
+    const spending = [];
     if (sheetsData.lastUpdateFb) {
         Object.entries(mergedWeeksData).forEach(([pageId, pageProps]) => {
-            const c = findPartyForMetaAccount(pageId);
-            if (c === party.name) {
+            const p = findPartyForMetaAccount(pageId);
+            if (p === party.name) {
+                spending.push({
+                    ...pageProps,
+                    [chartKeys.OUTGOING]: pageProps.outgoing,
+                });
                 totalSpending += pageProps.outgoing;
             }
         });
@@ -54,6 +64,8 @@ function PartyMeta({
 
     // parse data from API
     let totalAmount = 0;
+    const ranges = [];
+    const amounts = [];
     const regions = {};
     const regionsPie = {
         data: [],
@@ -103,37 +115,55 @@ function PartyMeta({
     if (metaApiData.lastUpdate) {
         // collect data from all FB accounts of the party
         Object.entries(metaApiData.pages).forEach(([pageId, pageProps]) => {
-            const c = findPartyForMetaAccount(pageId);
-            if (c === party.name) {
+            const p = findPartyForMetaAccount(pageId);
+            if (p === party.name) {
                 totalAmount += pageProps.spend.num;
 
-                Object.entries(regionOptions).forEach(([key, options]) => {
-                    if (pageProps.regions[key] ?? false) {
-                        const name = t(
-                            labels.ads.meta.regions.regionLabels[key]
-                        );
-                        if (regions[key] ?? false) {
-                            regions[key].value += pageProps.regions[key];
-                        } else {
-                            regions[key] = {
-                                name,
-                                value: pageProps.regions[key],
-                                size: options.size,
-                                color: options.color ?? colors.colorOrange,
-                            };
+                if (loadedCharts.includes(accKeys.RANGES)) {
+                    ranges.push({
+                        name: pageProps.name,
+                        range: [pageProps.spend.min, pageProps.spend.max],
+                        est: pageProps.spend.est,
+                    });
+                }
+
+                if (loadedCharts.includes(accKeys.AMOUNTS)) {
+                    amounts.push({
+                        name: pageProps.name,
+                        [chartKeys.AMOUNT]: pageProps.spend.num,
+                    });
+                }
+
+                if (loadedCharts.includes(accKeys.REGIONS)) {
+                    Object.entries(regionOptions).forEach(([key, options]) => {
+                        if (pageProps.regions[key] ?? false) {
+                            const name = t(
+                                labels.ads.meta.regions.regionLabels[key]
+                            );
+                            if (regions[key] ?? false) {
+                                regions[key].value += pageProps.regions[key];
+                            } else {
+                                regions[key] = {
+                                    name,
+                                    value: pageProps.regions[key],
+                                    size: options.size,
+                                    color: options.color ?? colors.colorOrange,
+                                };
+                            }
+                            const val = pageProps.regions[key] / options.size;
+                            if (regionsCols[key] ?? false) {
+                                regionsCols[key].value += val;
+                            } else {
+                                regionsCols[key] = {
+                                    name,
+                                    value: val,
+                                    color:
+                                        options.color ?? colors.colorDarkBlue,
+                                };
+                            }
                         }
-                        const val = pageProps.regions[key] / options.size;
-                        if (regionsCols[key] ?? false) {
-                            regionsCols[key].value += val;
-                        } else {
-                            regionsCols[key] = {
-                                name,
-                                value: val,
-                                color: options.color ?? colors.colorDarkBlue,
-                            };
-                        }
-                    }
-                });
+                    });
+                }
 
                 if (loadedCharts.includes(accKeys.DEMOGRAPHY)) {
                     Object.entries(pageProps.demography).forEach(
@@ -210,6 +240,33 @@ function PartyMeta({
     }
 
     const charts = {
+        // [accKeys.SPENDING]: loadedCharts.includes(accKeys.SPENDING) ? (
+        //     <TisBarChart
+        //         bars={columnVariants.spending}
+        //         currency
+        //         data={spending.sort(sortByNumericProp(chartKeys.OUTGOING))}
+        //         timestamp={sheetsData.lastUpdateFb}
+        //         subtitle={t(labels.ads.meta.spending.disclaimer)}
+        //         vertical
+        //     />
+        // ) : null,
+        [accKeys.RANGES]: loadedCharts.includes(accKeys.RANGES) ? (
+            <FbRangesChart
+                data={ranges.sort(sortByNumericProp('est'))}
+                timestamp={timestamp}
+                subtitle={t(labels.ads.meta.ranges.disclaimer)}
+                vertical
+            />
+        ) : null,
+        [accKeys.AMOUNTS]: loadedCharts.includes(accKeys.AMOUNTS) ? (
+            <TisBarChart
+                bars={columnVariants.amount}
+                data={amounts.sort(sortByNumericProp(chartKeys.AMOUNT))}
+                timestamp={timestamp}
+                subtitle={t(labels.ads.amount.disclaimer)}
+                vertical
+            />
+        ) : null,
         [accKeys.REGIONS]: loadedCharts.includes(accKeys.REGIONS) ? (
             <Row className="gy-3">
                 <Col xl={6}>
@@ -276,6 +333,9 @@ function PartyMeta({
     };
 
     const accordions = [
+        // [accKeys.SPENDING, labels.ads.meta.spending.partyAccountsTitle],
+        [accKeys.RANGES, labels.ads.meta.ranges.partyAccountsTitle],
+        [accKeys.AMOUNTS, labels.ads.amount.partyAccountsTitle],
         [accKeys.REGIONS, labels.ads.meta.regions.title],
         [accKeys.DEMOGRAPHY, labels.ads.meta.demography.title],
         [accKeys.ATTRIBUTION, labels.ads.meta.attribution.title],
@@ -301,7 +361,7 @@ function PartyMeta({
     if (!sheetsData.loaded || !metaApiData.loaded) {
         // waiting for data or error in loding
         content = <Loading error={sheetsData.error || metaApiData.loaded} />;
-    } else if (totalSpending > 0) {
+    } else if (totalAmount > 0) {
         content = (
             <Accordion
                 className="mt-4"
@@ -325,10 +385,10 @@ function PartyMeta({
             <AlertWithIcon className="my-4" variant="primary">
                 {t(labels.ads.meta.disclaimer)}
             </AlertWithIcon>
-            <Row className="gy-3 gy-lg-0 my-4">
+            {/* <Row className="gy-3 gy-lg-0 my-4">
                 <Col lg={6}>
                     <HeroNumber
-                        disclaimer={t(labels.ads.meta.totalCandidateDisclaimer)}
+                        disclaimer={t(labels.ads.meta.totalPartyDisclaimer)}
                         lastUpdate={sheetsData.lastUpdateFb || null}
                         loading={!sheetsData.loaded}
                         number={totalSpending}
@@ -338,16 +398,14 @@ function PartyMeta({
                 <Col lg={6}>
                     <HeroNumber
                         currency={false}
-                        disclaimer={t(
-                            labels.ads.meta.amount.candidateDisclaimer
-                        )}
+                        disclaimer={t(labels.ads.amount.candidateDisclaimer)}
                         lastUpdate={timestamp || null}
                         loading={!metaApiData.loaded}
                         number={totalAmount}
-                        title={t(labels.ads.meta.amount.title)}
+                        title={t(labels.ads.amount.title)}
                     />
                 </Col>
-            </Row>
+            </Row> */}
             {content}
         </div>
     );

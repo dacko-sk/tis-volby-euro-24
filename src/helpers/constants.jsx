@@ -17,7 +17,7 @@ export const partyImage = (name) => {
         .keys()
         .find(
             (key) =>
-                !!['jpg', 'png'].find((ext) => key.endsWith(`${name}.${ext}`))
+                !!['jpg', 'png'].find((ext) => key.endsWith(`/${name}.${ext}`))
         );
     if (file) {
         return <img src={partiesImages(file)} alt={name} />;

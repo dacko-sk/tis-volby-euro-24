@@ -44,7 +44,7 @@ export const csvConfig = {
 };
 
 export const metaApiUrl =
-    'https://volby.transparency.sk/api/meta/prezident24/ads_json.php';
+    'https://volby.transparency.sk/api/meta/euro24/ads_json.php';
 
 export const VAT = 1.2;
 

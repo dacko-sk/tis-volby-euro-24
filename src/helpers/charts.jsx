@@ -18,7 +18,6 @@ export const chartKeys = {
     INCOMING: 'i',
     META: 'm',
     OUTGOING: 'o',
-    SPENDING: 's',
     TOTAL: 't',
     UNIQUE: 'u',
 };
@@ -59,8 +58,8 @@ export const columnVariants = {
     ],
     amount: [
         {
-            key: 'num',
-            name: labels.ads.meta.amount.title,
+            key: chartKeys.AMOUNT,
+            name: labels.ads.amount.title,
             color: colors.colorOrange,
         },
     ],
