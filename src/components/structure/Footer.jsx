@@ -12,7 +12,7 @@ import DonateButton from '../general/DonateButton';
 import FbFeed from '../general/FbFeed';
 
 import logoEu from '../../../public/img/eu-funded-blue.png';
-import logoEuPontis from '../../../public/img/EÚ.png';
+import logoEmif from '../../../public/img/EMIF_Horizontal_logo_Black.png';
 import logoPontis from '../../../public/img/Logo_Pontis.png';
 import logoTis from '../../../public/img/tis-logo-blue.png';
 
@@ -28,35 +28,39 @@ function Footer() {
                             xs={8}
                             sm={6}
                             md={4}
-                            lg={3}
                         >
-                            <img
-                                className="mw-100 align-self-center"
-                                src={logoEuPontis}
-                            />
+                            <figure className="align-self-center mb-0">
+                                <img className="mw-100" src={logoEmif} />
+                                <figcaption className="small mx-1">
+                                    Zodpovednosť za akýkoľvek obsah podporený
+                                    Európskym fondom pre médiá a informácie
+                                    spočíva výlučne na autorovi/autoroch
+                                    a nemusí nutne odrážať stanoviská EMIFu
+                                    a jeho partnerov, nadácie Calouste
+                                    Gulbenkian a Európskeho univerzitného
+                                    inštitútu.
+                                </figcaption>
+                            </figure>
                         </Col>
                         <Col
                             className="d-flex justify-content-center mb-3 mb-md-0"
                             xs={8}
                             sm={6}
                             md={4}
-                            lg={3}
                         >
-                            <img
-                                className="mw-100 px-5 align-self-center"
-                                src={logoPontis}
-                            />
+                            <figure className="align-self-center mx-xl-3 mx-xxl-5 mb-0">
+                                <img className="mw-100 px-5" src={logoPontis} />
+                            </figure>
                         </Col>
                         <Col
                             className="d-flex justify-content-center mb-3 mb-md-0"
                             xs={8}
                             sm={6}
                             md={4}
-                            lg={3}
                         >
-                            <figure className="align-self-center m-0">
+                            <figure className="align-self-center mb-0">
                                 <img className="mw-100" src={logoEu} />
-                                <figcaption className="mx-1">
+                                <figcaption className="small mx-1">
                                     Integrity Watch 3.0 is funded by the
                                     European Union&apos;s Internal Security Fund
                                     — Police.
