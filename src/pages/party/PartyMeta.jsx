@@ -27,7 +27,7 @@ import Loading from '../../components/general/Loading';
 
 function PartyMeta({
     accKeys = {
-        // SPENDING: 'SPENDING',
+        SPENDING: 'SPENDING',
         RANGES: 'RANGES',
         AMOUNTS: 'AMOUNTS',
         REGIONS: 'REGIONS',
@@ -36,8 +36,8 @@ function PartyMeta({
     },
 }) {
     const party = useOutletContext();
-    const [activeKeys, setActiveKeys] = useState([accKeys.RANGES]);
-    const [loadedCharts, setLoadedCharts] = useState([accKeys.RANGES]);
+    const [activeKeys, setActiveKeys] = useState([accKeys.SPENDING]);
+    const [loadedCharts, setLoadedCharts] = useState([accKeys.SPENDING]);
 
     const {
         findPartyForMetaAccount,
@@ -240,16 +240,16 @@ function PartyMeta({
     }
 
     const charts = {
-        // [accKeys.SPENDING]: loadedCharts.includes(accKeys.SPENDING) ? (
-        //     <TisBarChart
-        //         bars={columnVariants.spending}
-        //         currency
-        //         data={spending.sort(sortByNumericProp(chartKeys.OUTGOING))}
-        //         timestamp={sheetsData.lastUpdateFb}
-        //         subtitle={t(labels.ads.meta.spending.disclaimer)}
-        //         vertical
-        //     />
-        // ) : null,
+        [accKeys.SPENDING]: loadedCharts.includes(accKeys.SPENDING) ? (
+            <TisBarChart
+                bars={columnVariants.spending}
+                currency
+                data={spending.sort(sortByNumericProp(chartKeys.OUTGOING))}
+                timestamp={sheetsData.lastUpdateFb}
+                subtitle={t(labels.ads.meta.spending.disclaimer)}
+                vertical
+            />
+        ) : null,
         [accKeys.RANGES]: loadedCharts.includes(accKeys.RANGES) ? (
             <FbRangesChart
                 data={ranges.sort(sortByNumericProp('est'))}
@@ -333,7 +333,7 @@ function PartyMeta({
     };
 
     const accordions = [
-        // [accKeys.SPENDING, labels.ads.meta.spending.partyAccountsTitle],
+        [accKeys.SPENDING, labels.ads.meta.spending.partyAccountsTitle],
         [accKeys.RANGES, labels.ads.meta.ranges.partyAccountsTitle],
         [accKeys.AMOUNTS, labels.ads.amount.partyAccountsTitle],
         [accKeys.REGIONS, labels.ads.meta.regions.title],
@@ -385,7 +385,7 @@ function PartyMeta({
             <AlertWithIcon className="my-4" variant="primary">
                 {t(labels.ads.meta.disclaimer)}
             </AlertWithIcon>
-            {/* <Row className="gy-3 gy-lg-0 my-4">
+            <Row className="gy-3 gy-lg-0 my-4">
                 <Col lg={6}>
                     <HeroNumber
                         disclaimer={t(labels.ads.meta.totalPartyDisclaimer)}
@@ -405,7 +405,7 @@ function PartyMeta({
                         title={t(labels.ads.amount.title)}
                     />
                 </Col>
-            </Row> */}
+            </Row>
             {content}
         </div>
     );

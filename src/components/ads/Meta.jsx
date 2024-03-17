@@ -45,8 +45,8 @@ function Meta({
         ATTRIBUTION: 'ATTRIBUTION',
     },
 }) {
-    const [activeKeys, setActiveKeys] = useState([accKeys.RANGES]);
-    const [loadedCharts, setLoadedCharts] = useState([accKeys.RANGES]);
+    const [activeKeys, setActiveKeys] = useState([accKeys.SPENDING]);
+    const [loadedCharts, setLoadedCharts] = useState([accKeys.SPENDING]);
 
     const {
         metaApiData,
@@ -332,30 +332,30 @@ function Meta({
     }
 
     const charts = {
-        // [accKeys.SPENDING]: loadedCharts.includes(accKeys.SPENDING) ? (
-        //     <TisBarChart
-        //         bars={columnVariants.spending}
-        //         currency
-        //         data={Object.values(spendingAggr).sort(
-        //             sortByNumericProp(chartKeys.OUTGOING)
-        //         )}
-        //         subtitle={t(labels.ads.meta.spending.partiesDisclaimer)}
-        //         timestamp={sheetsData.lastUpdateFb}
-        //         vertical
-        //     />
-        // ) : null,
-        // [accKeys.SPENDING_ACCOUNTS]: loadedCharts.includes(
-        //     accKeys.SPENDING_ACCOUNTS
-        // ) ? (
-        //     <TisBarChart
-        //         bars={columnVariants.spending}
-        //         currency
-        //         data={spending.sort(sortByNumericProp(chartKeys.OUTGOING))}
-        //         subtitle={t(labels.ads.meta.spending.disclaimer)}
-        //         timestamp={sheetsData.lastUpdateFb}
-        //         vertical
-        //     />
-        // ) : null,
+        [accKeys.SPENDING]: loadedCharts.includes(accKeys.SPENDING) ? (
+            <TisBarChart
+                bars={columnVariants.spending}
+                currency
+                data={Object.values(spendingAggr).sort(
+                    sortByNumericProp(chartKeys.OUTGOING)
+                )}
+                subtitle={t(labels.ads.meta.spending.partiesDisclaimer)}
+                timestamp={sheetsData.lastUpdateFb}
+                vertical
+            />
+        ) : null,
+        [accKeys.SPENDING_ACCOUNTS]: loadedCharts.includes(
+            accKeys.SPENDING_ACCOUNTS
+        ) ? (
+            <TisBarChart
+                bars={columnVariants.spending}
+                currency
+                data={spending.sort(sortByNumericProp(chartKeys.OUTGOING))}
+                subtitle={t(labels.ads.meta.spending.disclaimer)}
+                timestamp={sheetsData.lastUpdateFb}
+                vertical
+            />
+        ) : null,
         [accKeys.RANGES]: loadedCharts.includes(accKeys.RANGES) ? (
             <FbRangesChart
                 data={Object.values(partiesAggr).sort(sortByNumericProp('est'))}
@@ -461,8 +461,8 @@ function Meta({
     };
 
     const accordions = [
-        // [accKeys.SPENDING, labels.ads.meta.spending.partiesTitle],
-        // [accKeys.SPENDING_ACCOUNTS, labels.ads.meta.spending.accountsTitle],
+        [accKeys.SPENDING, labels.ads.meta.spending.partiesTitle],
+        [accKeys.SPENDING_ACCOUNTS, labels.ads.meta.spending.accountsTitle],
         [accKeys.RANGES, labels.ads.meta.ranges.partiesTitle],
         [accKeys.RANGES_ACCOUNTS, labels.ads.meta.ranges.accountsTitle],
         [accKeys.AMOUNTS, labels.ads.amount.partiesTitle],
@@ -512,7 +512,7 @@ function Meta({
             <AlertWithIcon className="my-4" variant="primary">
                 {t(labels.ads.meta.disclaimer)}
             </AlertWithIcon>
-            {/* <Row className="gy-3 gy-lg-0 my-4">
+            <Row className="gy-3 gy-lg-0 my-4">
                 <Col lg={6}>
                     <HeroNumber
                         disclaimer={t(labels.ads.meta.totalDisclaimer)}
@@ -532,7 +532,7 @@ function Meta({
                         title={t(labels.ads.amount.title)}
                     />
                 </Col>
-            </Row> */}
+            </Row>
             {content}
         </div>
     );
