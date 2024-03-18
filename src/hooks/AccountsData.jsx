@@ -58,8 +58,8 @@ const initialState = {
 
 export const getFileName = (accountData) => {
     if (
-        !(accountData[aggregatedKeys.name] ?? false) ||
-        !(accountData[aggregatedKeys.account] ?? false)
+        !(accountData?.[aggregatedKeys.name] ?? false) ||
+        !(accountData?.[aggregatedKeys.account] ?? false)
     ) {
         return null;
     }
