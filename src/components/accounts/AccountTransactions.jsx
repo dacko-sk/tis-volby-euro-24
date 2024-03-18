@@ -35,15 +35,13 @@ function AccountTransactions({ pageSize = 25, accountData }) {
     const [activePage, setActivePage] = useState(1);
     const { readRemoteFile } = usePapaParse();
 
-    if (!file) {
-        return null;
-    }
-
     // load data on first load
     useEffect(() => {
-        const parserConfig = buildParserConfig(null, setTransactions);
-        readRemoteFile(file, parserConfig);
-    }, []);
+        if (file) {
+            const parserConfig = buildParserConfig(null, setTransactions);
+            readRemoteFile(file, parserConfig);
+        }
+    }, [file]);
 
     const loadPage = (page) => () => {
         setActivePage(page);
