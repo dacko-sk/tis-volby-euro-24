@@ -26,7 +26,7 @@ export const partyImage = (name) => {
 };
 
 export const partySvg = (name) => {
-    const svg = partiesSvgs.keys().find((key) => key.endsWith(`${name}.svg`));
+    const svg = partiesSvgs.keys().find((key) => key.endsWith(`/${name}.svg`));
     if (svg) {
         const PartySvg = partiesSvgs(svg).default;
         return <PartySvg />;
