@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import { useOutletContext } from 'react-router-dom';
 
 import { setTitle } from '../../helpers/browser';
+// import { chartKeys, columnVariants } from '../../helpers/charts';
 import { labels, t } from '../../helpers/dictionary';
 import { routes, segments } from '../../helpers/routes';
 import { wpCat } from '../../helpers/wp';
@@ -10,11 +11,13 @@ import { wpCat } from '../../helpers/wp';
 import { aggregatedKeys as agk } from '../../hooks/AccountsData';
 import { csvConfig } from '../../hooks/AdsData';
 
-import TisBarChart from '../../components/charts/TisBarChart';
+// import TisBarChart from '../../components/charts/TisBarChart';
 import AlertWithIcon from '../../components/general/AlertWithIcon';
 import HeroNumber from '../../components/general/HeroNumber';
 import Posts, { templates } from '../../components/wp/Posts';
-import { chartKeys, columnVariants } from '../../helpers/charts';
+
+import linkIcon from '../../../public/img/external_link_icon.svg?url';
+import pdfIcon from '../../../public/img/PDF_icon.svg?url';
 
 function PartyOverview() {
     const party = useOutletContext();
@@ -30,8 +33,45 @@ function PartyOverview() {
             ) : (
                 <Row className="my-4">
                     <Col lg={6}>
-                        <TisBarChart
+                        <h2 className="text-center mb-4">
+                            {t(labels.parties.info)}
+                        </h2>
+                        <div className="mb-4">
+                            <a
+                                className="icon-link"
+                                href={party.account?.[agk.account]}
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label={t(labels.elections.account)}
+                            >
+                                <span>{t(labels.elections.account)}</span>
+                                <img src={linkIcon} />
+                            </a>
+                            {party.hasCL && (
+                                <a
+                                    className="icon-link"
+                                    href={
+                                        party[
+                                            csvConfig.ACCOUNTS.columns
+                                                .CANDIDATES_LIST
+                                        ]
+                                    }
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label="download"
+                                >
+                                    <span>
+                                        {t(labels.parties.candidatesList)}
+                                    </span>
+                                    <img src={pdfIcon} />
+                                </a>
+                            )}
+                        </div>
+
+                        {/* <TisBarChart
                             bars={columnVariants.inOutStacked}
+                            buttonLink={routes.charts}
+                            currency
                             data={[
                                 {
                                     name: t(labels.charts.outgoing),
@@ -44,15 +84,13 @@ function PartyOverview() {
                                         party.account?.[agk.incoming] ?? 0,
                                 },
                             ]}
-                            buttonLink={routes.charts}
-                            currency
                             lastUpdate={false}
-                        />
+                            vertical
+                        /> */}
                     </Col>
                     <Col lg={6}>
                         <HeroNumber
                             button={t(labels.account.allTransactions)}
-                            className="mt-xxl-4"
                             lastUpdate={party.account?.[agk.timestamp] ?? null}
                             link={routes.party(
                                 party.name,

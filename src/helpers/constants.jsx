@@ -46,6 +46,7 @@ export const partyData = (name, accountData, adsData) => {
     data.hasGoogle =
         adsData && !!data[csvConfig.ACCOUNTS.columns.GOOGLE].length;
     data.hasWp = adsData && !!data[csvConfig.ACCOUNTS.columns.WP];
+    data.hasCL = adsData && !!data[csvConfig.ACCOUNTS.columns.CANDIDATES_LIST];
     data.isValid = data.hasAccount || adsData !== false;
 
     return data;

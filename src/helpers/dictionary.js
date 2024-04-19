@@ -25,7 +25,7 @@ export const labels = {
         download: ['Stiahnuť ako CSV', 'Download as CSV'],
         expensesAmount: ['Počet výdavkov', 'Number of expenses'],
         incomesAmount: ['Počet príjmov', 'Number of incomes'],
-        info: ['Informácie o kampani', 'Campaign details'],
+        info: ['Detail účtu', 'Account details'],
         noData: [
             'Neevidujeme transparentný účet strany',
             'Transparent account of the party is unknown',
@@ -591,6 +591,8 @@ export const labels = {
     },
     parties: {
         assets: ['Majetkové priznania', 'Assets'],
+        candidatesList: ['Kandidátna listina', 'Candidates list'],
+        info: ['Informácie o kampani', 'Campaign details'],
         funding: ['Financovanie', 'Financing'],
         monitoring: [
             'Monitorujeme tieto strany',

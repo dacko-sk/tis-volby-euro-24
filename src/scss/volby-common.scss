@@ -258,6 +258,19 @@ th a {
   }
 }
 
+.icon-link {
+  @extend #{'.d-flex', '.justify-content-between'};
+  border-bottom: var(--bs-border-width) solid var(--bs-border-color);
+  padding: calc(0.5 * var(--bs-gutter-x));
+  &:hover,
+  &:focus {
+    background-color: $tis-grey;
+  }
+  img {
+    width: 1.5em;
+  }
+}
+
 .bg-banner {
   background-color: $tis-banner-bg;
 }
