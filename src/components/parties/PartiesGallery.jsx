@@ -15,7 +15,7 @@ import './Parties.scss';
 
 function PartiesGallery({ compact = false }) {
     const { allAccountsNames, getPartyAccountData } = useAccountsData();
-    const { getAllPartiesNames, getPartyAdsData, getPartyFulltName } =
+    const { getAllPartiesNames, getPartyAdsData, getPartyFullName } =
         useAdsData();
 
     const allParties = getAllPartiesNames(allAccountsNames);
@@ -31,7 +31,7 @@ function PartiesGallery({ compact = false }) {
                         const accountData = getPartyAccountData(name);
                         const adsData = getPartyAdsData(name);
                         const party = partyData(name, accountData, adsData);
-                        const fullName = getPartyFulltName(name);
+                        const fullName = getPartyFullName(name);
                         return compact ? (
                             <Col key={party.name} xs={12}>
                                 <Link

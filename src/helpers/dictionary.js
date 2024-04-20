@@ -43,6 +43,7 @@ export const labels = {
             [ak.vs]: ['VS', 'Variabile symbol'],
             [ak.ss]: ['ŠS', 'Specific symbol'],
         },
+        title: ['Transparentné účty', 'Transparent accounts'],
         totalDisclaimer: [
             'Súčet výdavkov na transparentných účtoch všetkých strán.',
             'Sum of spendings on accounts of all parties.',
@@ -592,6 +593,7 @@ export const labels = {
     parties: {
         assets: ['Majetkové priznania', 'Assets'],
         candidatesList: ['Kandidátna listina', 'Candidates list'],
+        candidatesLists: ['Kandidátne listiny', 'Candidates lists'],
         info: ['Informácie o kampani', 'Campaign details'],
         funding: ['Financovanie', 'Financing'],
         monitoring: [

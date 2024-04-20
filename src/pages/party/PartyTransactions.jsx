@@ -11,6 +11,8 @@ import { aggregatedKeys as agk } from '../../hooks/AccountsData';
 
 import AccountTransactions from '../../components/accounts/AccountTransactions';
 
+import linkIcon from '../../../public/img/external_link_icon.svg?url';
+
 function PartyTransactions() {
     const party = useOutletContext();
     const navigate = useNavigate();
@@ -36,6 +38,28 @@ function PartyTransactions() {
             <Table striped bordered responsive hover>
                 <tbody>
                     <tr>
+                        <td>{t(labels.elections.account)}</td>
+                        <td>
+                            <a
+                                href={party.account?.[agk.account]}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <span className="me-2">
+                                    <span className="d-md-none">
+                                        {shortenUrl(
+                                            party.account?.[agk.account]
+                                        )}
+                                    </span>
+                                    <span className="d-none d-md-inline">
+                                        {party.account?.[agk.account]}
+                                    </span>
+                                </span>
+                                <img className="inline-icon" src={linkIcon} />
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
                         <td>{t(labels.charts.incoming)}</td>
                         <td>{currencyFormat(party.account?.[agk.incoming])}</td>
                     </tr>
@@ -58,18 +82,6 @@ function PartyTransactions() {
                     <tr>
                         <td>{t(labels.charts.uniqueDonors)}</td>
                         <td>{party.account?.[agk.num_unique_donors]}</td>
-                    </tr>
-                    <tr>
-                        <td>{t(labels.elections.account)}</td>
-                        <td>
-                            <a
-                                href={party.account?.[agk.account]}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                {shortenUrl(party.account?.[agk.account])}
-                            </a>
-                        </td>
                     </tr>
                 </tbody>
             </Table>

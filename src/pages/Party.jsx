@@ -15,7 +15,7 @@ function Party() {
     const { slug } = useParams();
     const navigate = useNavigate();
     const { getPartyAccountData } = useAccountsData();
-    const { getPartyAccountName, getPartyAdsData, getPartyFulltName } =
+    const { getPartyAccountName, getPartyAdsData, getPartyFullName } =
         useAdsData();
 
     const name = decodeSlug(slug);
@@ -45,7 +45,7 @@ function Party() {
                         </div>
                     </div>
                 )}
-                {getPartyFulltName(name)}
+                {getPartyFullName(name)}
             </Title>
             <div className="tabs-scrollable">
                 <Nav variant="tabs">

@@ -237,7 +237,7 @@ export const AdsDataProvider = function ({ children }) {
         return found ? found[0] : name;
     };
 
-    const getPartyFulltName = (name) => {
+    const getPartyFullName = (name) => {
         const found = findPartyByName(name);
         if (found) {
             return (
@@ -283,7 +283,7 @@ export const AdsDataProvider = function ({ children }) {
             findPartyForMetaAccount,
             getPartyAccountName,
             getPartyShortName,
-            getPartyFulltName,
+            getPartyFullName,
             getAllPartiesNames,
         }),
         [sheetsData, metaApiData]

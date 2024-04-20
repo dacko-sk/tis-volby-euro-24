@@ -1,6 +1,11 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { useOutletContext } from 'react-router-dom';
+import {
+    Link,
+    useOutletContext,
+    useNavigate,
+    useParams,
+} from 'react-router-dom';
 
 import { setTitle } from '../../helpers/browser';
 // import { chartKeys, columnVariants } from '../../helpers/charts';
@@ -16,7 +21,6 @@ import AlertWithIcon from '../../components/general/AlertWithIcon';
 import HeroNumber from '../../components/general/HeroNumber';
 import Posts, { templates } from '../../components/wp/Posts';
 
-import linkIcon from '../../../public/img/external_link_icon.svg?url';
 import pdfIcon from '../../../public/img/PDF_icon.svg?url';
 
 function PartyOverview() {
@@ -37,16 +41,16 @@ function PartyOverview() {
                             {t(labels.parties.info)}
                         </h2>
                         <div className="mb-4">
-                            <a
+                            <Link
+                                to={routes.party(
+                                    party.name,
+                                    segments.TRANSACTIONS
+                                )}
                                 className="icon-link"
-                                href={party.account?.[agk.account]}
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label={t(labels.elections.account)}
                             >
                                 <span>{t(labels.elections.account)}</span>
-                                <img src={linkIcon} />
-                            </a>
+                            </Link>
+
                             {party.hasCL && (
                                 <a
                                     className="icon-link"

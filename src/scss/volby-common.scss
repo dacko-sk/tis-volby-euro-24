@@ -183,6 +183,7 @@ th a {
       }
     }
     h3 {
+      margin: 0;
       text-decoration: underline;
     }
     .town {
@@ -269,6 +270,12 @@ th a {
   img {
     width: 1.5em;
   }
+}
+
+.inline-icon {
+  display: inline-block;
+  height: 1em;
+  vertical-align: text-bottom;
 }
 
 .bg-banner {
