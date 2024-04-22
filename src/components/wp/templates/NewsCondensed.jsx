@@ -5,6 +5,7 @@ import { dateTimeFormat } from '../../../helpers/helpers';
 import { parseWpHtml } from '../../../helpers/wp';
 
 import Media from '../Media';
+import PartyTags from '../PartyTags';
 
 function NewsCondensed({ article, clickHandler, keyUpHandler }) {
     return (
@@ -37,6 +38,10 @@ function NewsCondensed({ article, clickHandler, keyUpHandler }) {
                         <div className="article-date my-2">
                             {dateTimeFormat(article.date)}
                         </div>
+                        <PartyTags
+                            className="article-tags my-2"
+                            tags={article.tags}
+                        />
                         {parseWpHtml(article.excerpt.rendered)}
                     </Col>
                 </Row>

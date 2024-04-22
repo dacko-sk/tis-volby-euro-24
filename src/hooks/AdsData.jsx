@@ -1,6 +1,7 @@
 import { createContext, useContext, useMemo, useState } from 'react';
 
 import {
+    fixNumber,
     getTimestampFromDate,
     isNumeric,
     sortAlphabetically,
@@ -111,7 +112,11 @@ export const processDataSheets = (data) => {
                                     row[csvConfig.ACCOUNTS.columns.TA_NAME] ??
                                     null,
                                 [csvConfig.ACCOUNTS.columns.WP]:
-                                    row[csvConfig.ACCOUNTS.columns.WP] ?? null,
+                                    row[csvConfig.ACCOUNTS.columns.WP] ?? false
+                                        ? fixNumber(
+                                              row[csvConfig.ACCOUNTS.columns.WP]
+                                          )
+                                        : null,
                                 [csvConfig.ACCOUNTS.columns.CANDIDATES_LIST]:
                                     row[
                                         csvConfig.ACCOUNTS.columns
