@@ -154,12 +154,10 @@ th a {
     padding-bottom: calc(var(--bs-gutter-y) * 0.75);
     padding-left: calc(var(--bs-gutter-x) * 1);
     padding-right: calc(var(--bs-gutter-x) * 1);
-    text-decoration: none;
     &.cat-regional {
       border: 1px solid $tis-orange;
       h3 {
         color: $tis-orange;
-        text-decoration: underline;
       }
       .type {
         color: $tis-orange;
@@ -169,7 +167,6 @@ th a {
       border: 1px solid $tis-light-blue;
       h3 {
         color: $tis-light-blue;
-        text-decoration: underline;
       }
       .type {
         color: $tis-light-blue;
@@ -179,12 +176,11 @@ th a {
     &:focus {
       background-color: $tis-grey;
       h3 {
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
     h3 {
       margin: 0;
-      text-decoration: underline;
     }
     .town {
       color: #333;
@@ -238,6 +234,7 @@ th a {
 
 .hover-bg {
   cursor: pointer;
+  display: block;
   padding: calc(0.5 * var(--bs-gutter-x)) 0;
   text-decoration: none;
   &:hover,

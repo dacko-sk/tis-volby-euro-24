@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { Link } from 'react-router-dom';
 
 import { partyData } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';

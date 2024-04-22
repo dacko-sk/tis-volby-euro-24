@@ -1,5 +1,7 @@
 $tis-light-blue: rgb(43, 172, 226);
-$tis-light-blue-rgb: #{red($tis-light-blue), green($tis-light-blue),
+$tis-light-blue-rgb:
+  #{red($tis-light-blue),
+  green($tis-light-blue),
   blue($tis-light-blue)};
 $tis-dark-blue: rgb(27, 51, 95);
 $tis-orange: rgb(240, 108, 80);
@@ -53,9 +55,9 @@ $success: $tis-dark-blue;
 $light: $tis-grey;
 $info: $tis-grey;
 $link-color: $tis-orange;
-$link-decoration: underline !default;
+$link-decoration: none !default;
 $link-hover-color: $tis-orange;
-$link-hover-decoration: none;
+$link-hover-decoration: underline !default;
 
 $pagination-color: $tis-dark-blue;
 $pagination-hover-color: $tis-dark-blue;

@@ -1,22 +1,22 @@
+import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 import { dateTimeFormat } from '../../../helpers/helpers';
+import { routes } from '../../../helpers/routes';
 import { parseWpHtml } from '../../../helpers/wp';
 
 import Media from '../Media';
 import PartyTags from '../PartyTags';
 
-function NewsList({ article, clickHandler, keyUpHandler }) {
+function NewsList({ article }) {
     return (
         <Col md={12}>
-            <div
+            <Link
                 id={article.slug}
                 className="article hover-bg"
-                onClick={clickHandler}
-                onKeyUp={keyUpHandler}
-                role="link"
-                tabIndex={0}
+                state={{ article }}
+                to={routes.article(article.slug)}
             >
                 <Row className="align-items-center">
                     <Col md={5} lg={3}>
@@ -38,10 +38,12 @@ function NewsList({ article, clickHandler, keyUpHandler }) {
                             className="article-tags my-2"
                             tags={article.tags}
                         />
-                        {parseWpHtml(article.excerpt.rendered)}
+                        <div className="article-excerpt">
+                            {parseWpHtml(article.excerpt.rendered)}
+                        </div>
                     </Col>
                 </Row>
-            </div>
+            </Link>
         </Col>
     );
 }

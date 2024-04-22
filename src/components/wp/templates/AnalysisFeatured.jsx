@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 
 import { badgePctFormat } from '../../../helpers/helpers';
+import { routes, segments } from '../../../helpers/routes';
 import { transparencyClass } from '../../../helpers/wp';
 
 // import useAccountsData from '../../../hooks/AccountsData';
 import Media from '../Media';
 
-function AnalysisFeatured({ article, clickHandler, keyUpHandler }) {
+function AnalysisFeatured({ article }) {
     const { analysis } = article;
     if (analysis.error ?? false) {
         console.log(analysis.error);
@@ -27,13 +29,10 @@ function AnalysisFeatured({ article, clickHandler, keyUpHandler }) {
 
     return (
         <Col>
-            <div
+            <Link
                 id={article.slug}
                 className={`article analysis-preview score-${cls}`}
-                onClick={clickHandler}
-                onKeyUp={keyUpHandler}
-                role="link"
-                tabIndex={0}
+                to={routes.party(name, segments.ANALYSIS)}
             >
                 <div
                     className="thumb"
@@ -51,7 +50,7 @@ function AnalysisFeatured({ article, clickHandler, keyUpHandler }) {
                         <span className="badge">{name}</span>
                     </div>
                 </div>
-            </div>
+            </Link>
         </Col>
     );
 }

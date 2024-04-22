@@ -10,7 +10,11 @@ function NewsDetail({ article }) {
                 <div className="article-date my-4 me-auto">
                     {dateTimeFormat(article.date)}
                 </div>
-                <PartyTags className="article-tags my-4" tags={article.tags} />
+                <PartyTags
+                    className="article-tags my-4"
+                    link
+                    tags={article.tags}
+                />
             </div>
             {parseWpHtml(article.content.rendered)}
         </div>

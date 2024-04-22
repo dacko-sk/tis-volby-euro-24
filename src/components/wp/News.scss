@@ -11,8 +11,15 @@
   }
 }
 
-.article {
-  cursor: pointer;
+a.article {
+  &:hover {
+    text-decoration: none;
+  }
+  table,
+  .article-date,
+  .article-excerpt {
+    color: $tis-dark-blue;
+  }
   p:last-child {
     margin-bottom: 0;
   }
@@ -152,21 +159,9 @@
   text-decoration: none;
 }
 
-.article-date,
-.article-tags {
-  font-style: italic;
-  a {
-    color: $tis-dark-blue;
-    display: inline-block;
-    margin-right: 0.5em;
-    &:hover {
-      color: $tis-dark-blue;
-    }
-  }
-}
-
 .article-date {
   @extend .emoji-icon;
+  font-style: italic;
   &:before {
     content: '📅';
   }
@@ -174,8 +169,17 @@
 
 .article-tags {
   @extend .emoji-icon;
+  font-style: italic;
   &:before {
     content: '🔖';
+  }
+  .tag {
+    & + .tag:before {
+      content: '·';
+      color: $font-color;
+      display: inline-block; // disable hover underline effect from parent link
+      margin: 0 0.5em;
+    }
   }
 }
 
