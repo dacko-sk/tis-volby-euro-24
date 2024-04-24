@@ -1,14 +1,8 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import {
-    Link,
-    useOutletContext,
-    useNavigate,
-    useParams,
-} from 'react-router-dom';
+import { Link, useOutletContext } from 'react-router-dom';
 
 import { setTitle } from '../../helpers/browser';
-// import { chartKeys, columnVariants } from '../../helpers/charts';
 import { labels, t } from '../../helpers/dictionary';
 import { routes, segments } from '../../helpers/routes';
 import { wpCat } from '../../helpers/wp';
@@ -16,7 +10,6 @@ import { wpCat } from '../../helpers/wp';
 import { aggregatedKeys as agk } from '../../hooks/AccountsData';
 import { csvConfig } from '../../hooks/AdsData';
 
-// import TisBarChart from '../../components/charts/TisBarChart';
 import AlertWithIcon from '../../components/general/AlertWithIcon';
 import HeroNumber from '../../components/general/HeroNumber';
 import Posts, { templates } from '../../components/wp/Posts';
@@ -54,12 +47,7 @@ function PartyOverview() {
                             {party.hasCL && (
                                 <a
                                     className="icon-link"
-                                    href={
-                                        party[
-                                            csvConfig.ACCOUNTS.columns
-                                                .CANDIDATES_LIST
-                                        ]
-                                    }
+                                    href={party[csvConfig.ACCOUNTS.columns.CL]}
                                     target="_blank"
                                     rel="noreferrer"
                                     aria-label="download"
@@ -71,26 +59,6 @@ function PartyOverview() {
                                 </a>
                             )}
                         </div>
-
-                        {/* <TisBarChart
-                            bars={columnVariants.inOutStacked}
-                            buttonLink={routes.charts}
-                            currency
-                            data={[
-                                {
-                                    name: t(labels.charts.outgoing),
-                                    [chartKeys.OUTGOING]:
-                                        party.account?.[agk.outgoing] ?? 0,
-                                },
-                                {
-                                    name: t(labels.charts.incoming),
-                                    [chartKeys.INCOMING]:
-                                        party.account?.[agk.incoming] ?? 0,
-                                },
-                            ]}
-                            lastUpdate={false}
-                            vertical
-                        /> */}
                     </Col>
                     <Col lg={6}>
                         <HeroNumber

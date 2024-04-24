@@ -18,7 +18,7 @@ export const csvConfig = {
             GOOGLE: 'Google účty',
             TA_NAME: 'Transparentný účet',
             WP: 'WP tag',
-            CANDIDATES_LIST: 'Kandidátne listiny',
+            CL: 'Kandidátne listiny',
         },
         name: 'účty',
     },
@@ -117,11 +117,8 @@ export const processDataSheets = (data) => {
                                               row[csvConfig.ACCOUNTS.columns.WP]
                                           )
                                         : null,
-                                [csvConfig.ACCOUNTS.columns.CANDIDATES_LIST]:
-                                    row[
-                                        csvConfig.ACCOUNTS.columns
-                                            .CANDIDATES_LIST
-                                    ] ?? null,
+                                [csvConfig.ACCOUNTS.columns.CL]:
+                                    row[csvConfig.ACCOUNTS.columns.CL] ?? null,
                             };
                     });
                     break;

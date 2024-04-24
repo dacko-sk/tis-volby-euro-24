@@ -55,14 +55,13 @@ function Search() {
             </Col>
         );
     });
-    const cls = foundPartyNames.map((name) => {
+    const candidatesLists = foundPartyNames.map((name) => {
         const adsData = getPartyAdsData(name);
-        return adsData &&
-            adsData[csvConfig.ACCOUNTS.columns.CANDIDATES_LIST] ? (
+        return adsData && adsData[csvConfig.ACCOUNTS.columns.CL] ? (
             <Col key={name} className="d-flex" sm>
                 <a
                     className="d-flex flex-column justify-content-between w-100 cat-local"
-                    href={adsData[csvConfig.ACCOUNTS.columns.CANDIDATES_LIST]}
+                    href={adsData[csvConfig.ACCOUNTS.columns.CL]}
                     target="_blank"
                     rel="noreferrer"
                     aria-label="download"
@@ -125,8 +124,8 @@ function Search() {
             )}
 
             <h2 className="my-4">{t(labels.parties.candidatesLists)}</h2>
-            {cls.length ? (
-                <Row className="tiles gx-4 gy-4">{cls}</Row>
+            {candidatesLists.length ? (
+                <Row className="tiles gx-4 gy-4">{candidatesLists}</Row>
             ) : (
                 <AlertWithIcon className="my-4" variant="danger">
                     {t(labels.parties.noResults)}
