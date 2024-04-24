@@ -21,6 +21,12 @@
     "prettier"
   ],
   "rules": {
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": [ "\\.svg\\?url" ]
+      }
+    ],
     "jsx-a11y/alt-text": [0],
     "linebreak-style": ["error", "unix"],
     "no-irregular-whitespace" : [1, {"skipStrings": true ,"skipTemplates": true, "skipJSXText": true}],
