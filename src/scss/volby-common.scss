@@ -175,6 +175,7 @@ th a {
     &:hover,
     &:focus {
       background-color: $tis-grey;
+      text-decoration: none;
       h3 {
         text-decoration: underline;
       }
