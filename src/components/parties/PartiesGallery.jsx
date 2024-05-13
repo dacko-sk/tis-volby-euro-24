@@ -7,31 +7,37 @@ import { labels, t } from '../../helpers/dictionary';
 import { routes } from '../../helpers/routes';
 
 import useAccountsData from '../../hooks/AccountsData';
-import useAdsData from '../../hooks/AdsData';
+import useAdsData, { csvConfig } from '../../hooks/AdsData';
 
 import Loading from '../general/Loading';
 
 import './Parties.scss';
+import { sortByTextProp } from '../../helpers/helpers';
 
 function PartiesGallery({ compact = false }) {
     const { allAccountsNames, getPartyAccountData } = useAccountsData();
-    const { getAllPartiesNames, getPartyAdsData, getPartyFullName } =
-        useAdsData();
+    const { getAllPartiesNames, getPartyAdsData } = useAdsData();
 
-    const allParties = getAllPartiesNames(allAccountsNames);
+    const allParties = (getAllPartiesNames(allAccountsNames) ?? []).map(
+        (name) => {
+            const accountData = getPartyAccountData(name);
+            const adsData = getPartyAdsData(name);
+            return partyData(name, accountData, adsData);
+        }
+    );
+    allParties.sort(sortByTextProp(csvConfig.ACCOUNTS.columns.FULL_NAME));
 
     return (
         <div className="my-4">
             <h2 className="mb-4">{t(labels.parties.monitoring)}</h2>
-            {allParties === null ? (
+            {allParties.length === 0 ? (
                 <Loading />
             ) : (
                 <Row className={compact ? '' : 'gy-4'}>
-                    {allParties.map((name) => {
-                        const accountData = getPartyAccountData(name);
-                        const adsData = getPartyAdsData(name);
-                        const party = partyData(name, accountData, adsData);
-                        const fullName = getPartyFullName(name);
+                    {allParties.map((party) => {
+                        const fullName =
+                            party[csvConfig.ACCOUNTS.columns.FULL_NAME] ||
+                            party.name;
                         return compact ? (
                             <Col key={party.name} xs={12}>
                                 <Link
