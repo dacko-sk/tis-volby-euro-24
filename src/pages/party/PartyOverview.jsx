@@ -1,6 +1,6 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import { Link, useOutletContext } from 'react-router-dom';
+import { useOutletContext } from 'react-router-dom';
 
 import { setTitle } from '../../helpers/browser';
 import { labels, t } from '../../helpers/dictionary';
@@ -11,10 +11,9 @@ import { aggregatedKeys as agk } from '../../hooks/AccountsData';
 import { csvConfig } from '../../hooks/AdsData';
 
 import AlertWithIcon from '../../components/general/AlertWithIcon';
+import DownloadLink from '../../components/general/DownloadLink';
 import HeroNumber from '../../components/general/HeroNumber';
 import Posts, { templates } from '../../components/wp/Posts';
-
-import pdfIcon from '../../../public/img/PDF_icon.svg?url';
 
 function PartyOverview() {
     const party = useOutletContext();
@@ -34,29 +33,21 @@ function PartyOverview() {
                             {t(labels.parties.info)}
                         </h2>
                         <div className="mb-4">
-                            <Link
+                            <DownloadLink
                                 to={routes.party(
                                     party.name,
                                     segments.TRANSACTIONS
                                 )}
-                                className="icon-link"
                             >
-                                <span>{t(labels.elections.account)}</span>
-                            </Link>
+                                {t(labels.elections.account)}
+                            </DownloadLink>
 
                             {party.hasCL && (
-                                <a
-                                    className="icon-link"
-                                    href={party[csvConfig.ACCOUNTS.columns.CL]}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="download"
+                                <DownloadLink
+                                    to={party[csvConfig.ACCOUNTS.columns.CL]}
                                 >
-                                    <span>
-                                        {t(labels.parties.candidatesList)}
-                                    </span>
-                                    <img src={pdfIcon} />
-                                </a>
+                                    {t(labels.parties.candidatesList)}
+                                </DownloadLink>
                             )}
                         </div>
                     </Col>

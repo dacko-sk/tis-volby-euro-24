@@ -11,7 +11,6 @@ import useAdsData, { csvConfig } from '../../hooks/AdsData';
 
 import Loading from '../general/Loading';
 
-import './Parties.scss';
 import { sortByTextProp } from '../../helpers/helpers';
 
 function PartiesGallery({ compact = false }) {
@@ -44,7 +43,7 @@ function PartiesGallery({ compact = false }) {
                                     className="party-logo-link hover-bg d-flex align-items-center"
                                     to={routes.party(party.name)}
                                 >
-                                    <figure className="flex-shrink-0 me-3">
+                                    <figure className="party-logo-inline">
                                         {party.image}
                                     </figure>
                                     <h3 className="my-2">{fullName}</h3>

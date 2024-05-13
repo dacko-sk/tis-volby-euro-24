@@ -226,10 +226,16 @@ th a {
   }
 }
 
+.unfade-image {
+  filter: saturate(100%);
+}
+
 .fade-image {
-  filter: saturate(25%);
+  @media (min-width: map.get($grid-breakpoints, 'xl')) {
+    filter: saturate(25%);
+  }
   &.hover-unfade-image:hover {
-    filter: saturate(100%);
+    @extend .unfade-image;
   }
 }
 
@@ -265,7 +271,11 @@ th a {
   &:focus {
     background-color: $tis-grey;
   }
-  img {
+  [class^='col-'] > & {
+    @extend .h-100;
+  }
+
+  .download-icon {
     width: 1.5em;
   }
 }

@@ -18,6 +18,8 @@ import Home from './pages/Home';
 import News from './pages/News';
 import Online from './pages/Online';
 import Parties from './pages/Parties';
+import PartiesCandidates from './pages/parties/PartiesCandidates';
+import PartiesList from './pages/parties/PartiesList';
 import Party from './pages/Party';
 import PartyNews from './pages/party/PartyNews';
 import PartyOnline from './pages/party/PartyOnline';
@@ -42,7 +44,17 @@ function App() {
                                 [routes.article(true, lang), Article],
                                 [routes.news(lang), News],
                                 [routes.online(lang), Online],
-                                [routes.parties(lang), Parties],
+                                [
+                                    routes.parties('', lang),
+                                    Parties,
+                                    [
+                                        ['', PartiesList],
+                                        [
+                                            segments.CANDIDATES,
+                                            PartiesCandidates,
+                                        ],
+                                    ],
+                                ],
                                 [
                                     routes.party(true, '', lang),
                                     Party,

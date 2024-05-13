@@ -20,7 +20,9 @@ export const partyImage = (name) => {
                 !!['jpg', 'png'].find((ext) => key.endsWith(`/${name}.${ext}`))
         );
     if (file) {
-        return <img src={partiesImages(file)} alt={name} />;
+        return (
+            <img src={partiesImages(file)} alt={name} className="party-logo" />
+        );
     }
     return null;
 };
@@ -29,7 +31,7 @@ export const partySvg = (name) => {
     const svg = partiesSvgs.keys().find((key) => key.endsWith(`/${name}.svg`));
     if (svg) {
         const PartySvg = partiesSvgs(svg).default;
-        return <PartySvg />;
+        return <PartySvg className="party-logo" />;
     }
     return null;
 };

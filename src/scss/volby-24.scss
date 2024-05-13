@@ -8,3 +8,37 @@ header {
   background-position-x: center;
   background-position-y: 20%;
 }
+
+.party-logo {
+  @extend .mw-100;
+
+  a & {
+    @extend .fade-image;
+  }
+
+  a:hover &,
+  a:active &,
+  a:focus & {
+    @extend .unfade-image;
+  }
+}
+
+.party-logo-link {
+  h3 {
+    color: $tis-orange;
+    margin-bottom: 0;
+  }
+
+  &.hover-bg {
+    &,
+    &:hover {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+}
+
+figure.party-logo-inline {
+  @extend #{'.flex-shrink-0', '.me-3', '.m-0'};
+  width: 36px;
+}
