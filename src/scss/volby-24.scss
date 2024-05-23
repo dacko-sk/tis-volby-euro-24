@@ -39,6 +39,7 @@ header {
 }
 
 figure.party-logo-inline {
-  @extend #{'.flex-shrink-0', '.me-3', '.m-0'};
+  @extend #{'.flex-shrink-0', '.align-content-center', '.me-3', '.m-0'};
+  height: 36px;
   width: 36px;
 }
