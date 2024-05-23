@@ -286,7 +286,7 @@ export const labels = {
         [abd.date]: ['Hodnotenie ku dňu', 'Evaluation date'],
         [abd.score]: ['Celkové hodnotenie', 'Assessment'],
         [amd.fb]: ['FB profil', 'FB profile'],
-        [amd.leader]: ['Líder kandidátky', 'Elections leader'],
+        [amd.leader]: ['Líder kandidátky', 'Lead candidate'],
         [amd.web]: ['Volebný web', 'Elections web'],
         badges: [
             ['nezistené/netýka sa', 'áno', 'čiastočne', 'nie'],
