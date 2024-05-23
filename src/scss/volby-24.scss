@@ -10,7 +10,7 @@ header {
 }
 
 .party-logo {
-  @extend .mw-100;
+  @extend #{'.mw-100', '.mh-100'};
 
   a & {
     @extend .fade-image;
