@@ -5,6 +5,7 @@ $tis-light-blue-rgb:
   blue($tis-light-blue)};
 $tis-dark-blue: rgb(27, 51, 95);
 $tis-orange: rgb(240, 108, 80);
+$tis-orange-ds: desaturate($tis-orange, 100%);
 $tis-grey: rgb(233, 242, 249);
 $tis-score-green: rgb(0, 205, 42);
 $tis-score-orange: rgb(255, 179, 0);

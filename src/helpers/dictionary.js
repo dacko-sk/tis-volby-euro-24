@@ -285,9 +285,8 @@ export const labels = {
     analysis: {
         [abd.date]: ['Hodnotenie ku dňu', 'Evaluation date'],
         [abd.score]: ['Celkové hodnotenie', 'Assessment'],
-        [amd.coalition]: ['Koalícia', 'Coalition'],
         [amd.fb]: ['FB profil', 'FB profile'],
-        [amd.leader]: ['Volebný líder', 'Elections leader'],
+        [amd.leader]: ['Líder kandidátky', 'Elections leader'],
         [amd.web]: ['Volebný web', 'Elections web'],
         badges: [
             ['nezistené/netýka sa', 'áno', 'čiastočne', 'nie'],
@@ -302,21 +301,21 @@ export const labels = {
                         'Marking of Payers and Recipients',
                     ],
                     desc: [
-                        'Na transparentnom účte sú precízne označené vklady strany a príjemcovia platieb, vďaka čomu je možné identifikovať komu strana za kampaň platí',
+                        'Na transparentnom účte sú precízne označené vklady strany a príjemcovia platieb, vďaka čomu je možné identifikovať komu strana za kampaň platí.',
                         `The party's transparent account clearly indicates the originators and beneficiaries of payments, allowing for easy identification of who the party is paying for the campaign.`,
                     ],
                 },
                 {
                     name: ['Podrobnosť účtu', 'Account Details'],
                     desc: [
-                        'Transparentnosť kampane nie je znižovaná využívaním súhrnných platieb, najčastejšie pre agentúry, ktoré predstavujú značnú časť výdavkov v kampani',
+                        'Transparentnosť kampane nie je znižovaná využívaním veľkých súhrnných platieb, najčastejšie pre agentúry, ktoré predstavujú značnú časť výdavkov v kampani.',
                         'Campaign transparency is not reduced by the use of aggregate payments, most often directed to agencies that account for a significant portion of campaign spending.',
                     ],
                 },
                 {
                     name: ['Popisovanie výdavkov', 'Description of Expenses'],
                     desc: [
-                        'Predvolebná kampaň strany je kontrolovateľná vďaka zrozumiteľným a výstižným popisom, ktoré vysvetľujú účel jednotlivých platieb',
+                        'Predvolebná kampaň strany je kontrolovateľná vďaka zrozumiteľným a výstižným popisom, ktoré vysvetľujú účel jednotlivých platieb.',
                         `The party's election campaign is easily traceable due to clear and concise descriptions accompanying individual payments.`,
                     ],
                 },
@@ -326,7 +325,7 @@ export const labels = {
                         'Time Reality of Expenses',
                     ],
                     desc: [
-                        'Výdavky na transparentom účte zodpovedajú reálnemu priebehu predvolebnej kampane. Strana sa vyhýba väčším zálohovým platbám, či využívaniu faktúr s dlhou dobou splatnosti',
+                        'Výdavky na transparentom účte zodpovedajú reálnemu priebehu predvolebnej kampane. Strana sa vyhýba väčším zálohovým platbám, či využívaniu väčších faktúr s dlhou dobou splatnosti viac ako jeden mesiac.',
                         'Expenditures on the transparent account correspond to the actual progression of the election campaign. The party avoids making substantial advance payments or using invoices with extended maturity periods.',
                     ],
                 },
@@ -336,7 +335,7 @@ export const labels = {
                         'Identification of the Billboard Campaign',
                     ],
                     desc: [
-                        'Na transparentnom účte je možné identifikovať výdavky na outdoorovú kampaň strany, minimálne v rozsahu mesačných výdavkov na tento typ reklamy',
+                        'Na transparentnom účte je možné identifikovať výdavky na outdoorovú kampaň strany, minimálne v rozsahu mesačných výdavkov na tento typ reklamy.',
                         `The transparent account enables the identification of expenses related to the party's outdoor campaign, at least within the monthly expense range for this type of advertising.`,
                     ],
                 },
@@ -348,41 +347,44 @@ export const labels = {
                         'Information about Campaign Financing',
                     ],
                     desc: [
-                        'Darcovia a veritelia strany sú prehľadne identifikovateľní prostredníctvom transparentného účtu a webu strany',
+                        'Darcovia a veritelia strany sú prehľadne identifikovateľní prostredníctvom transparentného účtu a webu strany.',
                         `The party's donors and creditors are readily identifiable through a transparent account and the party's official website.`,
                     ],
                 },
                 {
-                    name: ['Spôsob financovania', 'Method of Financing'],
+                    name: [
+                        'Zapájanie, podporovateľov, členov a kandidátov do financovania kampane',
+                        'Method of Financing',
+                    ],
                     desc: [
-                        'Predvolebná kampaň je postavená na viacerých zdrojoch financovania, napríklad aktivizovaním sympatizantov cez posielanie drobných darov',
+                        'Miera diverzifikácie kampaňových príjmov',
                         'The regular election campaign relies on diverse funding sources, including activating supporters through small donations.',
                     ],
                 },
                 {
                     name: [
-                        'Preverovanie pozadia veľkých darcov/veriteľov',
-                        'Major Donor/Lender Background Checks',
+                        'Závislosť od veľkých prispievateľov',
+                        'Dependency on major donors',
                     ],
                     desc: [
-                        'Strana si preveruje väčších darcov/veriteľov a je ochotná na požiadanie poskytnúť detaily o príklade takéhoto preverovania',
+                        'Miera závislosti kampane od veľkých darcov a veriteľov, mimo bankových úverov.',
                         'The party conducts thorough background checks on major donors/lenders and is prepared to share specific examples of such screening upon request.',
                     ],
                 },
                 {
                     name: [
-                        'Informovanie o predkampani',
-                        'Information about the Pre-Campaign',
+                        'Včasnosť transparentného účtu',
+                        'Transparent account timeliness',
                     ],
                     desc: [
-                        'Transparentnosť kampane strana zvýšila dobrovoľným využívaním transparentného účtu už v čase predkampane, prípadne na vyžiadanie poskytla informáciu o celkovej výške financií vynaložených na predkampaň',
-                        'The party enhances campaign transparency by voluntarily utilizing a transparent account during the pre-campaign period or providing detailed information about the total funds allocated to the pre-campaign upon request.',
+                        'Strana si založila transparentný účet najneskôr v deň začatia predvolebnej kampane (10.2.2024)',
+                        'The party established a transparent account prior to campaign start (Feb. 10th, 2024)',
                     ],
                 },
                 {
                     name: ['Plán kampane', 'Campaign Plan'],
                     desc: [
-                        'Strana proaktívne informuje o plánovanej výške kampane a spôsobe jej financovania, prípadne na vyžiadanie poskytla tieto informácie',
+                        'Strana proaktívne informuje o plánovanej výške kampane a spôsobe jej financovania, prípadne na vyžiadanie poskytla tieto informácie.',
                         'The party adopts a proactive approach, openly sharing information about the planned campaign budget and its financing methods. Alternatively, this information is promptly provided upon request.',
                     ],
                 },
@@ -391,8 +393,25 @@ export const labels = {
                 {
                     name: ['Volebný program', 'Election Program'],
                     desc: [
-                        'Strana na svojom webe v čase oficiálnej kampane zverejnila predvolebný program',
+                        'Strana v čase oficiálnej kampane zverejnila svoj volebný program.',
                         'The party published its election program on its official website at the onset of the official campaign.',
+                    ],
+                },
+                {
+                    name: [
+                        'Informovanosť o podujatiach v kampani',
+                        'Election Campaign Events',
+                    ],
+                    desc: [
+                        'Strana v priebehu oficiálnej kampane poskytuje verejnosti informácie o svojich predvolebných akciách, najmä na webovej stránke alebo sociálnej sieti.',
+                        `Throughout the official campaign period, the party consistently provided updates about its pre-election initiatives, featuring these updates on its official website and social media channels.`,
+                    ],
+                },
+                {
+                    name: ['Označovanie inzercie', 'Marking of Advertising'],
+                    desc: [
+                        'Strana v zmysle zákona označuje precízne politickú inzerciu na sociálnej sieti, bilbordoch a v tlači doplnením informácie o objednávateľovi a dodávateľovi reklamy.',
+                        'In full compliance with the law, the party meticulously marked all political advertising on social media platforms. This was achieved by including comprehensive information about the advertiser and the supplier.',
                     ],
                 },
                 {
@@ -401,8 +420,8 @@ export const labels = {
                         'Provision of Information from the Official Party Contact',
                     ],
                     desc: [
-                        'Test funkčnosti oficiálneho kontaktu strany počas kampane, zaslanie otázky potenciálneho voliča s textom: (1. Kolo): „Dobrý deň, mohli by ste mi prosím poskytnúť informáciu, kde by sa do volieb bolo možné stretnúť s Vašim predsedom (príp. predsedníčkou) aj osobne? Viem sa dostaviť kdekoľvek v rámci Slovenska. Za odpoveď vopred ďakujem.“, (2. Kolo): „Dobrý deň, chcel by som vedieť, či bude po voľbách možnosť uchádzať sa o miesto poslaneckých asistentov poslancov Vašej strany. Poprosím o detaily. Ďakujem.“',
-                        `The functionality of the party's official contact was tested during the campaign by sending an inquiry of a potential voter in the following wording: (1st Round) "Hello, could you please provide me with information where it would be possible to meet before the election with your chairman (or chairwoman) in person? I can show up anywhere within Slovakia. Thank you in advance for your answer.", (2nd Round): "Hello, I would like to know if there will be an opportunity to apply for the position of parliamentary assistants of your party's deputies after the elections. Kindly send me details. Thank you."`,
+                        'Test funkčnosti oficiálneho kontaktu strany počas kampane, zaslanie otázky potencionálneho voliča s textom: Dobrý deň, rada by som sa opýtala, či bude po voľbách do Európskeho parlamentu možnosť uchádzať sa o miesto poslaneckých asistentov poslancov zvolených do EU parlamentu za Vašu stranu. V prípade, že áno, vedeli by ste mi poskytnúť viac detailov?',
+                        `The functionality of the party's official contact was tested during the campaign by sending an inquiry of a potential voter.`,
                     ],
                 },
                 {
@@ -411,42 +430,18 @@ export const labels = {
                         'Response to Potential Voters via Social Networks',
                     ],
                     desc: [
-                        'Test ochoty strany komunikovať s voličom cez sociálnu sieť, zaslanie otázky potenciálneho voliča cez Messenger na FB profile strany s textom: (1. Kolo): „Mohli by ste mi prosím, ako Vášmu potenciálnemu voličovi, ozrejmiť, ako plánujete bojovať proti odvrátiteľným úmrtiam v slovenskom zdravotníctve? Vďaka za odpoveď“, (2. Kolo): „Dobrý deň, zaujímalo by ma, či podporíte po voľbách prípadné zrušenie alebo reorganizáciu Špecializovaného trestného súdu a Špeciálnej prokuratúry.“',
-                        `The willingness of the party to communicate with voters through social media was tested by sending an inquiry of a potential voter via Messenger to the party's FB profile with the following text: (1st Round): "Could you please clarify to me, your potential voter, how you plan to fight preventable deaths in the Slovak healthcare system? Thanks for the answer", (2nd Round): "Hello, I would like to know if you support the possible abolition or reorganization of the Specialized Criminal Court and the Special Prosecutor's Office after the elections."`,
+                        'Test ochoty strany komunikovať s voličom cez sociálnu sieť, zaslaním otázky: Dobrý deň, rada by som sa informovala, či budete v najbližšej dobe, pred eurovoľbami, organizovať aj stretnutie s občanmi, v Bratislave, kde by bola možnosť bližšie spoznať kandidátov Vašej strany.',
+                        `The willingness of the party to communicate with voters through social media was tested by sending an inquiry of a potential voter via Messenger to the party's FB profile.`,
                     ],
                 },
                 {
                     name: [
-                        'Kampaňový tím/spolupracujúce agentúry',
-                        'Campaign Team/Collaborating Agencies',
+                        'Majetkové priznanie lídra kandidátky',
+                        'Asset Declaration of the Leader Candidate',
                     ],
                     desc: [
-                        'Strana proaktívne informuje o spôsobe realizácie kampane, kampaňovom tíme a spolupracujúcich agentúrach, najmä na vlastnej webovej stránke, prípadne tieto informácie poskytla na vyžiadanie',
-                        `The party proactively disseminated information about its campaign implementation, the dedicated campaign team, and collaborating agencies. This information was displayed on the party's official website, or these details were made available upon request.`,
-                    ],
-                },
-                {
-                    name: ['Predvolebné akcie', 'Election Campaign Events'],
-                    desc: [
-                        'Strana v priebehu oficiálnej kampane poskytuje informácie o svojich predvolebných akciách, najmä na webovej stránke alebo sociálnej sieti',
-                        `Throughout the official campaign period, the party consistently provided updates about its pre-election initiatives, featuring these updates on its official website and social media channels.`,
-                    ],
-                },
-                {
-                    name: ['Označovanie inzercie', 'Marking of Advertising'],
-                    desc: [
-                        'Strana v zmysle zákona označuje precízne politickú inzerciu na sociálnej sieti doplnením informácie o objednávateľovi a dodávateľovi reklamy',
-                        'In full compliance with the law, the party meticulously marked all political advertising on social media platforms. This was achieved by including comprehensive information about the advertiser and the supplier.',
-                    ],
-                },
-                {
-                    name: [
-                        'Majetkové priznanie lídra',
-                        'Asset Declaration of the Leader',
-                    ],
-                    desc: [
-                        'Predseda strany na vyžiadanie Transparency vyplnil rozšírené majetkové priznanie a súhlasil s jeho zverejnením',
-                        `In response to Transparency's request, the party's chairman completed an extended asset declaration and consented to its public disclosure.`,
+                        'Kandidát na vyžiadanie Transparency vyplnil rozšírené majetkové priznanie a súhlasil s jeho zverejnením.',
+                        `In response to Transparency's request, the party's leader candidate completed an extended asset declaration and consented to its public disclosure.`,
                     ],
                 },
             ],

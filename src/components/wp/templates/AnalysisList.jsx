@@ -3,6 +3,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 
+import { partyData } from '../../../helpers/constants';
 import { labels, t } from '../../../helpers/dictionary';
 import { badgePctFormat } from '../../../helpers/helpers';
 import { routes, segments } from '../../../helpers/routes';
@@ -12,7 +13,7 @@ import {
     transparencyClass,
 } from '../../../helpers/wp';
 
-// import useAccountsData from '../../../hooks/AccountsData';
+import useAdsData from '../../../hooks/AdsData';
 
 function AnalysisList({ article }) {
     const { analysis } = article;
@@ -25,19 +26,10 @@ function AnalysisList({ article }) {
     }
     const cls = transparencyClass(analysis.lastScore);
 
-    // const { findPartyByWpTags } = useAccountsData();
-    // const party = findPartyByWpTags(article.tags);
-    const logo = /* party && (party.logo ?? false) ? (
-            <img
-                alt={t(labels.analysis.transparency[cls])}
-                className="p-3"
-                src={party.logo}
-            />
-        ) : */ null;
-    const name =
-        /* party && (party.fullName ?? false)
-            ? party.fullName
-            : */ article.title.rendered;
+    const { getPartyAdsData, findPartyByWpTags } = useAdsData();
+    const name = findPartyByWpTags(article.tags) ?? article.title.rendered;
+    const adsData = getPartyAdsData(name);
+    const party = partyData(name, null, adsData);
 
     return (
         <Col md={12}>
@@ -54,9 +46,17 @@ function AnalysisList({ article }) {
                                 labels.analysis.transparencyShort[cls]
                             )}
                         >
-                            <figure className="text-center text-xxl-start">
-                                {logo}
-                            </figure>
+                            {party.image ? (
+                                <figure className="text-center text-xxl-start">
+                                    {party.image}
+                                </figure>
+                            ) : (
+                                <div className="cover text-center">
+                                    <span className="text-white fw-bold">
+                                        {name}
+                                    </span>
+                                </div>
+                            )}
                         </div>
                     </Col>
                     <Col>

@@ -11,6 +11,8 @@
   }
 }
 
+$border-width: 2px;
+$fade: 0.3;
 a.article {
   &:hover {
     text-decoration: none;
@@ -52,19 +54,6 @@ a.article {
       overflow: hidden;
       padding-top: 100%;
       position: relative;
-      &:after {
-        content: attr(data-label);
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(50%, -50%) rotate(45deg) translate(0, 235%);
-        color: #fff;
-        font-size: 1rem;
-        font-weight: $fw-bold;
-        line-height: 2rem;
-        text-align: center;
-        width: 150%;
-      }
       .badge {
         background-color: rgb(0 0 0 / 50%);
         font-size: 1em;
@@ -80,7 +69,7 @@ a.article {
     figure {
       border-color: $tis-score-unknown;
       border-style: dotted;
-      border-width: 2px;
+      border-width: $border-width;
       position: absolute;
       top: 0;
       left: 0;
@@ -94,6 +83,11 @@ a.article {
       transform: translateY(-50%);
       filter: saturate(25%);
     }
+    .cover {
+      bottom: $border-width;
+      padding: 0 $border-width;
+    }
+
     &.score-good {
       .thumb:after {
         background-color: $tis-score-green;
@@ -144,10 +138,36 @@ a.article {
     }
     .thumb {
       &:after {
-        font-size: 1.5em;
-        line-height: 2.15rem;
+        content: attr(data-label);
+        position: absolute;
+        top: 0;
+        right: 0;
         transform: translate(50%, -50%) rotate(45deg) translate(0, 150%);
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: $fw-bold;
+        line-height: 2.15rem;
+        text-align: center;
+        width: 150%;
       }
+    }
+  }
+}
+
+.cover {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  span {
+    background-color: fade-out(black, $fade);
+    border-radius: 0;
+    display: inline-block;
+    line-height: 1.5em;
+    padding: 0.35em;
+    width: 100%;
+    white-space: normal;
+    &.info {
+      background-color: fade-out($tis-orange-ds, $fade);
     }
   }
 }
@@ -223,6 +243,27 @@ ul.blocks-gallery-grid {
   .analysis-preview th {
     width: calc(100% / 3);
   }
+  .articles.featured a.article .thumb:after {
+    font-size: 2em;
+    line-height: 2.65rem;
+  }
+  .analysis-preview .cover {
+    font-size: 1.25em;
+    padding: 0.4em 1em;
+    .articles.featured & {
+      font-size: 1.5em;
+    }
+    .articles.list & {
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media (min-width: map.get($grid-breakpoints, 'xl')) {
+  .articles.featured a.article .thumb:after {
+    font-size: 2.5em;
+    line-height: 3.15rem;
+  }
 }
 
 @media (min-width: map.get($grid-breakpoints, 'xxl')) {
@@ -241,7 +282,17 @@ ul.blocks-gallery-grid {
       }
     }
   }
+  .articles.featured a.article .thumb:after {
+    font-size: 3em;
+    line-height: 3.65rem;
+  }
   .analysis-preview th {
     width: 25%;
+  }
+  .analysis-preview .cover {
+    font-size: 1.5em;
+    .articles.featured & {
+      font-size: 2em;
+    }
   }
 }

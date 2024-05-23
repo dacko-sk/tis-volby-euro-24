@@ -234,6 +234,13 @@ export const AdsDataProvider = function ({ children }) {
             ].includes(name)
         );
 
+    const findPartyByWpTags = (tags) => {
+        const found = Object.entries(sheetsData.parties).find(([, party]) =>
+            tags.includes(party[csvConfig.ACCOUNTS.columns.WP])
+        );
+        return found ? found[0] : null;
+    };
+
     const getPartyShortName = (name) => {
         const found = findPartyByName(name);
         return found ? found[0] : name;
@@ -283,6 +290,7 @@ export const AdsDataProvider = function ({ children }) {
             mergedWeeksData: mergedWeeksData(),
             getPartyAdsData,
             findPartyForMetaAccount,
+            findPartyByWpTags,
             getPartyAccountName,
             getPartyShortName,
             getPartyFullName,

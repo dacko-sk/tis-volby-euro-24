@@ -172,12 +172,6 @@ function AnalysisDetail({ article }) {
                     <Table responsive>
                         <tbody>
                             <tr>
-                                <th>{t(labels.analysis[amd.coalition])}</th>
-                                <td className="text-end">
-                                    {t(analysis.meta[amd.coalition])}
-                                </td>
-                            </tr>
-                            <tr>
                                 <th>{t(labels.analysis[amd.leader])}</th>
                                 <td className="text-end">
                                     {analysis.meta[amd.leader]}

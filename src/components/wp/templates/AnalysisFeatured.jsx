@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 
+import { partyData } from '../../../helpers/constants';
 import { badgePctFormat } from '../../../helpers/helpers';
 import { routes, segments } from '../../../helpers/routes';
 import { transparencyClass } from '../../../helpers/wp';
 
-// import useAccountsData from '../../../hooks/AccountsData';
-import Media from '../Media';
+import useAdsData from '../../../hooks/AdsData';
 
 function AnalysisFeatured({ article }) {
     const { analysis } = article;
@@ -19,13 +19,10 @@ function AnalysisFeatured({ article }) {
     }
     const cls = transparencyClass(analysis.lastScore);
 
-    // const { findPartyByWpTags } = useAccountsData();
-    // const party = findPartyByWpTags(article.tags);
-    const logo = /* party && (party.logo ?? false) ? party.logo : */ null;
-    const name =
-        /* party && (party.fullName ?? false)
-            ? party.fbName
-            : */ article.title.rendered;
+    const { getPartyAdsData, findPartyByWpTags } = useAdsData();
+    const name = findPartyByWpTags(article.tags) ?? article.title.rendered;
+    const adsData = getPartyAdsData(name);
+    const party = partyData(name, null, adsData);
 
     return (
         <Col>
@@ -38,17 +35,13 @@ function AnalysisFeatured({ article }) {
                     className="thumb"
                     data-label={badgePctFormat(analysis.lastScore)}
                 >
-                    <figure className="text-center">
-                        <Media
-                            alt={article.title.rendered}
-                            id={article.featured_media}
-                            fallback={logo}
-                        />
-                    </figure>
-
-                    <div className="name text-center">
-                        <span className="badge">{name}</span>
-                    </div>
+                    {party.image ? (
+                        <figure className="text-center">{party.image}</figure>
+                    ) : (
+                        <div className="cover text-center">
+                            <span className="text-white fw-bold">{name}</span>
+                        </div>
+                    )}
                 </div>
             </Link>
         </Col>

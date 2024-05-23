@@ -16,71 +16,27 @@ function Analyses() {
         [languages.sk]: (
             <>
                 <AlertWithIcon className="my-4" variant="primary">
-                    Tlačová správa k prvému hodnoteniu transparentnosti kampaní:{' '}
+                    Tlačová správa k hodnoteniu transparentnosti kampaní:{' '}
                     <Link to={resources.pressRelease}>
-                        Len štyri predvolebné kampane sú transparentné
-                    </Link>
-                    .
-                </AlertWithIcon>
-
-                <AlertWithIcon className="my-4" variant="primary">
-                    Tlačová správa k druhému hodnoteniu transparentnosti
-                    kampaní:{' '}
-                    <Link to={resources.pressRelease2}>
-                        Víťazi posledných volieb vedú najmenej transparentné
-                        kampane
+                        Najmenej transparentnú kampaň vedie Peter Pellegrini
                     </Link>
                     .
                 </AlertWithIcon>
 
                 <p className="mt-4">
-                    Koncom septembra 2023 si slovenskí voliči v predčasných
-                    voľbách vyberú nové zloženie parlamentu, z ktorého vzíde aj
-                    nová vláda. Vo volebných miestnostiach sa budeme rozhodovať
-                    medzi kandidátnymi listinami 24 strán a jednej volebnej
-                    trojkoalície.
+                    V poradí šiesta priama voľba prezidenta neunikla pozornosti
+                    Transparency International Slovensko, ktorá sleduje kampane
+                    všetkých 11 prezidentských kandidátov. Do hodnotenia
+                    transparentnosti zaradila šesť kampaní, pri ktorých výdavky
+                    ku dňu hodnotenia prekročili hranicu 20-tisíc eur, čo sú
+                    4-percentá z limitu výdavkov 500-tisíc eur platiaceho pre
+                    prezidentské voľby. Zvyšných päť kandidátov neviedlo žiadnu
+                    platenú kampaň, alebo len v minimálnom rozsahu, kvôli čomu
+                    ich nebolo možné adekvátne zhodnotiť a porovnať.
                 </p>
                 <p>
-                    Napriek tomu, že sú to práve politici, ktorí nastavujú
-                    limity a pravidlá, v predvolebnom zápase majú mnohí z nich
-                    stále problémy s ich dodržiavaním. Ľahostajný prístup k
-                    transparentnosti kampane a jej financovania môže mnohé
-                    napovedať aj o prístupe politikov k zverenej moci po
-                    voľbách. Uvedomujú si to aj voliči. Podľa reprezentatívneho
-                    prieskumu agentúry IPSOS pre Transparency by bol
-                    netransparentný alebo nehodnoverný spôsob financovania
-                    kampane závažnou prekážkou pre voľbu takejto strany až pre
-                    46% respondentov.
-                </p>
-                <p>
-                    V Transparency preto dlhodobo férovosť a transparentnosť
-                    kampaní monitorujeme a politikov nabádame k zvyšovaniu
-                    štandardov. Po prezidentských voľbách 2019, parlamentných
-                    voľbách 2020 a samosprávnych voľbách 2022 sme sa aj
-                    tentokrát bližšie pozreli na spôsob vedenia kampaní
-                    politickými stranami a zostavili{' '}
-                    <Link to={resources.pressRelease}>
-                        hodnotenie ich transparentnosti
-                    </Link>
-                    .
-                </p>
-                <p>
-                    Zamerali sme sa predovšetkým na informácie z transparentných
-                    účtov, webov a sociálnych sietí strán, kládli sme im však aj
-                    podrobnejšie otázky o predkampani, darcoch či veriteľoch a
-                    testovali ochotu volebných lídrov vyplniť rozšírené
-                    majetkové priznanie.
-                </p>
-                <p>
-                    Z 27 kandidujúcich subjektov sme prvé hodnotenie (zverejnené
-                    25.8.2023) spracovali pre 15 strán a druhé hodnotenie
-                    (zverejnené 25. 9. 2023) pre 17 strán, ktoré mali v čase
-                    hodnotenia na transparentnom účte výdavky za aspoň 50-tisíc
-                    eur a aspoň 10 väčších výdavkových transakcií.
-                </p>
-                <p>
-                    Pre lepšiu prehľadnosť sme zvolili princíp semafora - pri
-                    každej z hodnotených strán tak svieti jedno z hodnotení:
+                    Výsledkom hodnotenia je rozradenie kandidátov na princípe
+                    semafora do štyroch kategórií:
                 </p>
                 <ul className="arrows lh-lg">
                     <li>
@@ -104,6 +60,39 @@ function Analyses() {
                         </span>
                     </li>
                 </ul>
+                <p>
+                    Hodnotenie je doplnené informáciou o dosiahnutom výslednom
+                    percentuálnom skóre.
+                </p>
+                <p>
+                    Podstatou hodnotenia je nielen preskúmať dodržiavanie
+                    zákonných pravidiel pre vedenie kampaní, ktoré sú však v
+                    mnohom deravé, ale aj ochotu kandidátov spraviť pre verejnú
+                    kontrolu niečo naviac. Pozostáva z 15 indikátorov
+                    rozdelených do troch kategórií:
+                </p>
+                <ul className="arrows lh-lg">
+                    <li>Transparentný účet (50% váha)</li>
+                    <li>Financovanie kampane (30% váha)</li>
+                    <li>Informovanosť o kampani (20% váha)</li>
+                </ul>
+                <p>
+                    Kľúčovým pre hodnotenie (najvyššia váha) je spôsob, akým
+                    kandidát vedie svoj transparentný účet, ktorý má poskytovať
+                    úplný a reálny obraz o jeho kampani. Dôležitým je i spôsob
+                    financovania kampane, ktorá v prípade prezidentských volieb
+                    môže byť postavená iba na daroch.
+                </p>
+                <p>
+                    Hodnotenie vychádza aj z informácií zverejnených na
+                    volebných weboch, sociálnych sieťach strán, z dát v knižnici
+                    reklám Facebooku, monitoringu outdoorovej kampane agentúrou
+                    Kantar, ako aj z testovania odozvy strán na otázky voličov.
+                    Kandidátom bola ponúknutá možnosť vyplniť rozšírený formulár
+                    majetkového priznania v podobe, ako o ňom v uplynulom
+                    volebnom období diskutovala pracovná skupina na pôde
+                    parlamentu.
+                </p>
                 <p className="mb-4">
                     Podrobnejšie výsledky nájdete v sekcii nižšie a v{' '}
                     <Link to={resources.methodology}>Metodike hodnotenia</Link>.
@@ -113,74 +102,28 @@ function Analyses() {
         [languages.en]: (
             <>
                 <AlertWithIcon className="my-4" variant="primary">
-                    First assessment press release (Slovak only):{' '}
+                    Press release (Slovak only):{' '}
                     <Link to={resources.pressRelease}>
-                        Len štyri predvolebné kampane sú transparentné
-                    </Link>
-                    .
-                </AlertWithIcon>
-
-                <AlertWithIcon className="my-4" variant="primary">
-                    Second assessment press release (Slovak only):{' '}
-                    <Link to={resources.pressRelease2}>
-                        Víťazi posledných volieb vedú najmenej transparentné
-                        kampane
+                        Najmenej transparentnú kampaň vedie Peter Pellegrini
                     </Link>
                     .
                 </AlertWithIcon>
 
                 <p className="mt-4">
-                    In late September 2023, Slovak voters will head to the polls
-                    for early elections, marking a crucial moment that will
-                    determine the new composition of the parliament and
-                    subsequently, the formation of a fresh government. At
-                    polling stations across the country, voters will be faced
-                    with a choice among 24 parties and one tripartite coalition.
-                </p>
-                <p>
-                    Despite the fact that politicians establish the limits and
-                    rules, many of them struggle to adhere to these regulations
-                    during election campaigns. The approach of politicians to
-                    campaign transparency and financing speaks volumes about
-                    their commitment to the responsibility entrusted to them
-                    after the elections, a fact not lost on the discerning
-                    voters. According to a representative survey conducted by
-                    the IPSOS agency for Transparency, nearly half of the
-                    respondents (46%) would be deterred from choosing a party if
-                    its campaign financing was non-transparent or unreliable.
-                </p>
-                <p>
-                    At Transparency, we have long been dedicated to monitoring
-                    the fairness and transparency of political campaigns, urging
-                    politicians to uphold higher standards. Following the 2019
-                    presidential elections, the 2020 parliamentary elections,
-                    and the 2022 municipal elections, we meticulously examined
-                    how political parties conducted their campaigns and assessed
-                    their{' '}
-                    <Link to={resources.pressRelease}>
-                        levels of transparency
-                    </Link>
-                    .
-                </p>
-                <p>
-                    Our evaluation process involved analyzing information from
-                    the parties&apos; transparent accounts, websites, and social
-                    networks. We also delved deeper, posing questions about
-                    pre-campaign activities, donors, creditors, and assessing
-                    the willingness of party leaders to complete extended asset
-                    declarations.
-                </p>
-                <p>
-                    Out of the 27 entities running in the elections, we
-                    conducted the first assessment (published on 25/08/2023) for
-                    15 parties and the second assessment (published on
-                    25/09/2023) for 17 parties that, at the time of assessment,
-                    had incurred expenses of at least 50,000 euros and at least
-                    10 significant spending transactions.
+                    The sixth direct presidential election did not escape the
+                    attention of Transparency International Slovakia, which
+                    diligently monitors the campaigns of all 11 candidates. Our
+                    transparency assesment focused on six campaigns, whose
+                    expenditures exceeded 20,000 €, as of the date of the
+                    assesment, which constitutes 4 percent of the 500,000 €
+                    spending limit applicable to presidential elections. The
+                    remaining five candidates either conducted minimal paid
+                    campaigns or none at all, rendering it challenging to
+                    adequately evaluate and compare them.
                 </p>
                 <p>
                     To present our findings clearly, we adopted a traffic light
-                    system, assigning a color to each party based on our
+                    system, assigning a color to each candidate based on our
                     assessment:
                 </p>
                 <ul className="arrows lh-lg">
@@ -205,6 +148,41 @@ function Analyses() {
                         </span>
                     </li>
                 </ul>
+                <p>
+                    The evaluation also includes information about the achieved
+                    final percentage score.
+                </p>
+                <p>
+                    The essence of our evaluation extends beyond examining
+                    compliance with legal campaign regulations, which are often
+                    porous, to assessing candidates&apos; willingness to undergo
+                    public scrutiny. It comprises 15 indicators across three
+                    categories:
+                </p>
+                <ul className="arrows lh-lg">
+                    <li>Transparent bank account (50% weight)</li>
+                    <li>Campaign financing (30% weight)</li>
+                    <li>Campaign awareness raising (20% weight)</li>
+                </ul>
+                <p>
+                    Key to the assessment (highest weight) is the way the
+                    candidate maintains his transparent account, which should
+                    provide a comprehensive and realistic picture of his
+                    campaign. Equally significant is the method of campaign
+                    financing, which, in presidential elections, is exclusively
+                    reliant on donations.
+                </p>
+                <p>
+                    Our evaluation draws from various sources including
+                    information published on election websites, social media
+                    platforms of candidates, data from Facebook ad library,
+                    Kantar agency’s outdoor campaign monitoring, as well as
+                    testing of the candidates‘ responses to voters&apos;
+                    questions. Candidates were given the option to complete an
+                    extended declaration of assets form, as discussed by the
+                    parlimentary working group during the previous election
+                    period.
+                </p>
                 <p className="mb-4">
                     For a more detailed overview of the results, please refer to
                     the section below and consult our{' '}

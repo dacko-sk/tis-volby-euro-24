@@ -6,7 +6,7 @@ import { routes } from './routes';
 export const wpCat = {
     analyses: 948,
     assets: 949,
-    featured: 948,
+    featured: 957,
     news: 947,
 };
 
@@ -132,7 +132,6 @@ export const resources = {
 };
 
 export const metaData = {
-    coalition: 'coalition',
     leader: 'leader',
     fb: 'fb',
     web: 'web',
@@ -159,7 +158,7 @@ export const transparencyIndicators = {
 export const indicatorsCriteria = {
     [transparencyIndicators.account]: 5,
     [transparencyIndicators.financing]: 5,
-    [transparencyIndicators.information]: 7,
+    [transparencyIndicators.information]: 6,
 };
 
 export const transparencyClass = (score) => {
