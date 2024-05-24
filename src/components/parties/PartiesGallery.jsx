@@ -4,14 +4,13 @@ import Row from 'react-bootstrap/Row';
 
 import { partyData } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
+import { sortByTextProp } from '../../helpers/helpers';
 import { routes } from '../../helpers/routes';
 
 import useAccountsData from '../../hooks/AccountsData';
 import useAdsData, { csvConfig } from '../../hooks/AdsData';
 
 import Loading from '../general/Loading';
-
-import { sortByTextProp } from '../../helpers/helpers';
 
 function PartiesGallery({ compact = false }) {
     const { allAccountsNames, getPartyAccountData } = useAccountsData();

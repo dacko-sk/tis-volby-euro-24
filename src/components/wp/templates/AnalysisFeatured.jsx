@@ -8,6 +8,9 @@ import { transparencyClass } from '../../../helpers/wp';
 
 import useAdsData from '../../../hooks/AdsData';
 
+import Loading from '../../general/Loading';
+import Media from '../Media';
+
 function AnalysisFeatured({ article }) {
     const { analysis } = article;
     if (analysis.error ?? false) {
@@ -19,7 +22,12 @@ function AnalysisFeatured({ article }) {
     }
     const cls = transparencyClass(analysis.lastScore);
 
-    const { getPartyAdsData, findPartyByWpTags } = useAdsData();
+    const { getPartyAdsData, findPartyByWpTags, sheetsData } = useAdsData();
+
+    if (!sheetsData.loaded) {
+        return <Loading small />;
+    }
+
     const name = findPartyByWpTags(article.tags) ?? article.title.rendered;
     const adsData = getPartyAdsData(name);
     const party = partyData(name, null, adsData);
@@ -35,13 +43,16 @@ function AnalysisFeatured({ article }) {
                     className="thumb"
                     data-label={badgePctFormat(analysis.lastScore)}
                 >
-                    {party.image ? (
-                        <figure className="text-center">{party.image}</figure>
-                    ) : (
-                        <div className="cover text-center">
-                            <span className="text-white fw-bold">{name}</span>
-                        </div>
-                    )}
+                    <figure className="text-center">
+                        {article.featured_media ? (
+                            <Media alt={name} id={article.featured_media} />
+                        ) : (
+                            party.image
+                        )}
+                    </figure>
+                    <div className="cover text-center">
+                        <span className="text-white fw-bold">{name}</span>
+                    </div>
                 </div>
             </Link>
         </Col>
