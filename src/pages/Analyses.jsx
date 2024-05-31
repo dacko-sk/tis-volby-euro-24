@@ -24,18 +24,18 @@ function Analyses() {
                 </AlertWithIcon>
 
                 <p className="mt-4">
-                    V poradí šiesta priama voľba prezidenta neunikla pozornosti
-                    Transparency International Slovensko, ktorá sleduje kampane
-                    všetkých 11 prezidentských kandidátov. Do hodnotenia
-                    transparentnosti zaradila šesť kampaní, pri ktorých výdavky
-                    ku dňu hodnotenia prekročili hranicu 20-tisíc eur, čo sú
-                    4-percentá z limitu výdavkov 500-tisíc eur platiaceho pre
-                    prezidentské voľby. Zvyšných päť kandidátov neviedlo žiadnu
-                    platenú kampaň, alebo len v minimálnom rozsahu, kvôli čomu
-                    ich nebolo možné adekvátne zhodnotiť a porovnať.
+                    Súčasťou monitoringu Volieb do Európskeho parlamentu 2024,
+                    ktoré uskutočňuje Transparency International Slovensko (TIS)
+                    je i hodnotenie transparentnosti kampaní strán. Vo voľbách
+                    kandiduje 24 politických subjektov, TIS do hodnotenia
+                    zaradila polovicu, teda 12 strán, ktoré ku dňu hodnotenia
+                    vedú kampaň minimálne v rozsahu 50-tisíc eur (výdavky na
+                    transparentnom účte). Zvyšné strany viedli kampaň v malom
+                    finančnom rozsahu, kvôli čomu ich nebolo možné adekvátne
+                    zhodnotiť a porovnať.
                 </p>
                 <p>
-                    Výsledkom hodnotenia je rozradenie kandidátov na princípe
+                    Výsledkom hodnotenia je rozradenie strán na princípe
                     semafora do štyroch kategórií:
                 </p>
                 <ul className="arrows lh-lg">
@@ -67,8 +67,8 @@ function Analyses() {
                 <p>
                     Podstatou hodnotenia je nielen preskúmať dodržiavanie
                     zákonných pravidiel pre vedenie kampaní, ktoré sú však v
-                    mnohom deravé, ale aj ochotu kandidátov spraviť pre verejnú
-                    kontrolu niečo naviac. Pozostáva z 15 indikátorov
+                    mnohom deravé, ale aj ochotu politických strán spraviť pre
+                    verejnú kontrolu niečo naviac. Pozostáva zo 16 indikátorov
                     rozdelených do troch kategórií:
                 </p>
                 <ul className="arrows lh-lg">
@@ -78,20 +78,21 @@ function Analyses() {
                 </ul>
                 <p>
                     Kľúčovým pre hodnotenie (najvyššia váha) je spôsob, akým
-                    kandidát vedie svoj transparentný účet, ktorý má poskytovať
+                    strana vedie svoj transparentný účet, ktorý má poskytovať
                     úplný a reálny obraz o jeho kampani. Dôležitým je i spôsob
-                    financovania kampane, ktorá v prípade prezidentských volieb
-                    môže byť postavená iba na daroch.
+                    financovania kampane, ktorá v prípade eurovolieb môže byť
+                    postavená na štátnych príspevkoch, ktorými strany disponujú,
+                    ďalších straníckych financiách, daroch ale aj pôžičkách.
                 </p>
                 <p>
                     Hodnotenie vychádza aj z informácií zverejnených na
                     volebných weboch, sociálnych sieťach strán, z dát v knižnici
                     reklám Facebooku, monitoringu outdoorovej kampane agentúrou
                     Kantar, ako aj z testovania odozvy strán na otázky voličov.
-                    Kandidátom bola ponúknutá možnosť vyplniť rozšírený formulár
-                    majetkového priznania v podobe, ako o ňom v uplynulom
-                    volebnom období diskutovala pracovná skupina na pôde
-                    parlamentu.
+                    Lídrom kandidátok jednotlivý ch strán bola ponúknutá možnosť
+                    vyplniť rozšírený formulár majetkového priznania v podobe,
+                    ako o ňom v uplynulom volebnom období diskutovala pracovná
+                    skupina na pôde parlamentu.
                 </p>
                 <p className="mb-4">
                     Podrobnejšie výsledky nájdete v sekcii nižšie a v{' '}
@@ -110,20 +111,21 @@ function Analyses() {
                 </AlertWithIcon>
 
                 <p className="mt-4">
-                    The sixth direct presidential election did not escape the
-                    attention of Transparency International Slovakia, which
-                    diligently monitors the campaigns of all 11 candidates. Our
-                    transparency assesment focused on six campaigns, whose
-                    expenditures exceeded 20,000 €, as of the date of the
-                    assesment, which constitutes 4 percent of the 500,000 €
-                    spending limit applicable to presidential elections. The
-                    remaining five candidates either conducted minimal paid
-                    campaigns or none at all, rendering it challenging to
-                    adequately evaluate and compare them.
+                    As part of the monitoring of the 2024 European Parliament
+                    elections conducted by Transparency International Slovakia
+                    (TIS), there is an assessment of the transparency of party
+                    campaigns. A total of 24 political entities are running in
+                    the elections, and TIS has included half of them, i.e., 12
+                    parties, in the assessment. These are the parties that, as
+                    of the assessment date, have conducted campaigns with a
+                    minimum expenditure of 50,000 euros (expenses on a
+                    transparent account). The remaining parties conducted
+                    campaigns on a small financial scale, making it impossible
+                    to adequately assess and compare them.
                 </p>
                 <p>
                     To present our findings clearly, we adopted a traffic light
-                    system, assigning a color to each candidate based on our
+                    system, assigning a color to each party based on our
                     assessment:
                 </p>
                 <ul className="arrows lh-lg">
@@ -153,10 +155,11 @@ function Analyses() {
                     final percentage score.
                 </p>
                 <p>
-                    The essence of our evaluation extends beyond examining
-                    compliance with legal campaign regulations, which are often
-                    porous, to assessing candidates&apos; willingness to undergo
-                    public scrutiny. It comprises 15 indicators across three
+                    The essence of the assessment is not only to examine
+                    compliance with legal rules for conducting campaigns, which
+                    are often quite flawed, but also to assess the willingness
+                    of political parties to do something extra for public
+                    oversight. It comprises 16 indicators across three
                     categories:
                 </p>
                 <ul className="arrows lh-lg">
@@ -165,23 +168,24 @@ function Analyses() {
                     <li>Campaign awareness raising (20% weight)</li>
                 </ul>
                 <p>
-                    Key to the assessment (highest weight) is the way the
-                    candidate maintains his transparent account, which should
-                    provide a comprehensive and realistic picture of his
-                    campaign. Equally significant is the method of campaign
-                    financing, which, in presidential elections, is exclusively
-                    reliant on donations.
+                    Key to the assessment (highest weight) is the way the party
+                    maintains its transparent account, which should provide a
+                    comprehensive and realistic picture of its campaign. Another
+                    important issue is the way of financing the campaign, which
+                    in the case of the European elections can be based on state
+                    contributions, which the parties have at their disposal,
+                    other party finances, donations, but also loans.
                 </p>
                 <p>
                     Our evaluation draws from various sources including
                     information published on election websites, social media
-                    platforms of candidates, data from Facebook ad library,
-                    Kantar agency’s outdoor campaign monitoring, as well as
-                    testing of the candidates‘ responses to voters&apos;
-                    questions. Candidates were given the option to complete an
-                    extended declaration of assets form, as discussed by the
-                    parlimentary working group during the previous election
-                    period.
+                    platforms of parties, data from Facebook ad library, Kantar
+                    agency’s outdoor campaign monitoring, as well as from
+                    testing the response of the parties to voters&#39;
+                    questions. Leaders of parties were given the option to
+                    complete an extended declaration of assets form, as
+                    discussed by the parliamentary working group during the
+                    previous election period.
                 </p>
                 <p className="mb-4">
                     For a more detailed overview of the results, please refer to
