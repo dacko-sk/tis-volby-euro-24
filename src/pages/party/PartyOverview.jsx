@@ -49,6 +49,16 @@ function PartyOverview() {
                                     {t(labels.parties.candidatesList)}
                                 </DownloadLink>
                             )}
+
+                            {party.hasAssets && (
+                                <DownloadLink
+                                    to={
+                                        party[csvConfig.ACCOUNTS.columns.ASSETS]
+                                    }
+                                >
+                                    {t(labels.parties.extendedAssets)}
+                                </DownloadLink>
+                            )}
                         </div>
                     </Col>
                     <Col lg={6}>

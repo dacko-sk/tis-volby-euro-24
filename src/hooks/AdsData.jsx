@@ -19,6 +19,7 @@ export const csvConfig = {
             TA_NAME: 'Transparentný účet',
             WP: 'WP tag',
             CL: 'Kandidátne listiny',
+            ASSETS: 'Majetkové priznania',
         },
         name: 'účty',
     },
@@ -119,6 +120,9 @@ export const processDataSheets = (data) => {
                                         : null,
                                 [csvConfig.ACCOUNTS.columns.CL]:
                                     row[csvConfig.ACCOUNTS.columns.CL] ?? null,
+                                [csvConfig.ACCOUNTS.columns.ASSETS]:
+                                    row[csvConfig.ACCOUNTS.columns.ASSETS] ??
+                                    null,
                             };
                     });
                     break;

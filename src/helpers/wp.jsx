@@ -132,6 +132,7 @@ export const resources = {
 };
 
 export const metaData = {
+    coalition: 'coalition',
     leader: 'leader',
     fb: 'fb',
     web: 'web',

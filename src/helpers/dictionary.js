@@ -285,6 +285,7 @@ export const labels = {
     analysis: {
         [abd.date]: ['Hodnotenie ku dňu', 'Evaluation date'],
         [abd.score]: ['Celkové hodnotenie', 'Assessment'],
+        [amd.coalition]: ['Koalícia', 'Coalition'],
         [amd.fb]: ['FB profil', 'FB profile'],
         [amd.leader]: ['Líder kandidátky', 'Lead candidate'],
         [amd.web]: ['Volebný web', 'Elections web'],
@@ -589,6 +590,10 @@ export const labels = {
         assets: ['Majetkové priznania', 'Assets'],
         candidatesList: ['Kandidátna listina', 'Candidates list'],
         candidatesLists: ['Kandidátne listiny', 'Candidates lists'],
+        extendedAssets: [
+            'Rozšírené majetkové priznanie lídra',
+            'Extended assets declaration of leader',
+        ],
         info: ['Informácie o kampani', 'Campaign details'],
         funding: ['Financovanie', 'Financing'],
         monitoring: [

@@ -74,6 +74,25 @@ function Search() {
             </Col>
         ) : null;
     });
+    const assets = foundPartyNames.map((name) => {
+        const adsData = getPartyAdsData(name);
+        return adsData && adsData[csvConfig.ACCOUNTS.columns.ASSETS] ? (
+            <Col key={name} className="d-flex" sm>
+                <a
+                    className="d-flex flex-column justify-content-between w-100 cat-local"
+                    href={adsData[csvConfig.ACCOUNTS.columns.ASSETS]}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="download"
+                >
+                    <h3>
+                        <span className="me-2">{`${getPartyFullName(name)} - ${t(labels.parties.extendedAssets)}`}</span>
+                        <img className="inline-icon" src={pdfIcon} />
+                    </h3>
+                </a>
+            </Col>
+        ) : null;
+    });
     const accounts = foundPartyNames.flatMap((name) => {
         const accountData = getPartyAccountData(getPartyAccountName(name));
         return accountData
@@ -126,6 +145,15 @@ function Search() {
             <h2 className="my-4">{t(labels.parties.candidatesLists)}</h2>
             {candidatesLists.length ? (
                 <Row className="tiles gx-4 gy-4">{candidatesLists}</Row>
+            ) : (
+                <AlertWithIcon className="my-4" variant="danger">
+                    {t(labels.parties.noResults)}
+                </AlertWithIcon>
+            )}
+
+            <h2 className="my-4">{t(labels.parties.assets)}</h2>
+            {assets.length ? (
+                <Row className="tiles gx-4 gy-4">{assets}</Row>
             ) : (
                 <AlertWithIcon className="my-4" variant="danger">
                     {t(labels.parties.noResults)}
