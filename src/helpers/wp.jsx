@@ -304,12 +304,17 @@ export const sortByScore = (a, b) => {
 };
 
 export const getAnalysedData = (data) => {
-    const analysedData = [];
-    processArticles(data).forEach((article) => {
-        analysedData.push({
-            ...article,
-            analysis: parseAnalysisData(article.content.rendered),
-        });
-    });
-    return analysedData.sort(sortByScore);
+    // keep only articles having tags
+    return processArticles(data)
+        .flatMap((article) =>
+            article.tags.length
+                ? [
+                      {
+                          ...article,
+                          analysis: parseAnalysisData(article.content.rendered),
+                      },
+                  ]
+                : []
+        )
+        .sort(sortByScore);
 };
