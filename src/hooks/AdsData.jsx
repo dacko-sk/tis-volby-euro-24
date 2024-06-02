@@ -270,18 +270,11 @@ export const AdsDataProvider = function ({ children }) {
         return name;
     };
 
-    const getAllPartiesNames = (transparentAccountNames = []) => {
+    const getAllPartiesNames = () => {
         if (!sheetsData.loaded) {
             return null;
         }
-        return Array.from(
-            new Set([
-                ...(transparentAccountNames ?? []).map((name) =>
-                    getPartyShortName(name)
-                ),
-                ...Object.keys(sheetsData.parties),
-            ])
-        ).sort(sortAlphabetically(true));
+        return Object.keys(sheetsData.parties).sort(sortAlphabetically(true));
     };
 
     const value = useMemo(
@@ -294,6 +287,7 @@ export const AdsDataProvider = function ({ children }) {
             mergedWeeksData: mergedWeeksData(),
             getPartyAdsData,
             findPartyForMetaAccount,
+            findPartyByName,
             findPartyByWpTags,
             getPartyAccountName,
             getPartyShortName,

@@ -13,16 +13,14 @@ import useAdsData, { csvConfig } from '../../hooks/AdsData';
 import Loading from '../general/Loading';
 
 function PartiesGallery({ compact = false }) {
-    const { allAccountsNames, getPartyAccountData } = useAccountsData();
+    const { getPartyAccountData } = useAccountsData();
     const { getAllPartiesNames, getPartyAdsData } = useAdsData();
 
-    const allParties = (getAllPartiesNames(allAccountsNames) ?? []).map(
-        (name) => {
-            const accountData = getPartyAccountData(name);
-            const adsData = getPartyAdsData(name);
-            return partyData(name, accountData, adsData);
-        }
-    );
+    const allParties = (getAllPartiesNames() ?? []).map((name) => {
+        const accountData = getPartyAccountData(name);
+        const adsData = getPartyAdsData(name);
+        return partyData(name, accountData, adsData);
+    });
     allParties.sort(sortByTextProp(csvConfig.ACCOUNTS.columns.FULL_NAME));
 
     return (

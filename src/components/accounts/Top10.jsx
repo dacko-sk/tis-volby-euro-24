@@ -12,13 +12,20 @@ import TisBarChart from '../charts/TisBarChart';
 
 function Top10({ maxItems = 10 }) {
     const { accountsData } = useAccountsData();
-    const { getPartyShortName } = useAdsData();
+    const { findPartyByName } = useAdsData();
 
-    const columns = (accountsData.data ?? []).map((row) => ({
-        name: partyChartLabel(getPartyShortName(row[agk.name])),
-        [chartKeys.INCOMING]: row[agk.incoming],
-        [chartKeys.OUTGOING]: row[agk.outgoing],
-    }));
+    const columns = (accountsData.data ?? []).flatMap((row) => {
+        const party = findPartyByName(row[agk.name]);
+        return party
+            ? [
+                  {
+                      name: partyChartLabel(party[0]),
+                      [chartKeys.INCOMING]: row[agk.incoming],
+                      [chartKeys.OUTGOING]: row[agk.outgoing],
+                  },
+              ]
+            : [];
+    });
 
     return (
         <TisBarChart

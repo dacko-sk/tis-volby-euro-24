@@ -24,7 +24,7 @@ function Search() {
     const query = params.query ?? null;
     const navigate = useNavigate();
 
-    const { allAccountsNames, getPartyAccountData } = useAccountsData();
+    const { getPartyAccountData } = useAccountsData();
     const {
         getAllPartiesNames,
         getPartyAccountName,
@@ -33,7 +33,7 @@ function Search() {
         getPartyShortName,
     } = useAdsData();
 
-    const allParties = getAllPartiesNames(allAccountsNames) ?? [];
+    const allParties = getAllPartiesNames() ?? [];
 
     const foundPartyNames = allParties.filter(
         (name) =>
