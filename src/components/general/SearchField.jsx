@@ -13,6 +13,7 @@ function SearchField() {
     const params = useParams();
     const query = params.query ?? null;
     const [searchQuery, setSearchQuery] = useState(query);
+    const [collapsed, setCollapsed] = useState(true);
 
     const debouncedSearch = useDebouncedCallback((value) => {
         navigate(routes.search(value));
@@ -38,6 +39,7 @@ function SearchField() {
         <Form className="mt-2 mt-lg-0 mx-0 mx-lg-2" onSubmit={handleFormSumbit}>
             <InputGroup>
                 <Form.Control
+                    className="d-lg-none d-xl-block"
                     placeholder={t(labels.search.label)}
                     aria-label={t(labels.search.label)}
                     aria-describedby="search-icon"
@@ -45,9 +47,21 @@ function SearchField() {
                     onChange={handleInputChange}
                     value={searchQuery || ''}
                 />
+                <Form.Control
+                    className={`position-absolute d-none d-xl-none ${
+                        collapsed ? 'd-lg-none' : 'd-lg-block'
+                    }`}
+                    placeholder={t(labels.search.label)}
+                    aria-label={t(labels.search.label)}
+                    aria-describedby="search-icon"
+                    id="collapsible-search"
+                    onChange={handleInputChange}
+                    value={searchQuery || ''}
+                />
                 <InputGroup.Text
                     id="search-icon"
-                    className="d-lg-none d-xl-flex"
+                    className="d-xl-flex"
+                    onClick={() => setCollapsed(!collapsed)}
                 >
                     🔍
                 </InputGroup.Text>

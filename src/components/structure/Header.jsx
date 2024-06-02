@@ -43,9 +43,9 @@ function Header() {
                         <Nav.Link as={NavLink} to={routes.news()}>
                             {t(labels.news.navTitle)}
                         </Nav.Link>
-                        {/* <Nav.Link as={NavLink} to={routes.analyses()}>
+                        <Nav.Link as={NavLink} to={routes.analyses()}>
                             {t(labels.analyses.navTitle)}
-                        </Nav.Link> */}
+                        </Nav.Link>
                     </Nav>
                     <SearchField />
                     <Nav variant="pills" className="me-2">
