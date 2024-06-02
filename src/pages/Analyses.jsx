@@ -18,7 +18,7 @@ function Analyses() {
                 <AlertWithIcon className="my-4" variant="primary">
                     Tlačová správa k hodnoteniu transparentnosti kampaní:{' '}
                     <Link to={resources.pressRelease}>
-                        Najmenej transparentnú kampaň vedie Peter Pellegrini
+                        Transparentnú eurokampaň vedú len tri strany
                     </Link>
                     .
                 </AlertWithIcon>
@@ -105,7 +105,7 @@ function Analyses() {
                 <AlertWithIcon className="my-4" variant="primary">
                     Press release (Slovak only):{' '}
                     <Link to={resources.pressRelease}>
-                        Najmenej transparentnú kampaň vedie Peter Pellegrini
+                        Transparentnú eurokampaň vedú len tri strany
                     </Link>
                     .
                 </AlertWithIcon>

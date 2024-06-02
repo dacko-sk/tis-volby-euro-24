@@ -121,13 +121,10 @@ export const processArticles = (data) =>
  */
 export const resources = {
     methodology: routes.article(
-        'ako-sme-hodnotili-transparentnost-kampani-pred-parlamentnymi-volbami-2023'
+        'hodnotenie-transparentnosti-kampani-pre-eurovolby-metodika'
     ),
     pressRelease: routes.article(
-        'len-styri-predvolebne-kampane-su-transparentne'
-    ),
-    pressRelease2: routes.article(
-        'vitazi-poslednych-volieb-vedu-najmenej-transparentne-kampane'
+        'transparentnu-eurokampan-vedu-len-tri-strany'
     ),
 };
 
