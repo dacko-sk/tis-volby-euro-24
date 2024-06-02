@@ -18,6 +18,7 @@ import Home from './pages/Home';
 import News from './pages/News';
 import Online from './pages/Online';
 import Parties from './pages/Parties';
+import PartiesAssets from './pages/parties/PartiesAssets';
 import PartiesCandidates from './pages/parties/PartiesCandidates';
 import PartiesList from './pages/parties/PartiesList';
 import Party from './pages/Party';
@@ -54,6 +55,7 @@ function App() {
                                             segments.CANDIDATES,
                                             PartiesCandidates,
                                         ],
+                                        [segments.ASSETS, PartiesAssets],
                                     ],
                                 ],
                                 [
