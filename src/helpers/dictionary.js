@@ -185,11 +185,11 @@ export const labels = {
                     'Distribution of ads impressions of all parties between regions of Slovakia since February 10, 2024. Click the profile name for detailed analysis of party targeting on regions based on their sizes.',
                 ],
                 diffAvg: [
-                    'Odchýlka od priemerného zásahu kandidáta v SR',
+                    'Odchýlka od priemerného zásahu strany v SR',
                     'Deviation from average impressions in Slovakia',
                 ],
                 diffAvgDisclaimer: [
-                    'Odchýlka zásahu reklamy na jedného obyvateľa kraja od priemerného zásahu kandidáta v celej SR.',
+                    'Odchýlka zásahu reklamy na jedného obyvateľa kraja od priemerného zásahu strany v celej SR.',
                     'Difference between impression per one citizen and average impressions in Slovakia',
                 ],
                 disclaimer: [
