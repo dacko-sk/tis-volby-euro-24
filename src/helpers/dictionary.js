@@ -364,8 +364,8 @@ export const labels = {
                 },
                 {
                     name: [
-                        'Závislosť od veľkých prispievateľov',
-                        'Dependence on Major Contributors',
+                        'Nezávislosť od veľkých prispievateľov',
+                        'Independence on Major Contributors',
                     ],
                     desc: [
                         'Miera závislosti kampane od veľkých darcov a veriteľov, mimo bankových úverov.',
