@@ -21,6 +21,7 @@ import Parties from './pages/Parties';
 import PartiesAssets from './pages/parties/PartiesAssets';
 import PartiesCandidates from './pages/parties/PartiesCandidates';
 import PartiesList from './pages/parties/PartiesList';
+import PartiesReports from './pages/parties/PartiesReports';
 import Party from './pages/Party';
 import PartyAnalysis from './pages/party/PartyAnalysis';
 import PartyNews from './pages/party/PartyNews';
@@ -56,6 +57,7 @@ function App() {
                                             PartiesCandidates,
                                         ],
                                         [segments.ASSETS, PartiesAssets],
+                                        [segments.REPORTS, PartiesReports],
                                     ],
                                 ],
                                 [

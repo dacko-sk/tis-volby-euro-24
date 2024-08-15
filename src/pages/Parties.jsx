@@ -28,6 +28,12 @@ function Parties() {
                     <Nav.Link as={NavLink} to={routes.parties(segments.ASSETS)}>
                         {t(labels.parties.assets)}
                     </Nav.Link>
+                    <Nav.Link
+                        as={NavLink}
+                        to={routes.parties(segments.REPORTS)}
+                    >
+                        {t(labels.parties.reports)}
+                    </Nav.Link>
                 </Nav>
             </div>
 

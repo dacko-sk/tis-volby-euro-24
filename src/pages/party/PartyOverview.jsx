@@ -59,6 +59,24 @@ function PartyOverview() {
                                     {t(labels.parties.extendedAssets)}
                                 </DownloadLink>
                             )}
+
+                            {party.hasReport &&
+                                party[csvConfig.ACCOUNTS.columns.REPORTS].map(
+                                    (reportUrl) => (
+                                        <DownloadLink
+                                            key={reportUrl}
+                                            to={reportUrl}
+                                        >
+                                            {t(labels.parties.report) +
+                                                (party[
+                                                    csvConfig.ACCOUNTS.columns
+                                                        .REPORTS
+                                                ].length > 1
+                                                    ? ` (${reportUrl.split('/').pop()})`
+                                                    : '')}
+                                        </DownloadLink>
+                                    )
+                                )}
                         </div>
                     </Col>
                     <Col lg={6}>

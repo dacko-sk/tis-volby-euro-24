@@ -20,6 +20,7 @@ export const csvConfig = {
             WP: 'WP tag',
             CL: 'Kandidátne listiny',
             ASSETS: 'Majetkové priznania',
+            REPORTS: 'Záverečné správy',
         },
         name: 'účty',
     },
@@ -123,6 +124,12 @@ export const processDataSheets = (data) => {
                                 [csvConfig.ACCOUNTS.columns.ASSETS]:
                                     row[csvConfig.ACCOUNTS.columns.ASSETS] ??
                                     null,
+                                [csvConfig.ACCOUNTS.columns.REPORTS]: (
+                                    row[csvConfig.ACCOUNTS.columns.REPORTS] ??
+                                    ''
+                                )
+                                    .split(';')
+                                    .map((item) => item.trim()),
                             };
                     });
                     break;

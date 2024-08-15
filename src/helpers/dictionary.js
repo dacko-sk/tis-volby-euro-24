@@ -606,6 +606,8 @@ export const labels = {
             'No party matches the search query.',
         ],
         overview: ['Prehľad', 'Overview'],
+        report: ['Záverečná správa', 'Final report'],
+        reports: ['Záverečné správy', 'Final reports'],
     },
     privacy: ['Ochrana súkromia', 'Privacy Policy'],
     readMore: ['Čítať ďalej…', 'Read more…'],

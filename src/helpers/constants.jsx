@@ -50,6 +50,8 @@ export const partyData = (name, accountData, adsData) => {
     data.hasWp = adsData && !!data[csvConfig.ACCOUNTS.columns.WP];
     data.hasCL = adsData && !!data[csvConfig.ACCOUNTS.columns.CL];
     data.hasAssets = adsData && !!data[csvConfig.ACCOUNTS.columns.ASSETS];
+    data.hasReport =
+        adsData && !!data[csvConfig.ACCOUNTS.columns.REPORTS].length;
     data.isValid = data.hasAccount || adsData !== false;
 
     return data;

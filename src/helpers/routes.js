@@ -30,6 +30,7 @@ export const segments = {
     NEWS: 'NEWS',
     ONLINE: 'ONLINE',
     PARTIES: 'PARTIES',
+    REPORTS: 'REPORTS',
     SEARCH: 'SEARCH',
     TRANSACTIONS: 'TRANSACTIONS',
 };
@@ -43,6 +44,7 @@ export const localSegments = {
         [segments.PARTIES]: 'strany',
         [segments.NEWS]: 'aktuality',
         [segments.ONLINE]: 'online',
+        [segments.REPORTS]: 'zaverecne-spravy',
         [segments.SEARCH]: 'vyhladavanie',
         [segments.TRANSACTIONS]: 'financovanie',
     },
@@ -54,6 +56,7 @@ export const localSegments = {
         [segments.PARTIES]: 'parties',
         [segments.NEWS]: 'news',
         [segments.ONLINE]: 'online',
+        [segments.REPORTS]: 'reports',
         [segments.SEARCH]: 'search',
         [segments.TRANSACTIONS]: 'financing',
     },
