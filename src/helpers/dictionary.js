@@ -24,6 +24,10 @@ export const labels = {
         partySpending: ['Priebežné výdavky strany', 'Party spending'],
         download: ['Stiahnuť ako CSV', 'Download as CSV'],
         expensesAmount: ['Počet výdavkov', 'Number of expenses'],
+        finalReportDisclaimer: [
+            'Súčet výdavkov všetkých strán podľa záverečných správ.',
+            'Sum of spendings of all parties.',
+        ],
         incomesAmount: ['Počet príjmov', 'Number of incomes'],
         info: ['Detail účtu', 'Account details'],
         noData: [
@@ -488,6 +492,8 @@ export const labels = {
         },
     },
     charts: {
+        amount: ['Suma', 'Amount'],
+        campaign: ['Kampaň', 'Campaign'],
         disclaimer: [
             'Grafy obsahujú dáta z transparentných účtov, očistené o vrátené platby.',
             'Graphs contains data from transparent accounts net of return payments.',
@@ -496,9 +502,19 @@ export const labels = {
             'Po kliknutí na meno strany sa rozbalia podrobnosti.',
             'Click the party name for details.',
         ],
-        amount: ['Suma', 'Amount'],
+        finalReport: {
+            disclaimer: [
+                'Grafy obsahujú dáta zo záverečných správ politických strán.',
+                'Graphs contains data from parties final reports.',
+            ],
+            title: [
+                'Top 10 kampaní podľa záverečných správ',
+                'Top 10 campaigns by final reports',
+            ],
+        },
         incoming: ['Príjmy', 'Incomes'],
         outgoing: ['Výdavky', 'Expenses'],
+        precampaign: ['Predkampaň', 'Precampaign'],
         sum: ['Spolu', 'Total'],
         top10: [
             'Top 10 kampaní podľa výdavkov a príjmov',

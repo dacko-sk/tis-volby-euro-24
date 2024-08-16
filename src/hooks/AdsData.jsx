@@ -21,6 +21,8 @@ export const csvConfig = {
             CL: 'Kandidátne listiny',
             ASSETS: 'Majetkové priznania',
             REPORTS: 'Záverečné správy',
+            CAMPAIGN: 'Kampaň',
+            PRECAMPAIGN: 'Predkampaň',
         },
         name: 'účty',
     },
@@ -130,6 +132,27 @@ export const processDataSheets = (data) => {
                                 )
                                     .split(';')
                                     .map((item) => item.trim()),
+                                [csvConfig.ACCOUNTS.columns.CAMPAIGN]:
+                                    row[csvConfig.ACCOUNTS.columns.CAMPAIGN] ??
+                                    false
+                                        ? fixNumber(
+                                              row[
+                                                  csvConfig.ACCOUNTS.columns
+                                                      .CAMPAIGN
+                                              ]
+                                          )
+                                        : 0,
+                                [csvConfig.ACCOUNTS.columns.PRECAMPAIGN]:
+                                    row[
+                                        csvConfig.ACCOUNTS.columns.PRECAMPAIGN
+                                    ] ?? false
+                                        ? fixNumber(
+                                              row[
+                                                  csvConfig.ACCOUNTS.columns
+                                                      .PRECAMPAIGN
+                                              ]
+                                          )
+                                        : 0,
                             };
                     });
                     break;

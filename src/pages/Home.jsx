@@ -2,6 +2,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
 import { setTitle } from '../helpers/browser';
+import { dates } from '../helpers/constants';
 import { labels, t } from '../helpers/dictionary';
 // import { routes } from '../helpers/routes';
 import { wpCat } from '../helpers/wp';
@@ -27,16 +28,16 @@ function Home() {
             <Row className="gy-3 gy-lg-0 text-center mb-4">
                 <Col lg={6}>
                     <ElectionsCountdown
-                        start="2024-06-08T07:00:00"
-                        end="2024-06-08T22:00:00"
+                        start={dates.electionsStart}
+                        end={dates.electionsEnd}
                     />
                 </Col>
                 <Col lg={6}>
-                    <TotalSpending />
+                    <TotalSpending finalReport />
                 </Col>
             </Row>
 
-            <Top10 />
+            <Top10 finalReport />
 
             <div className="text-center mb-4">
                 <DonateButton long xl />

@@ -14,9 +14,11 @@ export const verticalYaxisWidth = isMobile ? 120 : 180;
 
 export const chartKeys = {
     AMOUNT: 'a',
+    CAMPAIGN: 'c',
     GOOGLE: 'g',
     INCOMING: 'i',
     META: 'm',
+    PRECAMPAIGN: 'p',
     OUTGOING: 'o',
     TOTAL: 't',
     UNIQUE: 'u',
@@ -47,6 +49,20 @@ export const columnVariants = {
             name: labels.charts.incoming,
             color: colors.colorDarkBlue,
             stackId: 'finance',
+        },
+    ],
+    finalReport: [
+        {
+            key: chartKeys.PRECAMPAIGN,
+            name: labels.charts.precampaign,
+            color: colors.colorDarkBlue,
+            stackId: 'FR',
+        },
+        {
+            key: chartKeys.CAMPAIGN,
+            name: labels.charts.campaign,
+            color: colors.colorOrange,
+            stackId: 'FR',
         },
     ],
     spending: [
