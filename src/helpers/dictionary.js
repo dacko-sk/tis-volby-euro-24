@@ -499,7 +499,7 @@ export const labels = {
             'Graphs contains data from transparent accounts net of return payments.',
         ],
         disclaimerClick: [
-            'Po kliknutí na meno strany sa rozbalia podrobnosti.',
+            'Po kliknutí na názov strany sa rozbalia podrobnosti.',
             'Click the party name for details.',
         ],
         finalReport: {
