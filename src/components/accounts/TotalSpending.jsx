@@ -1,6 +1,7 @@
-import { dates, settings } from '../../helpers/constants';
+import { dates } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
 import { getTimeFromDate } from '../../helpers/helpers';
+import { finalReports } from '../../helpers/settings';
 
 import useAccountsData, {
     aggregatedKeys as agk,
@@ -10,7 +11,7 @@ import useAdsData, { csvConfig } from '../../hooks/AdsData';
 import HeroNumber from '../general/HeroNumber';
 
 function TotalSpending() {
-    if (settings.finalReports) {
+    if (finalReports) {
         const { sheetsData, getAllPartiesNames, getPartyAdsData } =
             useAdsData();
 

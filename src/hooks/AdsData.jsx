@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import useGoogleSheets from 'use-google-sheets';
+import { usePapaParse } from 'react-papaparse';
 
 import {
     fixNumber,
@@ -7,6 +8,11 @@ import {
     isNumeric,
     sortAlphabetically,
 } from '../helpers/helpers';
+import { offlineMode } from '../helpers/settings';
+
+import accounts from '../../public/csv/online/accounts.csv';
+import google from '../../public/csv/online/Google.csv';
+import meta from '../../public/csv/online/Meta.csv';
 
 export const sheetsId = '1HH5RdyPynYm3vNolZaTmBmh7GzDAGeDNdL7AXmemYX4';
 
@@ -25,6 +31,7 @@ export const csvConfig = {
             CAMPAIGN: 'Kampaň',
             PRECAMPAIGN: 'Predkampaň',
         },
+        file: accounts,
         name: 'účty',
     },
     GOOGLE: {
@@ -38,6 +45,7 @@ export const csvConfig = {
             TEXT: 'Textová',
             UPDATED: 'Aktualizácia',
         },
+        file: google,
         name: 'Google reklama',
     },
     META: {
@@ -47,6 +55,7 @@ export const csvConfig = {
             SPENDING: 'Amount spent (EUR)',
         },
         endDate: '21.1.2024',
+        file: meta,
     },
 };
 
@@ -84,90 +93,86 @@ const filterPoliticAccounts = (parties) => (account) => {
     return false;
 };
 
+const parseAccountsSheet = (allData, sheetData) => {
+    const parties = {};
+    sheetData.forEach((row) => {
+        parties[row[csvConfig.ACCOUNTS.columns.SHORT_NAME]] = {
+            [csvConfig.ACCOUNTS.columns.FULL_NAME]:
+                row[csvConfig.ACCOUNTS.columns.FULL_NAME] ?? null,
+            [csvConfig.ACCOUNTS.columns.FB]:
+                row[csvConfig.ACCOUNTS.columns.FB] ?? false
+                    ? row[csvConfig.ACCOUNTS.columns.FB]
+                          .replaceAll(' ', '')
+                          .split(',')
+                    : [],
+            [csvConfig.ACCOUNTS.columns.GOOGLE]:
+                row[csvConfig.ACCOUNTS.columns.GOOGLE] ?? false
+                    ? row[csvConfig.ACCOUNTS.columns.GOOGLE]
+                          .replaceAll(' ', '')
+                          .split(',')
+                    : [],
+            [csvConfig.ACCOUNTS.columns.TA_NAME]:
+                row[csvConfig.ACCOUNTS.columns.TA_NAME] ?? null,
+            [csvConfig.ACCOUNTS.columns.WP]:
+                row[csvConfig.ACCOUNTS.columns.WP] ?? false
+                    ? fixNumber(row[csvConfig.ACCOUNTS.columns.WP])
+                    : null,
+            [csvConfig.ACCOUNTS.columns.CL]:
+                row[csvConfig.ACCOUNTS.columns.CL] ?? null,
+            [csvConfig.ACCOUNTS.columns.ASSETS]:
+                row[csvConfig.ACCOUNTS.columns.ASSETS] ?? null,
+            [csvConfig.ACCOUNTS.columns.REPORTS]: (
+                row[csvConfig.ACCOUNTS.columns.REPORTS] ?? ''
+            )
+                .split(';')
+                .map((item) => item.trim()),
+            [csvConfig.ACCOUNTS.columns.CAMPAIGN]:
+                row[csvConfig.ACCOUNTS.columns.CAMPAIGN] ?? false
+                    ? fixNumber(row[csvConfig.ACCOUNTS.columns.CAMPAIGN])
+                    : 0,
+            [csvConfig.ACCOUNTS.columns.PRECAMPAIGN]:
+                row[csvConfig.ACCOUNTS.columns.PRECAMPAIGN] ?? false
+                    ? fixNumber(row[csvConfig.ACCOUNTS.columns.PRECAMPAIGN])
+                    : 0,
+        };
+    });
+    return { ...allData, parties };
+};
+
+const parseGoogleSheet = (allData, sheetData) => ({
+    ...allData,
+    googleAds: sheetData,
+    lastUpdateGgl: Math.max(
+        ...sheetData.map((pageData) =>
+            getTimestampFromDate(pageData[csvConfig.GOOGLE.columns.UPDATED])
+        )
+    ),
+});
+
+const parseMetaSheet = (allData, sheetData, date) => ({
+    ...allData,
+    metaAds: {
+        ...allData.metaAds,
+        [date]: sheetData.filter(filterPoliticAccounts(allData.parties)),
+    },
+    lastUpdateFb: getTimestampFromDate(date),
+});
+
 export const loadingErrorSheets = (error) => {
     return { ...initialState.sheetsData, error, loaded: true };
 };
 
 export const processDataSheets = (data) => {
-    const pd = { ...initialState.sheetsData, loaded: true };
+    let pd = { ...initialState.sheetsData, loaded: true };
     if (Array.isArray(data)) {
         data.forEach((sheet) => {
             switch (sheet.id ?? '') {
                 case csvConfig.ACCOUNTS.name: {
-                    sheet.data.forEach((row) => {
-                        pd.parties[row[csvConfig.ACCOUNTS.columns.SHORT_NAME]] =
-                            {
-                                [csvConfig.ACCOUNTS.columns.FULL_NAME]:
-                                    row[csvConfig.ACCOUNTS.columns.FULL_NAME] ??
-                                    null,
-                                [csvConfig.ACCOUNTS.columns.FB]:
-                                    row[csvConfig.ACCOUNTS.columns.FB] ?? false
-                                        ? row[csvConfig.ACCOUNTS.columns.FB]
-                                              .replaceAll(' ', '')
-                                              .split(',')
-                                        : [],
-                                [csvConfig.ACCOUNTS.columns.GOOGLE]:
-                                    row[csvConfig.ACCOUNTS.columns.GOOGLE] ??
-                                    false
-                                        ? row[csvConfig.ACCOUNTS.columns.GOOGLE]
-                                              .replaceAll(' ', '')
-                                              .split(',')
-                                        : [],
-                                [csvConfig.ACCOUNTS.columns.TA_NAME]:
-                                    row[csvConfig.ACCOUNTS.columns.TA_NAME] ??
-                                    null,
-                                [csvConfig.ACCOUNTS.columns.WP]:
-                                    row[csvConfig.ACCOUNTS.columns.WP] ?? false
-                                        ? fixNumber(
-                                              row[csvConfig.ACCOUNTS.columns.WP]
-                                          )
-                                        : null,
-                                [csvConfig.ACCOUNTS.columns.CL]:
-                                    row[csvConfig.ACCOUNTS.columns.CL] ?? null,
-                                [csvConfig.ACCOUNTS.columns.ASSETS]:
-                                    row[csvConfig.ACCOUNTS.columns.ASSETS] ??
-                                    null,
-                                [csvConfig.ACCOUNTS.columns.REPORTS]: (
-                                    row[csvConfig.ACCOUNTS.columns.REPORTS] ??
-                                    ''
-                                )
-                                    .split(';')
-                                    .map((item) => item.trim()),
-                                [csvConfig.ACCOUNTS.columns.CAMPAIGN]:
-                                    row[csvConfig.ACCOUNTS.columns.CAMPAIGN] ??
-                                    false
-                                        ? fixNumber(
-                                              row[
-                                                  csvConfig.ACCOUNTS.columns
-                                                      .CAMPAIGN
-                                              ]
-                                          )
-                                        : 0,
-                                [csvConfig.ACCOUNTS.columns.PRECAMPAIGN]:
-                                    row[
-                                        csvConfig.ACCOUNTS.columns.PRECAMPAIGN
-                                    ] ?? false
-                                        ? fixNumber(
-                                              row[
-                                                  csvConfig.ACCOUNTS.columns
-                                                      .PRECAMPAIGN
-                                              ]
-                                          )
-                                        : 0,
-                            };
-                    });
+                    pd = parseAccountsSheet(pd, sheet.data);
                     break;
                 }
                 case csvConfig.GOOGLE.name: {
-                    pd.googleAds = sheet.data;
-                    sheet.data.forEach((pageData) => {
-                        const time = getTimestampFromDate(
-                            pageData[csvConfig.GOOGLE.columns.UPDATED]
-                        );
-                        if (time > pd.lastUpdateGgl) {
-                            pd.lastUpdateGgl = time;
-                        }
-                    });
+                    pd = parseGoogleSheet(pd, sheet.data);
                     break;
                 }
                 default: {
@@ -175,14 +180,38 @@ export const processDataSheets = (data) => {
                     const date = words.length
                         ? words[words.length - 1]
                         : csvConfig.META.endDate;
-                    pd.metaAds[date] = sheet.data.filter(
-                        filterPoliticAccounts(pd.parties)
-                    );
-                    pd.lastUpdateFb = getTimestampFromDate(date);
+                    pd = parseMetaSheet(pd, sheet.data, date);
                 }
             }
         });
     }
+    return pd;
+};
+
+const processDataCsv = (filesData) => {
+    let pd = { ...initialState.sheetsData, loaded: true };
+    Object.keys(csvConfig).forEach((key) => {
+        if (Array.isArray(filesData[key].data) && filesData[key].data.length) {
+            switch (key) {
+                case 'ACCOUNTS': {
+                    pd = parseAccountsSheet(pd, filesData[key].data);
+                    break;
+                }
+                case 'GOOGLE': {
+                    pd = parseGoogleSheet(pd, filesData[key].data);
+                    break;
+                }
+                case 'META':
+                default: {
+                    pd = parseMetaSheet(
+                        pd,
+                        filesData[key].data,
+                        csvConfig.META.endDate
+                    );
+                }
+            }
+        }
+    });
     return pd;
 };
 
@@ -211,27 +240,65 @@ const AdsDataContext = createContext(initialState);
 export const AdsDataProvider = function ({ children }) {
     const [sheetsData, setSheetsData] = useState(initialState.sheetsData);
     const [metaApiData, setMetaApiData] = useState(initialState.metaApiData);
+    const { readRemoteFile } = usePapaParse();
 
-    // initial ads data load from google sheets
-    const {
-        data: gsData,
-        loading: gsLoading,
-        error: gsError,
-    } = useGoogleSheets({
-        apiKey: process.env.REACT_APP_SHEETS_API_KEY,
-        sheetId: sheetsId,
-    });
+    if (offlineMode) {
+        // initial ads data load from csv files
+        useEffect(() => {
+            const csvFiles = Object.entries(csvConfig);
+            const filesData = {};
+            Promise.all(
+                csvFiles.map(
+                    ([key, config]) =>
+                        new Promise((resolve, reject) => {
+                            readRemoteFile(config.file, {
+                                worker: false,
+                                header: true,
+                                dynamicTyping: false, // do not resolve types
+                                skipEmptyLines: true,
+                                complete: (csv) => {
+                                    filesData[key] = csv;
+                                    return resolve(key);
+                                },
+                                error: reject,
+                            });
+                        })
+                )
+            )
+                .then((results) => {
+                    const pd =
+                        results.length === csvFiles.length
+                            ? processDataCsv(filesData)
+                            : loadingErrorSheets('Failed to load all files');
+                    setSheetsData(pd);
+                })
+                .catch((error) => {
+                    const pd = loadingErrorSheets(error);
+                    setSheetsData(pd);
+                });
+        }, []);
+    } else {
+        // initial ads data load from google sheets
+        const {
+            data: gsData,
+            loading: gsLoading,
+            error: gsError,
+        } = useGoogleSheets({
+            apiKey: process.env.REACT_APP_SHEETS_API_KEY,
+            sheetId: sheetsId,
+        });
 
-    // store ads data in context provider once loaded
-    useEffect(() => {
-        if (gsError) {
-            const parsed = loadingErrorSheets(gsError);
-            setSheetsData(parsed);
-        } else if (!gsLoading && gsData) {
-            const parsed = processDataSheets(gsData);
-            setSheetsData(parsed);
-        }
-    }, [gsData, gsLoading, gsError]);
+        // store ads data in context provider once loaded
+        useEffect(() => {
+            if (gsError) {
+                const parsed = loadingErrorSheets(gsError);
+                setSheetsData(parsed);
+            } else if (!gsLoading && gsData) {
+                const parsed = processDataSheets(gsData);
+                setSheetsData(parsed);
+            }
+        }, [gsData, gsLoading, gsError]);
+    }
 
     // selectors
     const getAllFbAccounts = () => {
@@ -243,31 +310,31 @@ export const AdsDataProvider = function ({ children }) {
     };
 
     const mergedWeeksData = () => {
-        const accounts = {};
+        const profiles = {};
         // add weekly spending from all weeks
         Object.values(sheetsData.metaAds).forEach((week) => {
-            week.forEach((account) => {
-                if (isNumeric(account[csvConfig.META.columns.SPENDING])) {
+            week.forEach((profile) => {
+                if (isNumeric(profile[csvConfig.META.columns.SPENDING])) {
                     if (
                         !(
-                            accounts[account[csvConfig.META.columns.PAGE_ID]] ??
+                            profiles[profile[csvConfig.META.columns.PAGE_ID]] ??
                             false
                         )
                     ) {
-                        accounts[account[csvConfig.META.columns.PAGE_ID]] = {
-                            name: account[csvConfig.META.columns.PAGE_NAME],
+                        profiles[profile[csvConfig.META.columns.PAGE_ID]] = {
+                            name: profile[csvConfig.META.columns.PAGE_NAME],
                             outgoing: 0,
                         };
                     }
-                    accounts[
-                        account[csvConfig.META.columns.PAGE_ID]
+                    profiles[
+                        profile[csvConfig.META.columns.PAGE_ID]
                     ].outgoing +=
-                        Number(account[csvConfig.META.columns.SPENDING]) * VAT;
+                        Number(profile[csvConfig.META.columns.SPENDING]) * VAT;
                 }
             });
         });
 
-        return accounts;
+        return profiles;
     };
 
     const getPartyAdsData = (name) =>

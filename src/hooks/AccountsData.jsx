@@ -1,8 +1,8 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { usePapaParse } from 'react-papaparse';
 
-import { settings } from '../helpers/constants';
 import { contains } from '../helpers/helpers';
+import { offlineMode } from '../helpers/settings';
 
 import aggregatedAcounts from '../../public/csv/transparent/aggregation_no_returns.csv';
 // import all csv files from the accounts folder via webpack
@@ -15,7 +15,7 @@ const accountsFolder = require.context(
 const taUrl =
     'https://raw.githubusercontent.com/matusv/eu-elections-slovakia-2024/master/';
 const accountFile = (filename) => {
-    if (settings.offlineMode) {
+    if (offlineMode) {
         let found = null;
         accountsFolder.keys().some((key) => {
             if (key.endsWith(filename)) {
@@ -29,7 +29,7 @@ const accountFile = (filename) => {
     return `${taUrl}accounts/${filename}`;
 };
 
-export const accountsFile = settings.offlineMode
+export const accountsFile = offlineMode
     ? aggregatedAcounts
     : `${taUrl}aggregation_no_returns.csv`;
 export const baseDate = 1705266940;
@@ -142,7 +142,7 @@ export const findByProperty = (accountsData, property, value) => {
 
 export const buildParserConfig = (processCallback, storeDataCallback) => {
     return {
-        worker: !settings.offlineMode, // must be false for local files
+        worker: !offlineMode, // must be false for local files
         header: true,
         dynamicTyping: true,
         skipEmptyLines: true,

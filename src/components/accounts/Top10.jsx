@@ -1,4 +1,4 @@
-import { dates, settings } from '../../helpers/constants';
+import { dates } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
 import {
     chartKeys,
@@ -7,6 +7,7 @@ import {
 } from '../../helpers/charts';
 import { getTimeFromDate, sortByNumericProp } from '../../helpers/helpers';
 import { routes } from '../../helpers/routes';
+import { finalReports } from '../../helpers/settings';
 
 import useAccountsData, {
     aggregatedKeys as agk,
@@ -19,7 +20,7 @@ function Top10({ maxItems = 10 }) {
     const { findPartyByName, getAllPartiesNames, getPartyAdsData } =
         useAdsData();
 
-    if (settings.finalReports) {
+    if (finalReports) {
         const columns = (getAllPartiesNames() ?? []).map((name) => {
             const adsData = getPartyAdsData(name);
             return {
