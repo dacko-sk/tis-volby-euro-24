@@ -1,0 +1,6 @@
+index,account_name,date,amount,currency,message,tx_type,vs,ss
+0,Sloboda a Solidarita (SaS),2024-02-02,500000.0,EUR,presun prostriedkov na kampaň,Bezhotovostný vklad,,
+1,,2024-01-31,-5.0,EUR,Zverejňovanie účtu,Poplatok,,
+2,,2024-01-31,-1.61,EUR,Poplatok za vedenie účtu,Poplatok,,
+3,Bačák Juraj,2024-01-27,0.01,EUR,Prispevok na drahy alkohol v Dubaji .,Bezhotovostný vklad - okamžitá platba,,
+4,Sloboda a Solidarita (SaS),2024-01-23,200.0,EUR,presun prostriedkov,Bezhotovostný vklad,,

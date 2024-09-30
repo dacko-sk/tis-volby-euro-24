@@ -20,7 +20,7 @@ import logo from '../../../public/img/tis-logo-blue.png';
 function Header() {
     return (
         <Navbar bg="light" expand="lg">
-            <Container>
+            <Container className="z-1">
                 <Navbar.Brand href="https://volby.transparency.sk">
                     <img src={logo} alt={t(labels.tis)} />
                 </Navbar.Brand>

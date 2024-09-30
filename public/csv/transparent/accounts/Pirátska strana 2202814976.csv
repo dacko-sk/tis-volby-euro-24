@@ -1,0 +1,9 @@
+index,date,amount,tx_type,account_name,message,ks,vs,ss,note
+0,2024-06-14,-60.0,Platba prevodom v rámci banky,,uctovnictvo VS 2023,,,,uctovnictvo VS 2023
+1,2024-06-07,-300.0,Platba prevodom v rámci banky,,OLLE - plosna inzercia,,,,OLLE - plosna inzercia
+2,2024-05-28,300.0,Platba prevodom v rámci banky,"Mgr. Nosaľ, Jaroslav MSc, LL.M.","OLLE-Plosna inzercia Golden 202410228 Europarlament (Nosal, Estocak)",,,,"OLLE-Plosna inzercia Golden 202410228 Europarlament (Nosal, Estocak)"
+3,2024-05-16,25.0,Bezhotovostný príjem,KOLHANEK MIROSLAV,Dar 14.05.2024 Kolhanek/Pirati,,,,KOLHANEK MIROSLAV
+4,2024-03-19,25.0,Bezhotovostný príjem,Gloznek Miloš,"?/DO2024-03-18/SPMilos Gloznek, DAR",,,2024,Gloznek Miloš
+5,2024-03-08,-1700.0,Bezhotovostná platba,,VOLEBNA KAUCIA EP 2024,,42228034,,VOLEBNA KAUCIA EP 2024
+6,2024-03-08,1700.0,Platba prevodom v rámci banky,Pirátska strana - Slovensko,Kaucia do volieb EP,,,,Kaucia do volieb EP
+7,2024-03-01,10.0,Platba prevodom v rámci banky,Pirátska strana - Slovensko,,,,,

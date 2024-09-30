@@ -113,3 +113,8 @@ export const links = {
     [elections.p24]: 'https://volby.transparency.sk/prezident2024/',
     donateUrl: 'https://transparency.sk/volby',
 };
+
+export const settings = {
+    finalReports: true,
+    offlineMode: true,
+};

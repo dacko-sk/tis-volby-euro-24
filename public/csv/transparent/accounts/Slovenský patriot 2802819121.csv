@@ -1,0 +1,43 @@
+index,date,amount,tx_type,account_name,message,ks,vs,ss,note
+0,2024-06-14,-4200.0,Bezhotovostná platba,,"Faktura za celkovu platbu za sponzo
+rovanie prisoevkov na socialnej sie
+ti",,202401,,Faktura za celkovu platbu za sponzorovanie prispevkov na socialnej sieti - tretia strana
+1,2024-06-14,-700.7,Okamžitá odchádzajúca Europlatba,,"Platba za Batizovce Slovensky patri
+ot",,202404,,Volebna propagacia material
+2,2024-06-14,-960.0,Bezhotovostná platba,,Uhrada faktury: 20240078,,20240078,,Úhrada za propagacne materialy
+3,2024-06-14,5990.0,Bezhotovostný príjem,REALNA NARODNA STRAN,"?/DO2024-06-13/SPVklad prostriedkov za ucelom uhradynakladov na kampan, STRANA SLOVENSKY PATRIOT BEZNY UCET",,,,REALNA NARODNA STRAN
+4,2024-06-13,-17.7,Bezhotovostná platba,,"dakujeme za poskytnutie verejneho p
+riestranstva",,,,prenajom verejneho priestoru - stanok 3 x 2 metre
+5,2024-06-13,-12.0,Bezhotovostná platba,,Dakujeme,,,,oznámenie v rozhlase o konaní volieb v meste Sabinov
+6,2024-05-22,-2136.0,Okamžitá odchádzajúca Europlatba,,"Slovensky PATRIOT Radacovsky banner
+y na zadne okna busov Jezet reklamn
+a agentura",,,,Platba za propagaciu na zadnych sklach autobusov
+7,2024-05-22,950.0,Bezhotovostný príjem,Štefánia Rabatinová,"?/DO2024-05-21/SPDAR - Stefania Rabatinova, 21.5.1997, Zemplinska T    eplica, Obchodna 370",,,,Štefánia Rabatinová
+8,2024-05-22,950.0,Bezhotovostný príjem,JUDr. Miroslav Radac,"?/DO2024-05-21/SPMiroslav Radacovsky, Skalnata 3, 05375 Hnilec, nar 24.9.1953 DAR",,,,JUDr. Miroslav Radac
+9,2024-05-21,-2000.0,Bezhotovostná platba,,,0308,2024008,,Tlač novin na eurovolby - Return
+10,2024-05-20,-0.05,Poplatok,,SMS upozornění na +421******108,,,,
+11,2024-05-20,-0.05,Poplatok,,SMS upozornění na +421******108,,,,
+12,2024-05-20,-67.5,Bezhotovostná platba,,tlac plagatov,0000,2024070,0,predvolebne plagaty
+13,2024-05-20,-397.61,Platba prevodom v rámci banky,,Uhrada faktury: 20240112 rollupy,,20240112,,Best media- platba za roll-upy
+14,2024-05-20,-1594.31,Platba prevodom v rámci banky,,Uhrada faktury: 20240109-letaky,,20240109,,Tlač letakov a plagatov
+15,2024-05-20,-3640.8,Okamžitá odchádzajúca Europlatba,,"platba za prelep bilbordov , dve pl
+atby v jednom 24053345, 24053413",0308,24053345,,"platba za prelep bilbordov , dve platby v jednom var symb 24053345, a 24053413"
+16,2024-05-20,6000.0,Bezhotovostný príjem,Mgr. Michal Radacovs,"?/DO2024-05-17/SP23.5.1982 , dar.zmluva , Skalnat 3/175, Hnilec, 05375, SKALNATA 175/3, HNILEC, 23.5.1982",,,,Mgr. Michal Radacovs
+17,2024-05-09,950.0,Bezhotovostný príjem,Miroslav Bombara,?/DO2024-05-08/SPDar,,,,Miroslav Bombara
+18,2024-05-03,995.0,Bezhotovostný príjem,BOMBAROVA ZORICAKOVA,?/DO2024-05-02/SPDar,,,,BOMBAROVA ZORICAKOVA
+19,2024-04-24,-600.0,Bezhotovostná platba,,"Uhrada faktury: 20230002, za web de
+sign",,20230002,,"Inovacia webstranky Slov PATRIOT, Youness Alouri"
+20,2024-04-22,-660.0,Bezhotovostná platba,,"Slovensky PATRIOT. Strbanikova - tl
+ac. 13.03.2024",,240096,,tlac na reklamne plochy
+21,2024-04-22,-3036.0,Bezhotovostná platba,,"Slovensky PATRIOT. Strbanikova - na
+jom. 13.03.2024",,240095,,
+22,2024-04-22,-8736.0,Bezhotovostná platba,,"prenajom rekl ploch na zakl. objedn
+avky RU/49/02/2024",0308,14120083,,
+23,2024-04-22,-4056.0,Bezhotovostná platba,,"platba za prenajom bilbordov obj c.
+ RU/62/02/2024",0308,14120082,,
+24,2024-04-22,14500.0,Bezhotovostný príjem,Mgr. Michal Radacovs,"?/DO2024-04-22/SPMichal Radacovsky , Skalnata 175/3, Hnilec, darovacia zmluva 2, 820523",,,,Mgr. Michal Radacovs
+25,2024-04-08,2000.0,Bezhotovostný príjem,"Radačovský Peter, RS",?/DO2024-04-05/SPdrzim palce,,,,"Radačovský Peter, 082 57 Ľutina 56, darovacia zmluva"
+26,2024-03-28,-900.0,Bezhotovostná platba,,Vdaka,,2470021,,LED panel
+27,2024-03-28,-2184.0,Bezhotovostná platba,,Vdaka,,2470020,,
+28,2024-03-28,-1491.0,Bezhotovostná platba,,,,,,Fotenie kandidatov
+29,2024-03-28,5320.0,Bezhotovostný príjem,Mgr. Michal Radacovs,"?/DO2024-03-27/SPMichal Radacovsky, Skalnata 3, 05375 Hnilec. Darovacia zmluva",,23051982,,"Mgr. Michal Radacovsky, MBA"

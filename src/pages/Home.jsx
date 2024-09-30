@@ -33,11 +33,11 @@ function Home() {
                     />
                 </Col>
                 <Col lg={6}>
-                    <TotalSpending finalReport />
+                    <TotalSpending />
                 </Col>
             </Row>
 
-            <Top10 finalReport />
+            <Top10 />
 
             <div className="text-center mb-4">
                 <DonateButton long xl />

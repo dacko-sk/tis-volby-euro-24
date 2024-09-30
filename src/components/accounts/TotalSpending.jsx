@@ -1,4 +1,4 @@
-import { dates } from '../../helpers/constants';
+import { dates, settings } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
 import { getTimeFromDate } from '../../helpers/helpers';
 
@@ -9,8 +9,8 @@ import useAdsData, { csvConfig } from '../../hooks/AdsData';
 
 import HeroNumber from '../general/HeroNumber';
 
-function TotalSpending({ finalReport = false }) {
-    if (finalReport) {
+function TotalSpending() {
+    if (settings.finalReports) {
         const { sheetsData, getAllPartiesNames, getPartyAdsData } =
             useAdsData();
 

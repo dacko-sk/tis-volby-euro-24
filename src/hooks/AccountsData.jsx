@@ -1,31 +1,37 @@
 import { createContext, useContext, useMemo, useState } from 'react';
 import { usePapaParse } from 'react-papaparse';
 
+import { settings } from '../helpers/constants';
 import { contains } from '../helpers/helpers';
 
-// import aggregatedAcounts from '../../public/csv/transparent/final_aggr_no_returns.csv';
+import aggregatedAcounts from '../../public/csv/transparent/aggregation_no_returns.csv';
 // import all csv files from the accounts folder via webpack
-// const accountsFolder = require.context(
-//     '../../public/csv/transparent/accounts',
-//     false,
-//     /\.csv$/
-// );
-// const accountFile = (filename) => {
-//     let found = null;
-//     accountsFolder.keys().some((key) => {
-//         if (key.endsWith(filename)) {
-//             found = key;
-//             return true;
-//         }
-//         return false;
-//     });
-//     return found ? accountsFolder(found) : null;
-// };
+const accountsFolder = require.context(
+    '../../public/csv/transparent/accounts',
+    false,
+    /\.csv$/
+);
+
 const taUrl =
     'https://raw.githubusercontent.com/matusv/eu-elections-slovakia-2024/master/';
-const accountFile = (filename) => `${taUrl}accounts/${filename}`;
+const accountFile = (filename) => {
+    if (settings.offlineMode) {
+        let found = null;
+        accountsFolder.keys().some((key) => {
+            if (key.endsWith(filename)) {
+                found = key;
+                return true;
+            }
+            return false;
+        });
+        return found ? accountsFolder(found) : null;
+    }
+    return `${taUrl}accounts/${filename}`;
+};
 
-export const accountsFile = `${taUrl}aggregation_no_returns.csv`;
+export const accountsFile = settings.offlineMode
+    ? aggregatedAcounts
+    : `${taUrl}aggregation_no_returns.csv`;
 export const baseDate = 1705266940;
 
 export const aggregatedKeys = {
@@ -136,7 +142,7 @@ export const findByProperty = (accountsData, property, value) => {
 
 export const buildParserConfig = (processCallback, storeDataCallback) => {
     return {
-        worker: true, // must be false for local files
+        worker: !settings.offlineMode, // must be false for local files
         header: true,
         dynamicTyping: true,
         skipEmptyLines: true,

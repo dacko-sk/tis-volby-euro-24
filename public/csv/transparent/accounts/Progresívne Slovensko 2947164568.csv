@@ -1,0 +1,1519 @@
+index,date,amount,currency,account_name,message,vs
+0,2024-07-18,-1.0,EUR,MES POPLATOK VISA FIREMNA,Mesačný poplatok MES POPLATOK VISA FIREMNA,
+1,2024-07-17,5.0,EUR,,opravaPremiumAPI-Accounts05/24,
+2,2024-07-04,-5.0,EUR,,PREVOD/Poplatok za sluzbu Premium API - Accounts. Mesiac 05/2024 Cena balika 5.00 EUR Cena volani nad limit 0.00 EUR,
+3,2024-06-29,-57.12,EUR,,Poplatky za transakcie,
+4,2024-06-29,-7.0,EUR,"
+                            
+                    ","
+                        Poplatok za balík
+                    /
+                        
+                    ","
+                        
+                    "
+5,2024-06-27,-480.0,EUR,"
+                            INVISI, S.R.O.
+                    ","
+                        Platba
+                    /
+                        kacecko organizacne zabezpecenie prednasky 5.5.24
+                    ","
+                        2240501VS2240501/SS/KS
+                    "
+6,2024-06-27,-80.0,EUR,"
+                            KOSICE MESTO
+                    ","
+                        Platba
+                    /
+                        Mesto kosice predvolebna kampan spravny poplatok 29.5
+                    ","
+                        3451240253VS3451240253/SS/KS
+                    "
+7,2024-06-27,-1.0,EUR,"
+                            MES POPLATOK VISA FIREMNA
+                    ","
+                        Mesačný poplatok MES POPLATOK VISA FIREMNA
+                    /
+                        
+                    ","
+                        
+                    "
+8,2024-06-25,-360.0,EUR,"
+                            ARTAMI s. r. o.
+                    ","
+                        Platba
+                    /
+                        Ba diskusia wiezik, balaz 3.6
+                    ","
+                        20240003VS20240003/SS/KS
+                    "
+9,2024-06-24,-6.0,EUR,"
+                            Obec Krahule
+                    ","
+                        Platba
+                    /
+                        Krahule vysielanie politickej reklamy 5.6
+                    ","
+                        432024VS432024/SS/KS308
+                    "
+10,2024-06-24,-288.0,EUR,"
+                            SLOVNORMAL, S.R.O.
+                    ","
+                        Platba
+                    /
+                        pecivo mobilizacia KE
+                    ","
+                        8024803394VS8024803394/SS/KS
+                    "
+11,2024-06-24,-216.0,EUR,"
+                            SLOVNORMAL, S.R.O.
+                    ","
+                        Platba
+                    /
+                        pecivo mobilizacia KE
+                    ","
+                        8024803381VS8024803381/SS/KS
+                    "
+12,2024-06-24,-633.84,EUR,"
+                            ARIES reklama s.r.o.
+                    ","
+                        Platba
+                    /
+                        Aries tlac letak KE
+                    ","
+                        1020240015VS1020240015/SS/KS308
+                    "
+13,2024-06-21,-600.0,EUR,"
+                            MESTO ZILINA
+                    ","
+                        Platba
+                    /
+                        Zilina 1.5 dan za uzivanie verejneho priestranstva
+                    ","
+                        1510006260VS1510006260/SS/KS0558
+                    "
+14,2024-06-21,-20.0,EUR,MESTO BANSKA BYSTRIC,Platba/BB 5.6 dan za uzivanie priestranstva,"5010342282
+VS5010342282/SS2403051055/KS"
+15,2024-06-21,-5.0,EUR,OBEC STERUSY,Platba/Obec Sterusy hlasenie politickej reklamy 5.6,"202413
+VS202413/SS/KS"
+16,2024-06-20,-1180.0,EUR,"Kocúr Miroslav, ThDr",Platba/Kocur vratenie casti daru,
+17,2024-06-18,-120.0,EUR,Sofia Karina Trommlerova,Platba/Trommlerova vratenie casti daru,
+18,2024-06-18,-890.0,EUR,YAR LUCIA,Platba/Lucia Yar vratenie casti daru,
+19,2024-06-18,-115.0,EUR,Hana Kobliskova,Platba/Hana Kobliskova vratenie casti daru,
+20,2024-06-18,-6450.0,EUR,"Hojsík Martin, Mgr.",Platba/hojsik martin vratenie cast daru,
+21,2024-06-18,-6.0,EUR,Obec Kostolna Ves,Platba/Obec Kostolna Ves hlasenie obecny rozhlas 5.6,"32024
+VS032024/SS/KS"
+22,2024-06-18,-1.0,EUR,MES POPLATOK VISA FIREMNA,Mesačný poplatok MES POPLATOK VISA FIREMNA,
+23,2024-06-17,-5.0,EUR,OBEC NACINA VES,Platba/Obec Nacina Ves hlasenie v rozhlase 5.6,"2024002
+VS2024002/SS/KS308"
+24,2024-06-17,-1.5,EUR,Obec Drienov,Platba/Obec Drienov hlasenie v rozhlase 5.6,"1410400008
+VS1410400008/SS/KS"
+25,2024-06-17,-2.0,EUR,Obec Gemerská Ves,Platba/Gemerska Ves Poplatok za hlasenie v rozhlase 5.6,"2024006
+VS2024006/SS/KS308"
+26,2024-06-17,-1970.0,EUR,"Slovenska posta, a.s.",Platba/doplatok Slovenska posta distribucia letakov do schranok,"9001700137
+VS9001700137/SS/KS"
+27,2024-06-14,-138.0,EUR,ARTON s.r.o.,Platba/arton varadi reklamna plocha 05 24,"240164
+VS240164/SS/KS"
+28,2024-06-13,-501.6,EUR,MARIAN LOJ - MM AUD,"Platba/Loj MM audio, produkcia volebnej noci 8.6","24060
+VS24060/SS/KS"
+29,2024-06-13,-1220.0,EUR,"BALANS BISTRO, S. R.","Platba/Balans bistro catering, prenajom staff eu kampan vecera","20240010
+VS20240010/SS/KS"
+30,2024-06-13,-20.0,EUR,OBEC KALONDA,Platba/Kalonda hlasenie v obecnom rozhlase 5.6,"2024000007
+VS2024000007/SS/KS"
+31,2024-06-13,-20.0,EUR,OBEC GECA,Platba/Geca hlasenie politickej reklamy obecny rozhlas 5.6,"1117400039
+VS1117400039/SS/KS"
+32,2024-06-13,-10.0,EUR,OBECNY URAD,Platba/Kokosovce vysielanie spotu v obecnom rozhlase 5.6,"2024045
+VS2024045/SS/KS"
+33,2024-06-13,-5.0,EUR,OBEC ALEKSINCE,Platba/Aleksince hlasenie rozhlas 5.6,"2024000018
+VS2024000018/SS/KS"
+34,2024-06-13,-4422.0,EUR,"GROOW DIGITAL, s. r.","Platba/GROOW DIGITAL, agency fee hlavna kampan 05/24","2024082
+VS2024082/SS/KS"
+35,2024-06-13,-1200.0,EUR,GROOW DIGITAL,"Platba/GROOW DIGITAL, agency fee Hojsik google 05/24","2024083
+VS2024083/SS/KS"
+36,2024-06-13,-3036.0,EUR,GROOW DIGITAL,"Platba/GROOW DIGITAL, agency fee. boosting meta 05/24","2024084
+VS2024084/SS/KS"
+37,2024-06-13,-300.0,EUR,Slámka Jakub,Platba/Slamka zmluva odielo kampan Francescato,"202405
+VS202405/SS/KS"
+38,2024-06-13,-700.0,EUR,Karolina Blunarova,Platba/Blunarova reklama marketing 05 24,"10524
+VS10524/SS/KS"
+39,2024-06-13,-1000.0,EUR,Lea Maria Jassova,Platba/Jassova reklamne marketingove sluzby 06 24,"62024
+VS062024/SS/KS"
+40,2024-06-13,-2356.22,EUR,honest.company s.r.o.,Platba/honest europske dni gastro sluzby,"12024006
+VS12024006/SS/KS308"
+41,2024-06-13,-260.3,EUR,SPRAVA MESTSKEJ ZELE,"Platba/Eu den Kosice 27.4 spotreba energie,dohlad zamestnanca Sprava zelene KE","20240732
+VS20240732/SS/KS"
+42,2024-06-11,-3.0,EUR,TWITTER PAID FEATURES,INT NÁKUP POS EUR TWITTER PAID FEATURES / HTTPSWWW.X.CO / (POS KWX1DVYY),
+43,2024-06-11,-35.63,EUR,FACEBK *F22FB4QU22,EUR NÁKUP POS FACEBK *F22FB4QU22 / fb.me/ads / (POS 99999999),
+44,2024-06-07,-434.51,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+45,2024-06-07,-839.31,EUR,FACEBK *Q4AAY5CUJ2,EUR NÁKUP POS FACEBK *Q4AAY5CUJ2 / fb.me/ads / (POS 99999999),
+46,2024-06-07,-879.23,EUR,FACEBK *XNFBJ5LXC2,EUR NÁKUP POS FACEBK *XNFBJ5LXC2 / fb.me/ads / (POS 99999999),
+47,2024-06-07,-1087.13,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+48,2024-06-07,-800.0,EUR,FACEBK *TPFTZ3CXC2,EUR NÁKUP POS FACEBK *TPFTZ3CXC2 / fb.me/ads / (POS 99999999),
+49,2024-06-07,-800.0,EUR,FACEBK *UDV8Y38XC2,EUR NÁKUP POS FACEBK *UDV8Y38XC2 / fb.me/ads / (POS 99999999),
+50,2024-06-07,-800.0,EUR,FACEBK *C297J5LXC2,EUR NÁKUP POS FACEBK *C297J5LXC2 / fb.me/ads / (POS 99999999),
+51,2024-06-07,-800.0,EUR,FACEBK *KXQPS4UUJ2,EUR NÁKUP POS FACEBK *KXQPS4UUJ2 / fb.me/ads / (POS 99999999),
+52,2024-06-07,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+53,2024-06-07,-800.0,EUR,FACEBK *PX9SV3YXC2,EUR NÁKUP POS FACEBK *PX9SV3YXC2 / fb.me/ads / (POS 99999999),
+54,2024-06-07,-800.0,EUR,FACEBK *D82BJ4GXC2,EUR NÁKUP POS FACEBK *D82BJ4GXC2 / fb.me/ads / (POS 99999999),
+55,2024-06-07,-800.0,EUR,FACEBK *DPBYX5CUJ2,EUR NÁKUP POS FACEBK *DPBYX5CUJ2 / fb.me/ads / (POS 99999999),
+56,2024-06-07,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+57,2024-06-07,-800.0,EUR,FACEBK *3AD3L44YC2,EUR NÁKUP POS FACEBK *3AD3L44YC2 / fb.me/ads / (POS 99999999),
+58,2024-06-07,-800.0,EUR,FACEBK *4SC5J4GXC2,EUR NÁKUP POS FACEBK *4SC5J4GXC2 / fb.me/ads / (POS 99999999),
+59,2024-06-07,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+60,2024-06-07,-800.0,EUR,FACEBK *XYWX45YTJ2,EUR NÁKUP POS FACEBK *XYWX45YTJ2 / fb.me/ads / (POS 99999999),
+61,2024-06-07,-800.0,EUR,FACEBK *QNNEV3YXC2,EUR NÁKUP POS FACEBK *QNNEV3YXC2 / fb.me/ads / (POS 99999999),
+62,2024-06-07,-800.0,EUR,FACEBK *SGAYL5QUJ2,EUR NÁKUP POS FACEBK *SGAYL5QUJ2 / fb.me/ads / (POS 99999999),
+63,2024-06-07,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+64,2024-06-07,-800.0,EUR,FACEBK *CVQMV34XC2,EUR NÁKUP POS FACEBK *CVQMV34XC2 / fb.me/ads / (POS 99999999),
+65,2024-06-07,-800.0,EUR,FACEBK *SDGSH4GXC2,EUR NÁKUP POS FACEBK *SDGSH4GXC2 / fb.me/ads / (POS 99999999),
+66,2024-06-07,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+67,2024-06-07,-800.0,EUR,FACEBK *S4BJS6UXC2,EUR NÁKUP POS FACEBK *S4BJS6UXC2 / fb.me/ads / (POS 99999999),
+68,2024-06-07,-800.0,EUR,FACEBK *4UNTK5GUJ2,EUR NÁKUP POS FACEBK *4UNTK5GUJ2 / fb.me/ads / (POS 99999999),
+69,2024-06-06,-256.8,EUR,"PS:Events, s.r.o.",Platba/PS:Events ranajky pre novinarov 15.5,"24010047
+VS24010047/SS/KS"
+70,2024-06-06,-1000.0,EUR,Hana Kobliskova,Platba/Kobliskova marketing 05 24,"2024005
+VS2024005/SS/KS"
+71,2024-06-06,-7.0,EUR,Obec Chmiňany,Platba/Obec Chminany vyhlasenie politickeho oznamu 5.6,"2024009
+VS2024009/SS/KS"
+72,2024-06-06,-5.0,EUR,OBEC NEMCOVCE,Platba/Obec Nemcovce vyhlasenie politickeho oznamu 5.6,"202406
+VS202406/SS/KS308"
+73,2024-06-06,-300.0,EUR,Žemla Patrik,Platba/Zemla vypomoc na kampani Francescato,"202405
+VS202405/SS/KS"
+74,2024-06-06,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+75,2024-06-06,-800.0,EUR,FACEBK *HHJ9H4GXC2,EUR NÁKUP POS FACEBK *HHJ9H4GXC2 / fb.me/ads / (POS 99999999),
+76,2024-06-06,-800.0,EUR,FACEBK *PLWSG5LXC2,EUR NÁKUP POS FACEBK *PLWSG5LXC2 / fb.me/ads / (POS 99999999),
+77,2024-06-06,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+78,2024-06-06,-800.0,EUR,FACEBK *7RFPW5CUJ2,EUR NÁKUP POS FACEBK *7RFPW5CUJ2 / fb.me/ads / (POS 99999999),
+79,2024-06-06,-800.0,EUR,FACEBK *UQ3FM3QXC2,EUR NÁKUP POS FACEBK *UQ3FM3QXC2 / fb.me/ads / (POS 99999999),
+80,2024-06-06,-800.0,EUR,FACEBK *XMMWG4GXC2,EUR NÁKUP POS FACEBK *XMMWG4GXC2 / fb.me/ads / (POS 99999999),
+81,2024-06-06,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+82,2024-06-06,-800.0,EUR,FACEBK *VR24S6UTJ2,EUR NÁKUP POS FACEBK *VR24S6UTJ2 / fb.me/ads / (POS 99999999),
+83,2024-06-06,-800.0,EUR,FACEBK *A955Y3CXC2,EUR NÁKUP POS FACEBK *A955Y3CXC2 / fb.me/ads / (POS 99999999),
+84,2024-06-06,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+85,2024-06-06,-800.0,EUR,FACEBK *SLYEJ44YC2,EUR NÁKUP POS FACEBK *SLYEJ44YC2 / fb.me/ads / (POS 99999999),
+86,2024-06-06,-800.0,EUR,FACEBK *YFJ4A58UJ2,EUR NÁKUP POS FACEBK *YFJ4A58UJ2 / fb.me/ads / (POS 99999999),
+87,2024-06-06,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+88,2024-06-06,-800.0,EUR,FACEBK *YKN2W38XC2,EUR NÁKUP POS FACEBK *YKN2W38XC2 / fb.me/ads / (POS 99999999),
+89,2024-06-06,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+90,2024-06-06,-800.0,EUR,FACEBK *J4WGR6UTJ2,EUR NÁKUP POS FACEBK *J4WGR6UTJ2 / fb.me/ads / (POS 99999999),
+91,2024-06-06,-800.0,EUR,FACEBK *TEVPL3QXC2,EUR NÁKUP POS FACEBK *TEVPL3QXC2 / fb.me/ads / (POS 99999999),
+92,2024-06-05,-90.0,EUR,KOSICE MESTO,Platba/Mesto Kosice spravny poplatok 27.4,"3324000460
+VS3324000460/SS/KS"
+93,2024-06-05,-176.4,EUR,"COLORgrafik, spol. s r.o.",Platba/Colorgrafik tlac,"100572024
+VS100572024/SS/KS"
+94,2024-06-05,-1500.0,EUR,Tóthová Zuzana,Platba/Tothova koordinacia dobrovolnikov komunity ep kampan,"2024008
+VS2024008/SS/KS"
+95,2024-06-05,-442.3,EUR,"NOLIS, s.r.o.",Platba/Nolis prenajom obcerstvenie diskusia 18.4,"1124049
+VS1124049/SS/KS308"
+96,2024-06-05,-14.0,EUR,Obec Turie,Platba/Obec Turie vyhlasenie politickeho oznamu,"352024
+VS352024/SS/KS"
+97,2024-06-05,-5.0,EUR,OBEC PODHRADIE,Platba/Obec Podhradie vyhlasenie politickeho oznamu,"15
+VS15/SS/KS"
+98,2024-06-05,-6.6,EUR,Obec Seniakovce,Platba/Obec Seniakovce vyhlasenie politickeho oznamu 5.6,"2024000008
+VS2024000008/SS/KS"
+99,2024-06-05,-4.0,EUR,OBEC MOSUROV,Platba/Obec Mosurov vyhlasenie politickeho oznamu 5.6,"22024
+VS22024/SS/KS"
+100,2024-06-05,-10.0,EUR,OBEC PODBREZOVA,Platba/Obec Podbrezova vyhlasenie politickeho oznamu 5.6,"2702024
+VS2702024/SS/KS"
+101,2024-06-05,-24280.0,EUR,"Slovenska posta, a.s.",Platba/Slovenska posta distribucia letakov do schranok,
+102,2024-06-05,-12000.0,EUR,GROOW DIGITAL,"Platba/GROOW DIGITAL, media spend aktuality, sme.sk, dennikn","2024079
+VS2024079/SS/KS"
+103,2024-06-05,60000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+104,2024-06-05,10.0,EUR,Obec Turie,Platba/Obec Besenov vyhlasenie politickeho vratka z obce TURIE = OMYL,"702024
+VS702024/SS/KS"
+105,2024-06-05,-5.0,EUR,,PREVOD/Poplatok za sluzbu Premium API - Accounts. Mesiac 05/2024 Cena balika 5.00 EUR Cena volani nad limit 0.00 EUR,
+106,2024-06-05,-15.0,EUR,Obec Hrabušice,Platba/Obec Hrabusice vyhlasenie politickeho oznamu 5.6,"20240028
+VS20240028/SS/KS"
+107,2024-06-05,-10.0,EUR,Obec Turie,Platba/Obec Besenov vyhlasenie politickeho oznamu 5.6 2x,"702024
+VS702024/SS/KS"
+108,2024-06-05,-14.0,EUR,Obec Turie,Platba/Obec Turie vyhlasenie politickeho oznamu 5.6 2x,"352024
+VS352024/SS/KS"
+109,2024-06-05,-270.0,EUR,Fekete Gabriel - FEKETE L.Y.U.K.,Platba/Fekete Komarno prenajom diskusia 1.6,"202418
+VS202418/SS/KS"
+110,2024-06-05,-228.0,EUR,Delux s.r.o.,Platba/central perk LM diskusia wiezik 4.6,"2421005
+VS2421005/SS/KS308"
+111,2024-06-05,-966.0,EUR,ING. MGR. KRISTINA SUCHANKOVA - ANALYZY A KONZULTACIE,"Platba/Suchankova pr, marketing 04-06 24","20240206
+VS20240206/SS/KS"
+112,2024-06-05,-8.0,EUR,OBEC RAJECKÁ LESNÁ,Platba/obec rajecka lesna poplatok za hlasenie rozhlasom 2x 5.6,"20244
+VS20244/SS/KS308"
+113,2024-06-05,-5400.0,EUR,GROOW DIGITAL,"Platba/GROOW DIGITAL, media spend topky.sk","2024078
+VS2024078/SS/KS"
+114,2024-06-05,-3.5,EUR,OBEC POZBA,"Platba/Obec Pozba, vyhlasenie politickeho oznamu v rozhlase dna 5.6.","20247
+VS20247/SS/KS"
+115,2024-06-05,-6.5,EUR,OBEC OLCNAVA,"Platba/Obec Olcnava, poplatok za hlasenie rozhlasom 1 x 5.6.","1472024
+VS1472024/SS/KS"
+116,2024-06-05,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+117,2024-06-05,-800.0,EUR,FACEBK *UDANT34XC2,EUR NÁKUP POS FACEBK *UDANT34XC2 / fb.me/ads / (POS 99999999),
+118,2024-06-05,-800.0,EUR,FACEBK *S356L3QXC2,EUR NÁKUP POS FACEBK *S356L3QXC2 / fb.me/ads / (POS 99999999),
+119,2024-06-05,-800.0,EUR,FACEBK *Q9AFH5LUJ2,EUR NÁKUP POS FACEBK *Q9AFH5LUJ2 / fb.me/ads / (POS 99999999),
+120,2024-06-05,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+121,2024-06-05,-800.0,EUR,FACEBK *YPYEQ6UXC2,EUR NÁKUP POS FACEBK *YPYEQ6UXC2 / fb.me/ads / (POS 99999999),
+122,2024-06-05,-800.0,EUR,FACEBK *UXWTE5LXC2,EUR NÁKUP POS FACEBK *UXWTE5LXC2 / fb.me/ads / (POS 99999999),
+123,2024-06-05,-800.0,EUR,FACEBK *UGH9J5QUJ2,EUR NÁKUP POS FACEBK *UGH9J5QUJ2 / fb.me/ads / (POS 99999999),
+124,2024-06-05,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+125,2024-06-05,-800.0,EUR,FACEBK *YSN3F4GXC2,EUR NÁKUP POS FACEBK *YSN3F4GXC2 / fb.me/ads / (POS 99999999),
+126,2024-06-05,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+127,2024-06-05,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+128,2024-06-05,-800.0,EUR,FACEBK *NQPUP6UXC2,EUR NÁKUP POS FACEBK *NQPUP6UXC2 / fb.me/ads / (POS 99999999),
+129,2024-06-05,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+130,2024-06-05,-800.0,EUR,FACEBK *Y93F858UJ2,EUR NÁKUP POS FACEBK *Y93F858UJ2 / fb.me/ads / (POS 99999999),
+131,2024-06-05,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+132,2024-06-04,75.0,EUR,"Hajduk Pavol, RNDr.",Platba/Darovacia zmluva na podporu kandidata Michal Wiezik v eurovolbach 2024,"60425
+VS60425/SS5/KS"
+133,2024-06-04,-100.0,EUR,Market Bistro s.r.o.,Platba/Market Bistro sadnime si Ostrihonova 29.5 prenajom diskusia Samorin,"202410
+VS202410/SS/KS"
+134,2024-06-04,-1689.6,EUR,ARES SECURITY CORPOR,"Platba/Ares strazne sluzby 27.5-2.6 SE,NR,BA,NZ,BB,KN,PN,NR","10240202
+VS10240202/SS/KS308"
+135,2024-06-04,-2650.0,EUR,Prostredníková Zuzan,"Platba/Prostrednikova organizacia, administracia podujati eu kampan","2024008
+VS2024008/SS/KS"
+136,2024-06-04,-120.0,EUR,MONSTERS CAFE AND BA,Platba/Monsters hojsik diskusia prenajom 5.6,"20240054
+VS20240054/SS/KS"
+137,2024-06-04,-364.5,EUR,KAMET s r. o.,Platba/Kamet pohostenie podujatie,"2024003
+VS2024003/SS/KS"
+138,2024-06-04,-1855.2,EUR,ARES SECURITY CORPOR,"Platba/Ares strazne sluzby diskusie PK, BA,ZV,BB,DK,Samorin","10240203
+VS10240203/SS/KS308"
+139,2024-06-04,-440.4,EUR,"Pandan, s. r. o.","Platba/Pandan letaky, nalepky,","202405085
+VS202405085/SS/KS"
+140,2024-06-04,-60.0,EUR,MESTSKE KULTURNE STR,Platba/Levice prenajom priestorov diskusia 3.6 Kocnerova,"202410084
+VS202410084/SS/KS558"
+141,2024-06-04,-208.95,EUR,Krajská knižnica Ľudovíta Štúra,Platba/BB diskusia Wiezik kniznica 3.6,"22024
+VS22024/SS/KS308"
+142,2024-06-04,-1200.0,EUR,"PUBLISHING HOUSE, A.",Platba/Publishing house inzercia zilinsky vecernik,"800240463
+VS800240463/SS/KS"
+143,2024-06-04,-1800.0,EUR,"PUBLISHING HOUSE, A.",Platba/Publishing house inzercia novy cas nedela,"900240211
+VS900240211/SS/KS"
+144,2024-06-04,-400.0,EUR,Lucia Horakova,PLATBA VI24060409660/Horakova zmluva o dielo navrh docasne tetovacky,VS202404
+145,2024-06-04,-360.0,EUR,MESTSKE HOSPODARSTVO,Platba/Trencin EU den diskusia 8.5 prenajom,"24200
+VS24200/SS/KS308"
+146,2024-06-04,-2040.0,EUR,Blažo & Martinkovič,"Platba/Cukrova vata ZA,TN,BA,BB","20240100
+VS20240100/SS/KS308"
+147,2024-06-04,500.0,EUR,Juraj Machyna,Platba,"604321
+VS604321/SS1/KS"
+148,2024-06-04,100.0,EUR,Valeria Stefaniskova,Platba/Darovacia zmluva na podporu kandidata Marek Stefanisko v eurovolbach 2024,"60421
+VS60421/SS13/KS"
+149,2024-06-04,100.0,EUR,Peter Pavlik,Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60420
+VS60420/SS2/KS"
+150,2024-06-04,100.0,EUR,PETER BESTVINA,PLATBA/Darovacia zmluva na podporu kandidata Lucia Francescato v eurovolbach2024,"60418
+VS60418/SS10/KS"
+151,2024-06-04,-3000.0,EUR,Jan Kral,PLATBA VI24060400484/Kral marketingove a komunikacne sluzby,20240008
+152,2024-06-04,-800.0,EUR,FACEBK *R8TEP6UXC2,EUR NÁKUP POS FACEBK *R8TEP6UXC2 / fb.me/ads / (POS 99999999),
+153,2024-06-04,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+154,2024-06-04,-800.0,EUR,FACEBK *Z7EHP6UTJ2,EUR NÁKUP POS FACEBK *Z7EHP6UTJ2 / fb.me/ads / (POS 99999999),
+155,2024-06-04,-800.0,EUR,FACEBK *GXVRD5LXC2,EUR NÁKUP POS FACEBK *GXVRD5LXC2 / fb.me/ads / (POS 99999999),
+156,2024-06-04,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+157,2024-06-04,-800.0,EUR,FACEBK *6CWGV3CXC2,EUR NÁKUP POS FACEBK *6CWGV3CXC2 / fb.me/ads / (POS 99999999),
+158,2024-06-04,-800.0,EUR,FACEBK *HZ5PT5CUJ2,EUR NÁKUP POS FACEBK *HZ5PT5CUJ2 / fb.me/ads / (POS 99999999),
+159,2024-06-04,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+160,2024-06-04,-800.0,EUR,FACEBK *E8BLF44YC2,EUR NÁKUP POS FACEBK *E8BLF44YC2 / fb.me/ads / (POS 99999999),
+161,2024-06-04,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+162,2024-06-04,-800.0,EUR,FACEBK *H62KF5LUJ2,EUR NÁKUP POS FACEBK *H62KF5LUJ2 / fb.me/ads / (POS 99999999),
+163,2024-06-04,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+164,2024-06-04,-800.0,EUR,FACEBK *DEZ5T38XC2,EUR NÁKUP POS FACEBK *DEZ5T38XC2 / fb.me/ads / (POS 99999999),
+165,2024-06-04,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+166,2024-06-04,-81.9,EUR,SLOVNAFT A S,POS nákup SLOVNAFT A S / BRATISLAVA / (POS 11108981),
+167,2024-06-04,-800.0,EUR,FACEBK *F3K9F5GUJ2,EUR NÁKUP POS FACEBK *F3K9F5GUJ2 / fb.me/ads / (POS 99999999),
+168,2024-06-04,-1.86,EUR,FACEBK *DFDJU3CXC2,EUR NÁKUP POS FACEBK *DFDJU3CXC2 / fb.me/ads / (POS 99999999),
+169,2024-06-04,-800.0,EUR,FACEBK *7UCXE44YC2,EUR NÁKUP POS FACEBK *7UCXE44YC2 / fb.me/ads / (POS 99999999),
+170,2024-06-04,-1.92,EUR,FACEBK *ZPWPC4GXC2,EUR NÁKUP POS FACEBK *ZPWPC4GXC2 / fb.me/ads / (POS 99999999),
+171,2024-06-04,-800.0,EUR,FACEBK *ASJXM6UXC2,EUR NÁKUP POS FACEBK *ASJXM6UXC2 / fb.me/ads / (POS 99999999),
+172,2024-06-04,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+173,2024-06-04,-800.0,EUR,FACEBK *KUBES5CUJ2,EUR NÁKUP POS FACEBK *KUBES5CUJ2 / fb.me/ads / (POS 99999999),
+174,2024-06-04,-70.38,EUR,GoogleAdwordsEU ADS173487,EUR NÁKUP POS GoogleAdwordsEU ADS173487 / Dublin / (POS 99999999),
+175,2024-06-04,-4000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+176,2024-06-04,-1.0,EUR,FACEBK *7RPFC4GXC2,EUR NÁKUP POS FACEBK *7RPFC4GXC2 / fb.me/ads / (POS 99999999),
+177,2024-06-04,-800.0,EUR,FACEBK *MS34U3CXC2,EUR NÁKUP POS FACEBK *MS34U3CXC2 / fb.me/ads / (POS 99999999),
+178,2024-06-04,-800.0,EUR,FACEBK *EBJKF5QUJ2,EUR NÁKUP POS FACEBK *EBJKF5QUJ2 / fb.me/ads / (POS 99999999),
+179,2024-06-04,-1.77,EUR,FACEBK *43XTT3CXC2,EUR NÁKUP POS FACEBK *43XTT3CXC2 / fb.me/ads / (POS 99999999),
+180,2024-06-04,-800.0,EUR,FACEBK *TQM7C4GXC2,EUR NÁKUP POS FACEBK *TQM7C4GXC2 / fb.me/ads / (POS 99999999),
+181,2024-06-04,-270.92,EUR,FACEBK *Y4FCQ34XC2,EUR NÁKUP POS FACEBK *Y4FCQ34XC2 / fb.me/ads / (POS 99999999),
+182,2024-06-03,-1500.0,EUR,BUY NOW studio,Platba/Buy now EU kampan graficke prace”” 05 24,"2024023
+VS2024023/SS/KS308"
+183,2024-06-03,-120.0,EUR,"Štefanovič Sammuel,",Platba/Fecko zmluva odielo eu den ke 05 24,"202405
+VS202405/SS/KS"
+184,2024-06-03,-94.03,EUR,NEVERENDING STORY s.,Platba/Neverending prenajom vozidla 29.5-30.5,"2401171
+VS2401171/SS/KS"
+185,2024-06-03,-633.6,EUR,ARES SECURITY CORPOR,"Platba/Ares security strazne sluzby pocas podujati ZA,DS,SC,PB,SE 23-27.5","10240177
+VS10240177/SS/KS308"
+186,2024-06-03,-200.4,EUR,"Pandan, s. r. o.","Platba/Pandan nalepky, plagaty","202405079
+VS202405079/SS/KS"
+187,2024-06-03,-360.0,EUR,ATY s.r.o.,"Platba/ATy prenajom priestorov, technika BB Hojsik, Wiezik 29.5","20240001
+VS20240001/SS/KS"
+188,2024-06-03,-265.0,EUR,Kostolanská Nikoleta,Platba/Kostolanska malovanie na tvar den deti eu,"20240013
+VS20240013/SS/KS308"
+189,2024-06-03,-500.0,EUR,Petrušková Michaela,Platba/Petruskova marketingove a komunikacne sluzby 05 24,"20240013
+VS20240013/SS/KS308"
+190,2024-06-03,-252.0,EUR,"Petit Press, a.s.","Platba/PetitPress Wiezik inzercia MYbystrica.sk,MYzvolen.sk","2435104884
+VS2435104884/SS/KS308"
+191,2024-06-03,-1584.0,EUR,AFINITA s.r.o.,Platba/Merch odznaky,"24010128
+VS24010128/SS/KS308"
+192,2024-06-03,-210.76,EUR,"COLORgrafik, spol. s r.o.","Platba/Colorgrafik, tlac letaky BB","100542024
+VS100542024/SS/KS"
+193,2024-06-03,-5400.0,EUR,Jan Kalocaj,Platba/organizacia podujati 05 23,"20240003
+VS20240003/SS/KS"
+194,2024-06-03,-2664.0,EUR,More Design s. r. o.,"Platba/More Design eu web, eu kreativa,gdn, proeuropsky merch","202424
+VS202424/SS/KS"
+195,2024-06-03,-420.0,EUR,Pribula Peter,Platba/eu den kosice 27.4 cukrova vata,"22024
+VS22024/SS/KS308"
+196,2024-06-03,-3000.0,EUR,VELICKA JANA,Platba/Velicka manazovanie kampane eu volby,"20240011
+VS20240011/SS/KS308"
+197,2024-06-03,-2000.0,EUR,Drgon Oliver,Platba/Drgon administrativa Kocur,"20240002
+VS20240002/SS/KS308"
+198,2024-06-03,-150.0,EUR,Zuzana Lackovičová,Platba/Lackovicova zmluva o dielo moderovanie diskusii,"202405
+VS202405/SS/KS"
+199,2024-06-03,-400.0,EUR,Elečková Lucia,"Platba/Eleckova zmluva o dielo, stolova hra a interaktivne politicke aktivity","202405
+VS202405/SS/KS"
+200,2024-06-03,-335.0,EUR,Zuzana Sochulakova,"Platba/Jedlicka zmluva o dielo, malovanie na tvar 8.5 Trencin, 9.5 Bratislava","202405
+VS202405/SS/KS"
+201,2024-06-03,-600.0,EUR,"Tormová Kristína, Mg","Platba/Tormova zmluva o dielo moderovanie diskusii 5.5, 3.6","202405
+VS202405/SS/KS"
+202,2024-06-03,-700.0,EUR,Dúbravský Andrej,Platba/Dubravsky licencna zmluva dizajn merch eurovcela,"202405
+VS202405/SS/KS"
+203,2024-06-03,-1500.0,EUR,Veronika Gulasova,Platba/gulasova manazovanie timu L.Odora eu volby 05 24,"42024
+VS42024/SS/KS"
+204,2024-06-03,-350.0,EUR,"Dracia stopa plus, s. r. o.","Platba/Dracia Stopa disco, malovanie na tvar sutaz, rekvizity 27.4 Kosice","552024
+VS0552024/SS/KS"
+205,2024-06-03,-2500.0,EUR,JAN NIKODEM,Platba/produkcne prace eu kampan 05 24,"22024
+VS22024/SS/KS"
+206,2024-06-03,-2000.0,EUR,Pavol Krajci,Platba/organizacia kampane eu volby 05 24,"2024060201
+VS2024060201/SS/KS"
+207,2024-06-03,-300.0,EUR,Ing. Patricia Krausova,"Platba/Krausova moderovanie diskusii Wiezik 28.5 Ba, 3.6 Zvolen","202402
+VS202402/SS/KS"
+208,2024-06-03,-450.0,EUR,Lea Kurpasova,Platba/Kurpasova moderovanie serii diskusii 05 24,"202405
+VS202405/SS/KS"
+209,2024-06-03,-10000.0,EUR,"HITCHHIKER FILMS,S.R",Platba/Hitchhiker produkcia online spotu L.Odor eu volby,"2024077
+VS2024077/SS/KS"
+210,2024-06-03,-500.0,EUR,Winston Wolf,Platba/Winston Wolf marketingove sluzby 05 24,"92024
+VS92024/SS/KS"
+211,2024-06-03,-500.0,EUR,Winston Wolf,Platba/Winston Wolf marketingove sluzby 04 24,"72024
+VS72024/SS/KS"
+212,2024-06-03,-2015.0,EUR,Lea Maria Jassova,Platba/Jassova reklamne marketingove sluzby 05 24,"52024
+VS052024/SS/KS"
+213,2024-06-03,-700.0,EUR,"Šille Erik, Mgr.art.",Platba/Sille grafika merch,"22024
+VS22024/SS/KS"
+214,2024-06-03,-200.0,EUR,"Scherz, s.r.o.",Platba/Kocur diskusia prenajom priestoru a zvukovej techniky Scherz 29.5,"2024009
+VS2024009/SS/KS"
+215,2024-06-03,-39.0,EUR,Mestské kultúrne stredisko,"Platba/Mestske kulturne stredisko Nove Mesto nad Vahom prenajom diskusia Hojsik, Yar","2024072
+VS2024072/SS/KS"
+216,2024-06-03,-13791.0,EUR,"Bratiska, s.r.o.",Platba/Bratiska proeuropskymerch.sk,"2024094
+VS2024094/SS/KS"
+217,2024-06-03,-210.0,EUR,ASOCIÁCIA DIVADELNÁ NITRA,"Platba/Diskusia Hojsik,Ostrihonova Nitra BodK7 produkcia 28.5","5032024
+VS05032024/SS/KS"
+218,2024-06-03,-210.0,EUR,ASOCIÁCIA DIVADELNÁ NITRA,"Platba/Diskusia Hojsik,Ostrihonova,Kocnerova Nitra BodK7 produkcia 13.5","5022024
+VS05022024/SS/KS"
+219,2024-06-03,-210.0,EUR,ASOCIÁCIA DIVADELNÁ NITRA,Platba/Diskusia Nitra BodK7 produkcia 22.2,"5012024
+VS05012024/SS/KS"
+220,2024-06-03,-60.0,EUR,David Marko,Platba/Marko tlmocenie spj tlacova konferencia 27.5,"2024016
+VS2024016/SS/KS"
+221,2024-06-03,100.0,EUR,Gabor Bordacs,Platba,"60419
+VS60419/SS/KS"
+222,2024-06-03,120000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+223,2024-06-03,30.0,EUR,NÁRODNÁ BANKA SLOVEN,DT24060372644 FT268475648271//VS60406/SS5/,
+224,2024-06-03,-1000.0,EUR,Čifári Zuzana,Platba/cifari administrativne sluzby 05 24,"20240010
+VS20240010/SS/KS"
+225,2024-06-03,75.0,EUR,ANNA URBASIKOVA,PLATBA/ANNA URBASIKOVA,"60410
+VS0000060410/SS/KS"
+226,2024-06-03,990.0,EUR,Hana Kobliskova,PLATBA/Darovacia zmluva na podporu kandidata Veronika Cifrova Ostrihonova v eurovolbach 2024,"60412
+VS60412/SS4/KS"
+227,2024-06-03,100.0,EUR,Labáth Vladimír,Platba/PS,"60415
+VS60415/SS7/KS"
+228,2024-06-03,10.0,EUR,Dudáš Adam,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60414
+VS60414/SS1/KS"
+229,2024-06-03,-800.0,EUR,FACEBK *T8PRW4YTJ2,EUR NÁKUP POS FACEBK *T8PRW4YTJ2 / fb.me/ads / (POS 99999999),
+230,2024-06-03,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+231,2024-06-03,-800.0,EUR,FACEBK *FZY6R5CUJ2,EUR NÁKUP POS FACEBK *FZY6R5CUJ2 / fb.me/ads / (POS 99999999),
+232,2024-06-03,-20.8,EUR,NC38_BAKame,POS nákup NC38_BAKame / Bratislava / (POS SN104643),
+233,2024-06-03,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+234,2024-06-03,-800.0,EUR,FACEBK *E3DNP34XC2,EUR NÁKUP POS FACEBK *E3DNP34XC2 / fb.me/ads / (POS 99999999),
+235,2024-06-03,-2.2,EUR,POSTA BRATISLAVA 1,POS nákup POSTA BRATISLAVA 1 / BRATISLAVA / (POS SP520086),
+236,2024-06-03,-12.0,EUR,"ENTO ZELEZIARSTVO, TUR","POS nákup ENTO ZELEZIARSTVO, TUR / BRATISLAVA / (POS 05440433)",
+237,2024-06-03,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+238,2024-06-03,-800.0,EUR,FACEBK *DSF7D44YC2,EUR NÁKUP POS FACEBK *DSF7D44YC2 / fb.me/ads / (POS 99999999),
+239,2024-06-03,-800.0,EUR,FACEBK *FPB7D5LUJ2,EUR NÁKUP POS FACEBK *FPB7D5LUJ2 / fb.me/ads / (POS 99999999),
+240,2024-06-03,-800.0,EUR,FACEBK *39MZN34XC2,EUR NÁKUP POS FACEBK *39MZN34XC2 / fb.me/ads / (POS 99999999),
+241,2024-06-03,-800.0,EUR,FACEBK *ZB4RK6UTJ2,EUR NÁKUP POS FACEBK *ZB4RK6UTJ2 / fb.me/ads / (POS 99999999),
+242,2024-06-03,-800.0,EUR,FACEBK *3G9U95LXC2,EUR NÁKUP POS FACEBK *3G9U95LXC2 / fb.me/ads / (POS 99999999),
+243,2024-06-03,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+244,2024-06-03,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+245,2024-06-03,-500.0,EUR,GoogleAdwordsEU ADS173487,EUR NÁKUP POS GoogleAdwordsEU ADS173487 / Dublin / (POS 99999999),
+246,2024-06-03,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+247,2024-06-03,-81.09,EUR,OMV 2306,AP nákup POS OMV 2306 / Bratislava / (POS OSK1028B),
+248,2024-06-03,-18.78,EUR,OBI Bratislava III,POS nákup OBI Bratislava III / Bratislava Ru / (POS 55616151),
+249,2024-06-01,15.0,EUR,Silvia Sedlackova,Platba,"60404
+VS60404/SS/KS"
+250,2024-06-01,75.0,EUR,Martin Fekete,Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60413
+VS60413/SS2/KS"
+251,2024-05-31,-69.6,EUR,,Poplatky za transakcie,
+252,2024-05-31,-7.0,EUR,,Poplatok za balík,
+253,2024-05-31,200.0,EUR,Marek Stefanisko,Platba/Darovacia zmluva na podporu kandidata Marek Stefanisko v eurovolbach 2024,"60411
+VS60411/SS13/KS"
+254,2024-05-31,20.0,EUR,SEMANISINOVA ZANETA,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovol,"60403
+VS60403/SS/KS"
+255,2024-05-31,75.0,EUR,Jánsky Peter,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60409
+VS60409/SS/KS"
+256,2024-05-31,-1700.0,EUR,"CUBEK, s. r. o.","Platba/CUBEK, kalkan koordinacia zapadne slovensko","202401
+VS202401/SS/KS"
+257,2024-05-31,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+258,2024-05-31,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+259,2024-05-31,-5.5,EUR,LA GUTOSO S.R.O.,POS nákup LA GUTOSO S.R.O. / NOVE ZAMKY / (POS G2NPU912),
+260,2024-05-31,-5.0,EUR,LA GUTOSO S.R.O.,POS nákup LA GUTOSO S.R.O. / NOVE ZAMKY / (POS G2NPU912),
+261,2024-05-31,-800.0,EUR,FACEBK *2DBA85LXC2,EUR NÁKUP POS FACEBK *2DBA85LXC2 / fb.me/ads / (POS 99999999),
+262,2024-05-31,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+263,2024-05-31,-500.0,EUR,GoogleAdwordsEU ADS173487,EUR NÁKUP POS GoogleAdwordsEU ADS173487 / Dublin / (POS 99999999),
+264,2024-05-31,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+265,2024-05-31,-800.0,EUR,FACEBK *5WXRK3YXC2,EUR NÁKUP POS FACEBK *5WXRK3YXC2 / fb.me/ads / (POS 99999999),
+266,2024-05-31,-13.9,EUR,"ENTO ZELEZIARSTVO, TURB","AP nákup POS ENTO ZELEZIARSTVO, TURB / BRATISLAVA / (POS 05010649)",
+267,2024-05-31,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+268,2024-05-30,50.0,EUR,Vladimir Mokran,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60408
+VS60408/SS3/KS"
+269,2024-05-30,2500.0,EUR,Ivan Hejda,Platba/Ivan Hejda dar MK,"7
+VS7/SS/KS"
+270,2024-05-30,150.0,EUR,"Šalamon Ján, Ing., CSc.",Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60407
+VS60407/SS/KS"
+271,2024-05-30,30.0,EUR,VIERA KUSA,PLATBA/PS DAR VIERA KUSA,"60401
+VS0000060401/SS0000000001/KS"
+272,2024-05-30,25.0,EUR,Mgr. Viera Jurickova,PLATBA/Dar PS,"60344
+VS60344/SS/KS"
+273,2024-05-30,22.0,EUR,Bc. Martina Mitacova,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60399
+VS60399/SS0/KS"
+274,2024-05-30,150.0,EUR,Ing. Peter Liska,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60397
+VS60397/SS0/KS"
+275,2024-05-30,150.0,EUR,Ing. Peter Liska,PLATBA/Darovacia zmluva na podporu kandidata Michal Wiezik v eurovolbach 2024,"60396
+VS60396/SS5/KS"
+276,2024-05-30,50.0,EUR,JUDr. Gabriela Trommler,PLATBA,"60395
+VS60395/SS12/KS"
+277,2024-05-30,10.0,EUR,Ing. Monika Hotakova PhD.,PLATBA/Darovacia zmluva na podporu kandidata Sofia Karina Trommlerova v eurovolbach 2024,"60394
+VS60394/SS12/KS"
+278,2024-05-30,150.0,EUR,Dusan Chrenek,Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60405
+VS60405/SS2/KS"
+279,2024-05-30,-800.0,EUR,FACEBK *8EG6K3YXC2,EUR NÁKUP POS FACEBK *8EG6K3YXC2 / fb.me/ads / (POS 99999999),
+280,2024-05-30,-500.0,EUR,GoogleAdwordsEU ADS173487,EUR NÁKUP POS GoogleAdwordsEU ADS173487 / Dublin / (POS 99999999),
+281,2024-05-30,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+282,2024-05-30,-800.0,EUR,FACEBK *ZJJDM38XC2,EUR NÁKUP POS FACEBK *ZJJDM38XC2 / fb.me/ads / (POS 99999999),
+283,2024-05-30,-800.0,EUR,FACEBK *F7DLN3CXC2,EUR NÁKUP POS FACEBK *F7DLN3CXC2 / fb.me/ads / (POS 99999999),
+284,2024-05-30,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+285,2024-05-30,-500.0,EUR,GoogleAdwordsEU ADS173487,EUR NÁKUP POS GoogleAdwordsEU ADS173487 / Dublin / (POS 99999999),
+286,2024-05-30,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+287,2024-05-30,-800.0,EUR,FACEBK *3YQGB3QXC2,EUR NÁKUP POS FACEBK *3YQGB3QXC2 / fb.me/ads / (POS 99999999),
+288,2024-05-29,4500.0,EUR,Ivan Hejda,Platba/Ivan Hejda dar MK,"7
+VS7/SS/KS"
+289,2024-05-29,50.0,EUR,Maros Ondrejicka,Platba/Darovacia zmluva na podporu kandidata Vanda Rogovska v eurovolbach 2024,"60402
+VS60402/SS8/KS"
+290,2024-05-29,-660.0,EUR,"Pekamo, s.r.o.",Platba/pekamo pecivo mobilizacia,"2024103047
+VS2024103047/SS/KS"
+291,2024-05-29,-600.0,EUR,Michal Mazak,Platba/Mazak Kocur audiovizualna tvorba,"20240010
+VS20240010/SS/KS"
+292,2024-05-29,-2910.24,EUR,"Unimedia spol. ,s.r.",Platba/Unimedia outdoor eu volby 06 24,"720240033
+VS720240033/SS/KS"
+293,2024-05-29,-70.0,EUR,MESTO SALA,"Platba/Sala prenajom proestoriv diskusia hojsik, ostrihonova","5318400025
+VS5318400025/SS/KS"
+294,2024-05-29,-50.0,EUR,SOLTYSOVA EVA,Platba/Soltysova tlmocenie spj 23.5 zilina,"20240007
+VS20240007/SS/KS"
+295,2024-05-29,-75.0,EUR,Barbara Randušková,Platba/Randuskova tlmocenie diskusia zilina 23.5,"20240509
+VS20240509/SS/KS"
+296,2024-05-29,-2000.0,EUR,Drgon Oliver,Platba/Drgon administrativa Kocur,"20240001
+VS20240001/SS/KS308"
+297,2024-05-29,-180.0,EUR,"WINESERVICE, S.R.O.",Platba/wineservice prenajom priestorov diskusia sitdown martin 29.5,"24027
+VS24027/SS/KS308"
+298,2024-05-29,-132.0,EUR,POLNOPROJEKT NITRA,Platba/polnoinfo.sk rogovska poskytnutie reklamneho priestoru,"20240039
+VS20240039/SS/KS"
+299,2024-05-29,-804.65,EUR,"Red Post, s.r.o",Platba/Petit press francescato inzercia,"2024028
+VS2024028/SS/KS308"
+300,2024-05-29,-436.8,EUR,"Petit Press, a.s.",Platba/petit press wiezik inzercia,"2435104577
+VS2435104577/SS/KS308"
+301,2024-05-29,-394.8,EUR,"Petit Press, a.s.",Platba/petit press inzercia diskusie LM,"2435104469
+VS2435104469/SS/KS308"
+302,2024-05-29,-700.0,EUR,"Berty, s. r. o.",Platba/berty graficky navrh merch,"45052024
+VS45052024/SS/KS"
+303,2024-05-29,-700.0,EUR,PATRICIA KOYSOVA,Platba/koysova merch dizajn,"62024
+VS062024/SS/KS"
+304,2024-05-29,-160.0,EUR,Nadácia Horský park,Platba/hojsik horsky park prenajom event 26.5,"22024
+VS022024/SS/KS"
+305,2024-05-29,-1008.0,EUR,"Pandan, s. r. o.",Platba/Pandan kandidati letaky,"202405013
+VS202405013/SS/KS"
+306,2024-05-29,-1000.8,EUR,"Pandan, s. r. o.",Platba/Pandan letaky,"202405012
+VS202405012/SS/KS"
+307,2024-05-29,-1230.0,EUR,Kresky s.r.o.,Platba/Kresky merch doplatok,"22405004
+VS22405004/SS/KS"
+308,2024-05-29,-1400.0,EUR,TRUC SPHÉRIQUE,Platba/truc sphere zilina 23.5 diskusia sitdown,"1024050
+VS1024050/SS/KS"
+309,2024-05-29,-264.0,EUR,"REGIONPRESS, s.r.o.",Platba/Rogovska region press inzercia,"84240029
+VS84240029/SS/KS"
+310,2024-05-29,-264.0,EUR,"CPB, spol. s r.o.",Platba/cpb mobilizacia pecivo,"23201008
+VS23201008/SS/KS"
+311,2024-05-29,-250.0,EUR,MZ promo s.r.o.,Platba/moderovanie diakusie sit down zilina 23.5 vackova,"20240039
+VS20240039/SS/KS"
+312,2024-05-29,30.0,EUR,Andrea Vrbovska,Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60383
+VS60383/SS2/KS"
+313,2024-05-29,100.0,EUR,Mgr.Martin Lauko PhD.,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60375
+VS60375/SS0/KS"
+314,2024-05-29,50.0,EUR,ALENA TEPLICANOVA,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA PS V EUROVOLBACH 2024,"60366
+VS0000060366/SS/KS"
+315,2024-05-29,150.0,EUR,RASTISLAV NOGA,PLATBA/PRISPEVOK NA KAMPAN,"60370
+VS0000060370/SS/KS0558"
+316,2024-05-29,900.0,EUR,LUCIA FRANCESCATO,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA LUCIA FRANCESCATO V EUROVOLBACH 2024,"60380
+VS0000060380/SS0000000010/KS"
+317,2024-05-29,75.0,EUR,RADOSLAV DORCIK,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA LUDOVIT ODOR V EUROVOLBACH 2024,"60372
+VS0000060372/SS0000000001/KS"
+318,2024-05-29,20.0,EUR,JAKUB GAVORNIK,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA PS V EUROVOLBACH 2024,"60367
+VS0000060367/SS/KS"
+319,2024-05-29,100.0,EUR,MUDr. Adriana Smolkova,PLATBA,"60392
+VS60392/SS1/KS"
+320,2024-05-29,10.0,EUR,Ing. Martin Simon,PLATBA,"60391
+VS60391/SS12/KS"
+321,2024-05-29,20.0,EUR,Sofia Karina Trommlerova,PLATBA/Darovacia zmluva na podporu kandidata Sofia Karina Trommlerova v eurovolbach 2024,"60393
+VS60393/SS12/KS"
+322,2024-05-29,200.0,EUR,MARIA KOCNEROVA,PLATBA/Darovacia zmluva na podporu kandidata Maria Kocnerova v eurovolbach 2024,"60104
+VS60104/SS14/KS"
+323,2024-05-29,20.0,EUR,Ing. Olga Vlaskova,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60368
+VS60368/SS/KS"
+324,2024-05-29,30.0,EUR,Jan Spisiak,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60371
+VS60371/SS0/KS"
+325,2024-05-29,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+326,2024-05-29,-800.0,EUR,FACEBK *SLDZK38XC2,EUR NÁKUP POS FACEBK *SLDZK38XC2 / fb.me/ads / (POS 99999999),
+327,2024-05-29,-38.64,EUR,top-obaly.sk,INT NÁKUP POS EUR top-obaly.sk / Syrovice / (POS CZ187177),
+328,2024-05-29,-500.0,EUR,GoogleAdwordsEU ADS173487,EUR NÁKUP POS GoogleAdwordsEU ADS173487 / Dublin / (POS 99999999),
+329,2024-05-28,75.0,EUR,Vladimir Cavoj,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60389
+VS60389/SS/KS"
+330,2024-05-28,75.0,EUR,Buzalka Juraj,Platba/Lubica Karvasova,"60385
+VS60385/SS/KS"
+331,2024-05-28,33.0,EUR,Martina Sittova,Platba,"60384
+VS60384/SS1/KS"
+332,2024-05-28,75.0,EUR,Helena Gabrišová,PLATBA/drzim palce vo volbach,"60369
+VS60369/SS/KS"
+333,2024-05-28,40.0,EUR,Richard Paksi,Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60382
+VS60382/SS2/KS"
+334,2024-05-28,-2000.0,EUR,"Hojsík Martin, Mgr.",Platba/hojsik martin vratenie cast daru,
+335,2024-05-28,20.0,EUR,"Faltus Zdeněk, Ing.",Platba,"60381
+VS60381/SS/KS"
+336,2024-05-28,-606.0,EUR,"Red Post, s.r.o",Platba/Hojsik distribucia letakov,"2024026
+VS2024026/SS/KS308"
+337,2024-05-28,150.0,EUR,"Kluvánek Juraj, Ing.",Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60379
+VS60379/SS1/KS"
+338,2024-05-28,20.0,EUR,Noge Maroš,Platba/Darovacia zmluva na podporu kandidata Lucia Francescato v eurovolbach 2024,"60378
+VS60378/SS10/KS"
+339,2024-05-28,20.0,EUR,"Bohušová Nikola, Ing.",Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60377
+VS60377/SS1/KS"
+340,2024-05-28,150.0,EUR,"Getlik Vladimír, Ing.",Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60373
+VS60373/SS2/KS"
+341,2024-05-28,75.0,EUR,Ing.Martin Bolo,PLATBA,"60346
+VS60346/SS10/KS"
+342,2024-05-28,75.0,EUR,MILAN KOLIBIAR,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA PS V EUROVOLBACH 2024,"60351
+VS0000060351/SS/KS"
+343,2024-05-28,250.0,EUR,MIROSLAV GASPAR,PLATBA/PREVOD PROSTRIEDKOV NA KAMPAN,"60356
+VS0000060356/SS/KS"
+344,2024-05-28,75.0,EUR,JAN GARAJ,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA PS V EUROVOLBACH 2024,"60362
+VS0000060362/SS/KS"
+345,2024-05-28,20.0,EUR,ONDREJ KVETKO,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA PS V EUROVOLBACH 2024,"60353
+VS0000060353/SS/KS"
+346,2024-05-28,75.0,EUR,TOMAS CHATRNUCH,PLATBA/PS,"60355
+VS0000060355/SS0000000003/KS"
+347,2024-05-28,20.0,EUR,ALEXANDER KASJANOV,PLATBA/PS CENTRALA,"60337
+VS0000060337/SS/KS0558"
+348,2024-05-28,500.0,EUR,Takac Juraj,PLATBA/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60358
+VS60358/SS1/KS"
+349,2024-05-28,30.0,EUR,Miroslav Baca,PLATBA/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60348
+VS60348/SS2/KS"
+350,2024-05-28,20.0,EUR,Ing. STEFAN DOJCAR,PLATBA/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60339
+VS60339/SS2/KS"
+351,2024-05-28,250.0,EUR,Ing. Vladimir Turlik,PLATBA,"60342
+VS60342/SS1/KS"
+352,2024-05-28,20.0,EUR,Martin Varchol,Platba/Martin Varchol,"60365
+VS60365/SS5/KS"
+353,2024-05-28,50.0,EUR,"Gerbel Daniel, Ing., PhD.",Platba/Podpora,"60364
+VS60364/SS/KS"
+354,2024-05-28,20.0,EUR,Papuga Ján,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60363
+VS60363/SS/KS"
+355,2024-05-28,75.0,EUR,Simon Sebastian Halaj,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60361
+VS60361/SS1/KS"
+356,2024-05-28,99.0,EUR,"Čenteš Juraj, Ing.",Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60360
+VS60360/SS1/KS"
+357,2024-05-28,-80.0,EUR,Hlavné mesto Slovenskej republiky Bratislava,Platba/spravnny poplatok nam.snp,"2241331321
+VS2241331321/SS/KS"
+358,2024-05-28,-80.0,EUR,Hlavné mesto Slovenskej republiky Bratislava,Platba/spravny poplatok namestie neznej revolucie,"2241331322
+VS2241331322/SS/KS"
+359,2024-05-28,150.0,EUR,Jozef Korman,Platba,"60359
+VS60359/SS1/KS0308"
+360,2024-05-28,-800.0,EUR,FACEBK *C3E8K38XC2,EUR NÁKUP POS FACEBK *C3E8K38XC2 / fb.me/ads / (POS 99999999),
+361,2024-05-28,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+362,2024-05-28,-80.71,EUR,SLOVNAFT-SK11214,AP nákup POS SLOVNAFT-SK11214 / Pezinok / (POS MSK16214),
+363,2024-05-28,-800.0,EUR,FACEBK *UKUDG3YXC2,EUR NÁKUP POS FACEBK *UKUDG3YXC2 / fb.me/ads / (POS 99999999),
+364,2024-05-28,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+365,2024-05-28,-800.0,EUR,FACEBK *55WTK3CXC2,EUR NÁKUP POS FACEBK *55WTK3CXC2 / fb.me/ads / (POS 99999999),
+366,2024-05-28,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+367,2024-05-28,-800.0,EUR,FACEBK *BQLAF3YXC2,EUR NÁKUP POS FACEBK *BQLAF3YXC2 / fb.me/ads / (POS 99999999),
+368,2024-05-28,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+369,2024-05-28,-800.0,EUR,FACEBK *HRYQJ3CXC2,EUR NÁKUP POS FACEBK *HRYQJ3CXC2 / fb.me/ads / (POS 99999999),
+370,2024-05-27,250.0,EUR,Miroslav Otocka,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60357
+VS60357/SS1/KS"
+371,2024-05-27,100.0,EUR,Bartoš Lukáš,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60354
+VS60354/SS/KS"
+372,2024-05-27,20.0,EUR,Ruman Ján,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60352
+VS60352/SS1/KS"
+373,2024-05-27,20.0,EUR,Richard Slusny,Platba,"60349
+VS60349/SS/KS"
+374,2024-05-27,10.0,EUR,Bulla Henrich,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60347
+VS60347/SS/KS"
+375,2024-05-27,20.0,EUR,Jozef Bednarik,Platba,"60343
+VS60343/SS/KS"
+376,2024-05-27,75.0,EUR,Peter Pipa,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60345
+VS60345/SS1/KS"
+377,2024-05-27,20.0,EUR,Cihák Mikuláš,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60341
+VS60341/SS/KS"
+378,2024-05-27,55.0,EUR,"Tomša Ľubomír, Ing.",Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60340
+VS60340/SS1/KS"
+379,2024-05-27,50.0,EUR,Branislav Osif,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60338
+VS60338/SS/KS"
+380,2024-05-27,50.0,EUR,"Adamík Michal, Ing.",Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60336
+VS60336/SS/KS"
+381,2024-05-27,50.0,EUR,Vladimira Kurincova Cavojova,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60335
+VS60335/SS/KS"
+382,2024-05-27,50.0,EUR,Beniak Tomáš,Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60334
+VS60334/SS2/KS"
+383,2024-05-27,10.0,EUR,"Kmeť Martin, Mgr.",Platba/Drzim palce,"60299
+VS60299/SS/KS"
+384,2024-05-27,-1.0,EUR,MES POPLATOK VISA FIREMNA,Mesačný poplatok MES POPLATOK VISA FIREMNA,
+385,2024-05-27,150.0,EUR,DUKES TOMAS,PLATBA/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60325
+VS60325/SS3/KS0"
+386,2024-05-27,174.0,EUR,JARMILA PRIBULOVA,PLATBA/PLATBA,"60316
+VS0000060316/SS/KS"
+387,2024-05-27,900.0,EUR,Martin Pekar,PLATBA/Darovacia zmluva na podporu kandidata Lucia Francescato v eurovolbach2024,"60321
+VS60321/SS10/KS"
+388,2024-05-27,900.0,EUR,Martin Pekar,PLATBA/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60317
+VS60317/SS7/KS"
+389,2024-05-27,20.0,EUR,Kernasevic Alexander,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovol,"60323
+VS60323/SS/KS"
+390,2024-05-27,50.0,EUR,Tomas Jokel,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60332
+VS60332/SS/KS"
+391,2024-05-27,500.0,EUR,MRS LAURA HEYMANS TRIMAJ,Platba PO24052687578060/VS 60331 Dar Lubica Karvasova,
+392,2024-05-27,10.0,EUR,Martina Rychla,Platba/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60330
+VS60330/SS6/KS"
+393,2024-05-27,-800.0,EUR,FACEBK *QPD2J3CXC2,EUR NÁKUP POS FACEBK *QPD2J3CXC2 / fb.me/ads / (POS 99999999),
+394,2024-05-27,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+395,2024-05-27,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+396,2024-05-27,-800.0,EUR,FACEBK *DT5D24GXC2,EUR NÁKUP POS FACEBK *DT5D24GXC2 / fb.me/ads / (POS 99999999),
+397,2024-05-27,-800.0,EUR,FACEBK *R8ZMD34XC2,EUR NÁKUP POS FACEBK *R8ZMD34XC2 / fb.me/ads / (POS 99999999),
+398,2024-05-27,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+399,2024-05-27,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+400,2024-05-27,-134.05,EUR,ORLEN CS 760 ZILINA,POS nákup ORLEN CS 760 ZILINA / ZILINA / (POS BENZ1760),
+401,2024-05-27,-800.0,EUR,FACEBK *N8NAG3CXC2,EUR NÁKUP POS FACEBK *N8NAG3CXC2 / fb.me/ads / (POS 99999999),
+402,2024-05-27,-50.6,EUR,WWW.TOOTOOT.FM,POS nákup WWW.TOOTOOT.FM / BRATISLAVA / (POS 09073496),
+403,2024-05-27,-50.6,EUR,WWW.TOOTOOT.FM,POS nákup WWW.TOOTOOT.FM / BRATISLAVA / (POS 09073496),
+404,2024-05-27,-800.0,EUR,FACEBK *Y6YCY3GXC2,EUR NÁKUP POS FACEBK *Y6YCY3GXC2 / fb.me/ads / (POS 99999999),
+405,2024-05-25,10.0,EUR,Papež Václav,Platba,"60329
+VS60329/SS12/KS"
+406,2024-05-25,250.0,EUR,Vašáková Lívia,Platba/podpora pre L Karvasovu,"60328
+VS60328/SS2/KS"
+407,2024-05-25,250.0,EUR,Fudala Viktor,Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60327
+VS60327/SS2/KS"
+408,2024-05-25,30.0,EUR,Katarina Karasova,Platba,"60326
+VS60326/SS/KS"
+409,2024-05-24,999.0,EUR,Lucia Paskova,Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60324
+VS60324/SS7/KS"
+410,2024-05-24,-1800.0,EUR,VLN Production,Platba/VLN production poliacik kampanove video,"20240047
+VS20240047/SS/KS"
+411,2024-05-24,-3000.0,EUR,Kocur Kucerova komunikacna strategia,PLATBA VA24052406007/20240002 KAMILA KUCEROVA,VS20240002SS/KS0308
+412,2024-05-24,-7500.0,EUR,"HITCHHIKER FILMS,S.R",Platba/Hitchhiker produkcia online spotov eu volby,"2024069
+VS2024069/SS/KS"
+413,2024-05-24,-600.0,EUR,Matúš Lelovský,Platba/lelovsky graficke prace k eu kampani,"82024
+VS0082024/SS/KS"
+414,2024-05-24,-240.0,EUR,"ProRacio, n.o.",Platba/ProRacio wiezik bannerova reklama,"2024019
+VS2024019/SS/KS"
+415,2024-05-24,-80.0,EUR,Rising s. r. o.,Platba/Wiezik diskusia Kosice 9.5 technicke zabezpecenie,"202405013
+VS202405013/SS/KS308"
+416,2024-05-24,-465.45,EUR,honest.company s.r.o.,Platba/honest.company eu den Bratislava 9.5.2024 gastro sluzby,"2024015
+VS2024015/SS/KS308"
+417,2024-05-24,-636.0,EUR,honest.company s.r.o.,Platba/honest.company eu den trencin mobiliar 8.5.24,"2024010
+VS2024010/SS/KS308"
+418,2024-05-24,-174.0,EUR,"Pandan, s. r. o.",Platba/pandan reklamne predmety tabulky,"202405055
+VS202405055/SS/KS"
+419,2024-05-24,-374.4,EUR,"Pandan, s. r. o.","Platba/pandan reklamne predmety letak, plagaty tlac","202405012
+VS202405012/SS/KS"
+420,2024-05-24,-164.4,EUR,"Pandan, s. r. o.",Platba/pandan reklamne predmety beachflag,"202405055
+VS202405055/SS/KS"
+421,2024-05-24,-984.0,EUR,AUVID PRODUCTION S.R,Platba/auvid sit down diskusia kosiec technicke zabezpecenie,"630524
+VS630524/SS/KS"
+422,2024-05-24,-40.0,EUR,STRED KUL NOVE MESTO,Platba/Hojsik diskusia BA prenajom priestorov 14.5,
+423,2024-05-24,-3960.0,EUR,GROOW DIGITAL,"Platba/GROOW DIGITAL, agency fee 04 24","2024061
+VS2024061/SS/KS"
+424,2024-05-24,-8000.0,EUR,GROOW DIGITAL,"Platba/GROOW DIGITAL, media spend parameter.sk","2024053
+VS2024053/SS/KS"
+425,2024-05-24,100000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+426,2024-05-24,75.0,EUR,Katarina Bohusova,Platba,"60322
+VS60322/SS/KS"
+427,2024-05-24,20.0,EUR,Zuzana Grunova,Platba/Darovacia zmluva na podporu kandidata Michal Wiezik v eurovolbach 2024,"60320
+VS60320/SS5/KS"
+428,2024-05-24,10.0,EUR,Renata Irsova,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60319
+VS60319/SS/KS"
+429,2024-05-24,50.0,EUR,TAMARA STOHLOVA,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA VANDA ROGOVSKA V EUROVOLBACH 2024,"60302
+VS0000060302/SS0000000008/KS"
+430,2024-05-24,750.0,EUR,MARTIN HABURAJ,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA MARTIN POLIACIK V EUROVOLBACH 2024,"60307
+VS0000060307/SS0000000015/KS"
+431,2024-05-24,10.0,EUR,PhDr. Ivica Forroova,PLATBA/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60312
+VS60312/SS1/KS"
+432,2024-05-24,50.0,EUR,SAVCINSKA VANDA,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovol,"60311
+VS60311/SS/KS"
+433,2024-05-24,100.0,EUR,"Hupka Ján, Ing.",Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60318
+VS60318/SS7/KS"
+434,2024-05-24,250.0,EUR,Miroslav Adamis,Platba/Drzime palce,"60315
+VS60315/SS2/KS"
+435,2024-05-24,499.0,EUR,Jan Glovicko,Platba,"60314
+VS60314/SS/KS3"
+436,2024-05-24,150.0,EUR,Pavel Durco,Platba,"60313
+VS60313/SS/KS"
+437,2024-05-24,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+438,2024-05-24,-800.0,EUR,FACEBK *WUZX76UXC2,EUR NÁKUP POS FACEBK *WUZX76UXC2 / fb.me/ads / (POS 99999999),
+439,2024-05-23,50.0,EUR,Vladislav Berezny,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60310
+VS60310/SS1/KS"
+440,2024-05-23,10.0,EUR,Adam Daniel,Platba,"60308
+VS60308/SS2/KS"
+441,2024-05-23,150.0,EUR,"Štrba Jaroslav, Ing.",Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60301
+VS60301/SS/KS"
+442,2024-05-23,10.0,EUR,"Vallušová Dagmar, Ing.",Platba,"60297
+VS60297/SS2/KS"
+443,2024-05-23,-500.0,EUR,Jan Glovicko,Platba/Vratenie daru podla 85/2005 Z.z.,
+444,2024-05-23,30.0,EUR,TATIANA IVANICKA,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA LUBICA KARVASOVA V EUROVOLBACH 2024,"60294
+VS0000060294/SS0000000002/KS"
+445,2024-05-23,250.0,EUR,MUDr. Tomas Horak,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60292
+VS60292/SS/KS"
+446,2024-05-23,10.0,EUR,Gabriel Meixner,PLATBA,"60291
+VS60291/SS/KS"
+447,2024-05-23,750.0,EUR,Dana Baluchova,Platba,"60296
+VS60296/SS15/KS"
+448,2024-05-23,20.0,EUR,Viera Farbiakova,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60295
+VS60295/SS/KS"
+449,2024-05-23,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+450,2024-05-23,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+451,2024-05-23,-121.73,EUR,KAPWING,POS nákup zahr. KAPWING / HTTPSWWW.KAPW / (POS M51SA49E),
+452,2024-05-23,-800.0,EUR,FACEBK *6EFE93YXC2,EUR NÁKUP POS FACEBK *6EFE93YXC2 / fb.me/ads / (POS 99999999),
+453,2024-05-22,20.0,EUR,Jozef Gregor,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60293
+VS60293/SS1/KS"
+454,2024-05-22,-609.6,EUR,"REGIONPRESS, s.r.o.",Platba/region press inzercia rogovska,"84240028
+VS84240028/SS/KS"
+455,2024-05-22,108.0,EUR,RASTISLAV LETNICKY,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA VANDA ROGOVSKA V EUROVOLBACH 2024,"60287
+VS0000060287/SS0000000008/KS"
+456,2024-05-22,-10.0,EUR,Prah jizni Morava zu,SPRAC.POPLATOK VI24052200386,
+457,2024-05-22,-70.34,EUR,Prah jizni Morava zu,PLATBA VI24052200386/Rusnak diskusia Brno prenajom priestorov 7.5,
+458,2024-05-21,-200.0,EUR,AHOJ MEDIA s. r. o.,Platba/Yar reklamne sluzby a tvorba video zaznamov,"20240056
+VS20240056/SS/KS"
+459,2024-05-21,-200.0,EUR,AHOJ MEDIA s. r. o.,"Platba/Cifrova Ostrihonova reklamne sluzby,tvorba video zaznamov","20240054
+VS20240054/SS/KS"
+460,2024-05-21,-345.36,EUR,"Red Post, s.r.o",Platba/Yar distribucia letakov,"2024021
+VS2024021/SS/KS308"
+461,2024-05-21,-520.0,EUR,Park kultúry a oddychu,Platba/diskusia prenajom priestorov presov 25.4,"8024
+VS008024/SS/KS"
+462,2024-05-21,-400.0,EUR,"Scherz, s.r.o.","Platba/Kocur diskusia prenajom priestoru a zvukovej techniky Scherz 9.5, 16.5","2024007
+VS2024007/SS/KS"
+463,2024-05-21,-95.0,EUR,KVZ s.r.o.,Platba/EU den Kosice gastro sluzby,"2400124
+VS2400124/SS/KS308"
+464,2024-05-21,-2155.66,EUR,honest.company s.r.o.,Platba/Nitra europsky den 8.5 zalohova fa gastro sluzby,"12024006
+VS12024006/SS/KS308"
+465,2024-05-21,-10.0,EUR,Charles Edouard Richard STENKER,"Platba OO24052100035581/Vratenie daru podla 85/2005 Z.z., navstivte prosim progresivne.sk/podporte-europsku-buducnost",
+466,2024-05-21,5000.0,EUR,"Hojsík Martin, Mgr.",Platba/martin hojsik dar,"3
+VS3/SS/KS"
+467,2024-05-21,500.0,EUR,Cifra Tomas,PLATBA/Dar Veronika Cifra Ostrihonova,"60285
+VS60285/SS4/KS"
+468,2024-05-21,500.0,EUR,Martin Poliacik,Platba/Darovacia zmluva na podporu kandidata Martin Poliacik v eurovolbach 2024,"60286
+VS60286/SS15/KS"
+469,2024-05-20,30.0,EUR,Vančo Viktor,Platba/Darovacia zmluva na podporu kandidata Krisztian Varadi v eurovolbach 2024,"60284
+VS60284/SS9/KS"
+470,2024-05-20,500.0,EUR,Hana Poliacikova,Platba/Darovacia zmluva na podporu kandidata Martin Poliacik v eurovolbach 2024,"60282
+VS60282/SS15/KS"
+471,2024-05-20,-1.0,EUR,MES POPLATOK VISA FIREMNA,Mesačný poplatok MES POPLATOK VISA FIREMNA,
+472,2024-05-17,250.0,EUR,Mgr. Stefan Konecny,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60280
+VS60280/SS0/KS"
+473,2024-05-16,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+474,2024-05-16,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+475,2024-05-16,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+476,2024-05-16,-27.0,EUR,BON BON,POS nákup BON BON / Nitra / (POS 11284652),
+477,2024-05-16,-80.0,EUR,"SLOVNAFT, ZELENEC I.","POS nákup SLOVNAFT, ZELENEC I. / ZELENEC / (POS 12310748)",
+478,2024-05-16,-17.75,EUR,KAPWING,POS nákup zahr. KAPWING / HTTPSWWW.KAPW / (POS M51SA49E),
+479,2024-05-16,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+480,2024-05-15,-3434.0,EUR,"SAKMAR, s. r. o.",Platba/produkcne zabezpecenie eventu eu den 1.5.2024 Zilina,"240100002
+VS240100002/SS/KS"
+481,2024-05-15,-1000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+482,2024-05-15,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+483,2024-05-15,-35.7,EUR,"MR. DOU, BA, GORKEHO","AP nákup POS MR. DOU, BA, GORKEHO / BRATISLAVA / (POS 03062932)",
+484,2024-05-15,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+485,2024-05-14,2000.0,EUR,"Kocúr Miroslav, ThDr., PhD.",Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60279
+VS60279/SS7/KS"
+486,2024-05-14,-2000.0,EUR,Čifári Zuzana,VÝBER V HOTOVOSTI/vklad do pokladne,
+487,2024-05-14,-1000.0,EUR,,Platba/Martiniakova reklamne a marketingove sluzby pre Yar,"20240007
+VS20240007/SS/KS"
+488,2024-05-14,-396.0,EUR,ATRIOS S.R.O.,Platba/atrios wiezik najom konferencna sala 9.5.,"24232
+VS24232/SS/KS"
+489,2024-05-14,-1000.0,EUR,Hana Kobliskova,Platba/Kobliskova marketing 04 24,"2024007
+VS2024007/SS/KS"
+490,2024-05-14,50.0,EUR,Ing. Lubomir KYSELICA,PLATBA/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60277
+VS60277/SS6/KS"
+491,2024-05-14,-250.0,EUR,MZ promo s.r.o.,Platba/MZ promo Vackova moderovanie sit down Lucenec 7.5,"20240034
+VS20240034/SS/KS"
+492,2024-05-14,-300.0,EUR,Rozpoctova organizacia LUKUS,Platba/LUKUS prenajom priestorov Lucenec synagoga sitndown 7.5,"16
+VS16/SS/KS308"
+493,2024-05-14,-150.0,EUR,SOLTYSOVA EVA,Platba/Soltysova tlmocenie spj sitdown diskusie,"20240006
+VS20240006/SS/KS"
+494,2024-05-14,-230.0,EUR,Barbara Randušková,Platba/Randuskova tlmocenie sitdown diskusie,"20240502
+VS20240502/SS/KS"
+495,2024-05-14,-30.0,EUR,klastor s. r. o.,Platba/Klastor Roznava prenajom priestorov diskusia 26.4.2024,"20240070
+VS20240070/SS/KS"
+496,2024-05-14,100.0,EUR,Miške Tomáš,Platba/Darovacia zmluva na podporu kandidata Krisztian Varadi v eurovolbach 2024,"60278
+VS60278/SS9/KS"
+497,2024-05-14,-3000.0,EUR,"Kucerova komunikacna strategia, praktivity",PLATBA VA24051403743/20240001 KAMILA KUCEROVA,VS20240001/SS/KS0308
+498,2024-05-14,-120.0,EUR,Brilla Daniel,Platba/zmluva o dielo brilla technicke zabezpecenie europsky den 8.5.2024,"52024
+VS52024/SS/KS"
+499,2024-05-14,5000.0,EUR,Martin Pekar,PLATBA/Dar EU kandidat Martin Hojsik,
+500,2024-05-14,-7681.36,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+501,2024-05-14,-815.95,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+502,2024-05-14,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+503,2024-05-14,-8000.0,EUR,GoogleAdwordsEU ADS862770,EUR NÁKUP POS GoogleAdwordsEU ADS862770 / Dublin / (POS 99999999),
+504,2024-05-14,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+505,2024-05-13,-26500.0,EUR,GROOW DIGITAL,"Platba/GROOW DIGITAL, media spend markiza.sk 13.5-5.6","2024054
+VS2024054/SS/KS"
+506,2024-05-13,10.0,EUR,Zuzana Kvapilova,PLATBA,"60274
+VS60274/SS8/KS"
+507,2024-05-13,100.0,EUR,Jan Hargas,Platba,"60276
+VS60276/SS7/KS"
+508,2024-05-13,50.0,EUR,"Jeckel Eugen, Ing.",Platba/Miro Kocur,"60275
+VS60275/SS7/KS"
+509,2024-05-13,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+510,2024-05-13,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+511,2024-05-13,-368.8,EUR,"2 U,S.R.O.","AP nákup POS 2 U,S.R.O. / BRATISLAVA / (POS G2NP3145)",
+512,2024-05-13,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+513,2024-05-13,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+514,2024-05-13,-141.72,EUR,OMV 2303,POS nákup OMV 2303 / Bratislava / (POS OSK1021B),
+515,2024-05-10,-10.0,EUR,Dudes Barbies s.r.o.,SPRAC.POPLATOK VI24051009310,
+516,2024-05-10,-1044.91,EUR,Dudes and Barbies,"PLATBA VI24051009310/Progresivne Slovensko diskusia 7.3 technika, prenajom",
+517,2024-05-10,75.0,EUR,Martin Urbancok,Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60273
+VS60273/SS7/KS"
+518,2024-05-10,10.0,EUR,Richard Chrenka,Platba,"60271
+VS60271/SS/KS"
+519,2024-05-10,999.0,EUR,Ing. Milan Galata,PLATBA/Milan Galata dar,"15
+VS15/SS/KS"
+520,2024-05-10,-250.0,EUR,"ARTMIE, spol. s r.o.",Platba/yar billboard snina 05 24,"2400000039
+VS2400000039/SS/KS8"
+521,2024-05-10,-3.0,EUR,TWITTER PAID FEATURES,INT NÁKUP POS EUR TWITTER PAID FEATURES / HTTPSWWW.X.CO / (POS KWX1DVYY),
+522,2024-05-10,-273.59,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+523,2024-05-10,-87.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+524,2024-05-09,300.0,EUR,"Antal Peter, Mgr. PhDr.",Platba/Darovacia zmluva na podporu kandidata Krisztian Varadi v eurovolbach 2024,"60270
+VS60270/SS9/KS"
+525,2024-05-09,-1130.0,EUR,DOUBLE DIAMOND,Platba/KE event catering 27.4,"2024008
+VS2024008/SS/KS"
+526,2024-05-09,-150.0,EUR,Nádvorie s. r. o.,Platba/prenajom priestorov diskusia TT,"20240206
+VS20240206/SS/KS"
+527,2024-05-09,-300.0,EUR,Nedozierne moznosti s.r.o.,Platba/garajova schramekova moderovanie diskusie KE sit down s Veronikou,"20240007
+VS20240007/SS/KS"
+528,2024-05-09,-1500.0,EUR,BUY NOW studio,Platba/buy now EU kampan graficke prace 04 24,"2024017
+VS2024017/SS/KS308"
+529,2024-05-09,-254.4,EUR,ARES SECURITY CORPOR,Platba/sbs diskusie,"10240073
+VS10240073/SS/KS308"
+530,2024-05-09,-414.0,EUR,PRECISE S.R.O.,Platba/precise event eu den kosice inventar,"24144
+VS24144/SS/KS8"
+531,2024-05-09,-129.02,EUR,ARIES reklama s.r.o.,Platba/aries ke tlac plagatov 27.4-30.4,"1020240010
+VS1020240010/SS/KS308"
+532,2024-05-09,-131.04,EUR,ARIES reklama s.r.o.,Platba/aries ke tlac plagatov 26.4,"1020240011
+VS1020240011/SS/KS308"
+533,2024-05-09,-40000.0,EUR,"HITCHHIKER FILMS,S.R",Platba/produkcia online spotov PS volby do EU parlamentu,"2024055
+VS2024055/SS/KS"
+534,2024-05-09,100000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+535,2024-05-09,75.0,EUR,Ing. MATEJ BESEDA,PLATBA/Dar,"60265
+VS60265/SS4/KS"
+536,2024-05-09,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+537,2024-05-09,50.0,EUR,Lubos Molitoris,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60269
+VS60269/SS3/KS"
+538,2024-05-09,50.0,EUR,Lubos Molitoris,Platba/Darovacia zmluva na podporu kandidata Michal Wiezik v eurovolbach 2024,"60268
+VS60268/SS5/KS"
+539,2024-05-09,50.0,EUR,Lubos Molitoris,Platba/Darovacia zmluva na podporu kandidata Vanda Rogovska v eurovolbach 2024,"60267
+VS60267/SS8/KS"
+540,2024-05-09,-54.31,EUR,"SLOVNAFT, LC, OPATOVA","POS nákup SLOVNAFT, LC, OPATOVA / LUCENEC / (POS 12320429)",
+541,2024-05-09,-45.11,EUR,OMV 2416,POS nákup OMV 2416 / Blatna na Ost / (POS OSK1228B),
+542,2024-05-09,-180.0,EUR,Kvetinarstvo Orchidea,POS nákup Kvetinarstvo Orchidea / Bratislava / (POS 11284705),
+543,2024-05-09,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+544,2024-05-09,-150.0,EUR,svabach.sk,POS nákup svabach.sk / Bratislava / (POS CZ323637),
+545,2024-05-09,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+546,2024-05-07,-3758.4,EUR,"Pandan, s. r. o.",Platba/noviny hu tlac,"202404116
+VS202404116/SS/KS"
+547,2024-05-07,-3000.0,EUR,Michal Mazak,Platba/audiovizualna tvorba pre kampan Lubica Karvasova,"20240009
+VS20240009/SS/KS"
+548,2024-05-07,-10958.4,EUR,"Pandan, s. r. o.","Platba/letaky, plagaty, noviny tlac","202404088
+VS202404088/SS/KS"
+549,2024-05-07,-111.6,EUR,"Pandan, s. r. o.",Platba/mash banner,"202404104
+VS202404104/SS/KS"
+550,2024-05-07,-2839.2,EUR,"Pandan, s. r. o.",Platba/kandidati tlac letakov,"202404089
+VS202404089/SS/KS"
+551,2024-05-07,-50.0,EUR,DEÁKOVÁ KATARÍNA,Platba/vratenie daru slovenska posta 4.4.2024 Deakova Katarina,
+552,2024-05-07,15.0,EUR,LUKAS SVRCEK,PLATBA/PLATBA,
+553,2024-05-07,5000.0,EUR,Ivan Hejda,Platba/Ivan Hejda dar MK,"7
+VS7/SS/KS"
+554,2024-05-07,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+555,2024-05-06,5000.0,EUR,Ivan Hejda,Platba/Ivan Hejda dar MK,"7
+VS7/SS/KS"
+556,2024-05-06,-5.0,EUR,,PREVOD/Poplatok za sluzbu Premium API - Accounts. Mesiac 04/2024 Cena balika 5.00 EUR Cena volani nad limit 0.00 EUR,
+557,2024-05-06,-2177.98,EUR,honest.company s.r.o.,Platba/Trencin europsky den 8.5 zalohova fa gastro sluzby,"12024005
+VS12024005/SS/KS308"
+558,2024-05-06,-250.0,EUR,Macková Bianca,Platba/hudobne vystupenie 17.4 KC 17.4.2024,"2020404
+VS2020404/SS/KS"
+559,2024-05-06,-25.0,EUR,Mesto Trenčín,Platba/trencin spravny poplatok za zabratie priestoru 7.5,"5010013302
+VS5010013302/SS/KS558"
+560,2024-05-06,-250.0,EUR,ŽEN&MAS s. r. o.,Platba/prenajom priestorov michalovce diskusia sit down 25.4,"240002
+VS240002/SS/KS8"
+561,2024-05-06,-500.0,EUR,Petrušková Michaela,"Platba/merketingove, komunikacne sluzby eu kampan 04 24","20240011
+VS20240011/SS/KS308"
+562,2024-05-06,-1300.0,EUR,JAN NIKODEM,Platba/produkcne prace eu kampan 04 24,"12024
+VS12024/SS/KS"
+563,2024-05-06,-2000.0,EUR,Pavol Krajci,Platba/organizacia kampane eu volby 04 24,"2024050101
+VS2024050101/SS/KS"
+564,2024-05-06,-108.0,EUR,OBCIANSKE ZDRUZENIE,Platba/tabacka diskusia prenajom zvukovej techniky; 27.04.2024,"2024104
+VS2024104/SS/KS308"
+565,2024-05-06,-372.0,EUR,AGLO SNINA,"Platba/Yar prenajom reklamnej plochy,potlac,umiestnenie","24130041
+VS24130041/SS/KS"
+566,2024-05-06,-132.12,EUR,"POPRADSKÁ TLAČIAREŇ, VYDAVATEĽSTVO s. r. o.",Platba/Trommlerova letaky,"2404119
+VS2404119/SS/KS308"
+567,2024-05-06,-1200.0,EUR,Pianista s. r. o.,Platba/hudobne vystupenie 27.4.2024 v Kosiciach,"20240004
+VS20240004/SS/KS308"
+568,2024-05-06,-2000.0,EUR,Lea Maria Jassova,Platba/Jassova reklamne marketingove sluzby 04 24,"32024
+VS032024/SS/KS"
+569,2024-05-06,-10874.4,EUR,More Design s. r. o.,"Platba/EU web,kreativa, fotenie,navrh merch","202419
+VS202419/SS/KS"
+570,2024-05-06,-350.0,EUR,ART SPEKTRUM S.R.O.,Platba/vyroba streamu z diskusie v Kacecku,"202431
+VS202431/SS/KS"
+571,2024-05-06,50.0,EUR,Mgr. Eva Rusnakova,PLATBA,"60261
+VS60261/SS11/KS"
+572,2024-05-06,-800.0,EUR,FACEBK *L6YTJ28XC2,EUR NÁKUP POS FACEBK *L6YTJ28XC2 / fb.me/ads / (POS 99999999),
+573,2024-05-06,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+574,2024-05-06,-800.0,EUR,FACEBK *9PE2F2YXC2,EUR NÁKUP POS FACEBK *9PE2F2YXC2 / fb.me/ads / (POS 99999999),
+575,2024-05-04,20.0,EUR,Hall Renáta,Platba/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60262
+VS60262/SS6/KS"
+576,2024-05-03,100.0,EUR,Pokorná Zuzana,Platba,"60260
+VS60260/SS11/KS"
+577,2024-05-03,250.0,EUR,Peter Javorcik,Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60259
+VS60259/SS2/KS"
+578,2024-05-03,4000.0,EUR,Boris Kukumberg,Platba/Boris Kukumberg dar,
+579,2024-05-03,50.0,EUR,Janka Kottulova,Platba/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60258
+VS60258/SS6/KS"
+580,2024-05-03,-2500.0,EUR,Jan Kalocaj,Platba/organizacia podujati 04 23,"20240001
+VS20240001/SS/KS"
+581,2024-05-03,-800.0,EUR,FACEBK *T5AU23GXC2,EUR NÁKUP POS FACEBK *T5AU23GXC2 / fb.me/ads / (POS 99999999),
+582,2024-05-03,-691.93,EUR,FACEBK *49UKZ3LXC2,EUR NÁKUP POS FACEBK *49UKZ3LXC2 / fb.me/ads / (POS 99999999),
+583,2024-05-02,20.0,EUR,"Findor Andrej, PhDr.",Platba/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60257
+VS60257/SS6/KS"
+584,2024-05-02,150.0,EUR,Cifrová Anna,Platba/veronika ostrihonova,
+585,2024-05-02,50000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+586,2024-05-02,25.0,EUR,LAUKO MARTIN,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60253
+VS60253/SS/KS"
+587,2024-05-02,50.0,EUR,PETER LENYI,PLATBA/PODPORA PRE LUCIU YAR,"60255
+VS0000060255/SS0000000006/KS"
+588,2024-05-02,500.0,EUR,Ladislav Hegyi,PLATBA/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60248
+VS60248/SS3/KS"
+589,2024-05-02,250.0,EUR,Peter Cifra,"Platba/Prispevok Veronike, Peter Cifra","60256
+VS60256/SS4/KS"
+590,2024-05-02,150.0,EUR,Georgi Krastev,Platba/Darovacia zmluva na podporu kandidata Lucia Francescato v eurovolbach2024,"60254
+VS60254/SS10/KS"
+591,2024-05-02,-800.0,EUR,FACEBK *TVUTE28XC2,EUR NÁKUP POS FACEBK *TVUTE28XC2 / fb.me/ads / (POS 99999999),
+592,2024-05-02,-800.0,EUR,FACEBK *T9P9E28XC2,EUR NÁKUP POS FACEBK *T9P9E28XC2 / fb.me/ads / (POS 99999999),
+593,2024-05-02,-800.0,EUR,FACEBK *ZS9PZ24YC2,EUR NÁKUP POS FACEBK *ZS9PZ24YC2 / fb.me/ads / (POS 99999999),
+594,2024-05-02,-800.0,EUR,FACEBK*,EUR NÁKUP POS FACEBK* / fb.me/ads / (POS 99999999),
+595,2024-05-01,-1000.0,EUR,MARATÓN s.r.o.,Platba/Kosice hotel maraton diskusia 04 24,"2024000089
+VS2024000089/SS/KS"
+596,2024-05-01,-32.0,EUR,ING. MICHAL FEČÍK - PRESS,Platba/Yar inzercia noviny snina pozvanka na diskusiu,"2404023
+VS2404023/SS/KS"
+597,2024-05-01,-500.0,EUR,Winston Wolf,Platba/marketingove sluzby 03 24,"52024
+VS52024/SS/KS"
+598,2024-05-01,-180.0,EUR,STONED MEDIA s.r.o.,Platba/Rogovska inzercia na led obrazovke,"24040010
+VS24040010/SS/KS"
+599,2024-05-01,-600.0,EUR,Bagin Ľubomír,Platba/bagin moderovanie diskusii,"2024250
+VS2024250/SS/KS"
+600,2024-05-01,-100.0,EUR,SÚKROMNÁ ZÁKLADNÁ UMELECKÁ ŠKOLA DAMA,Platba/Diskusia prenajom priestorov 15.4.2024 DAMA presov,"202401
+VS202401/SS/KS8"
+601,2024-05-01,-150.0,EUR,Igor Lebloch,Platba/organizacne zabezpecenie diskusie v history art music club 25.4.2024,"20240018
+VS20240018/SS/KS"
+602,2024-05-01,-511.8,EUR,"INVISI, S.R.O.",Platba/kacecko produkcne a technicke zabezpecenie diskusie,"2240404
+VS2240404/SS/KS"
+603,2024-05-01,-30.8,EUR,JANUD S.R.O.,Platba/konzum diakusia 17.4.2024,"2240401
+VS2240401/SS/KS"
+604,2024-05-01,-816.0,EUR,"Pandan, s. r. o.","Platba/merch zetony, balony","202404071
+VS202404071/SS/KS"
+605,2024-05-01,-24.0,EUR,ARTON s.r.o.,Platba/varadi tlac plagatov,"240165
+VS240165/SS/KS"
+606,2024-05-01,-144.0,EUR,Tlačová agentúra Slovenskej republiky,Platba/tasr video 03 24,"1000240621
+VS1000240621/SS/KS308"
+607,2024-04-30,10.0,EUR,Svárovský Róbert,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60252
+VS60252/SS1/KS"
+608,2024-04-30,-38.8,EUR,,Poplatky za transakcie,
+609,2024-04-30,-7.0,EUR,,Poplatok za balík,
+610,2024-04-30,15.0,EUR,Bajus Martin,Platba/Darovacia zmluva na podporu kandidata Sofia Karina Trommlerova v eurovolbach 2024,"60250
+VS60250/SS12/KS"
+611,2024-04-30,100.0,EUR,LUKAS MRAZ,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA LUCIA YAR V EUROVOLBACH 2024,"60244
+VS0000060244/SS0000000006/KS"
+612,2024-04-30,30.0,EUR,Luby Samuel Maximilian,Platba,"60247
+VS60247/SS/KS"
+613,2024-04-30,30.0,EUR,Matus Rebic,Platba,"60246
+VS60246/SS/KS"
+614,2024-04-30,-800.0,EUR,FACEBK *Y4X4E2CXC2,EUR NÁKUP POS FACEBK *Y4X4E2CXC2 / fb.me/ads / (POS 99999999),
+615,2024-04-30,-800.0,EUR,FACEBK *2F53V3LXC2,EUR NÁKUP POS FACEBK *2F53V3LXC2 / fb.me/ads / (POS 99999999),
+616,2024-04-29,200.0,EUR,Váradi Krisztián,Platba/Darovacia zmluva na podporu kandidata Krisztian Varadi v eurovolbach 2024,"60245
+VS60245/SS9/KS"
+617,2024-04-29,10.0,EUR,Liana Kuzmova,DE24042961334/0,60242
+618,2024-04-29,100.0,EUR,Zary Ivan,PLATBA/Do toho - za Slovensko v EU a NATO - proti diktatorom a dezinformatorom,"60239
+VS0000060239/SS0000000000/KS0000"
+619,2024-04-29,180.0,EUR,Sofia Karina Trommlerova,PLATBA/Darovacia zmluva na podporu kandidata Sofia Karina Trommlerova v eurovolbach 2024,"60240
+VS60240/SS12/KS"
+620,2024-04-29,30.0,EUR,Ing. JAKUB RUSNAK,PLATBA/Darovacia zmluva na podporu kandidata Sofia Karina Trommlerova v eurovolbach 2024,"60238
+VS60238/SS12/KS"
+621,2024-04-29,-1.0,EUR,MES POPLATOK VISA FIREMNA,Mesačný poplatok MES POPLATOK VISA FIREMNA,
+622,2024-04-29,-800.0,EUR,FACEBK *ML8AZZPXC2,EUR NÁKUP POS FACEBK *ML8AZZPXC2 / fb.me/ads / (POS 99999999),
+623,2024-04-29,-800.0,EUR,FACEBK *ZE23W24YC2,EUR NÁKUP POS FACEBK *ZE23W24YC2 / fb.me/ads / (POS 99999999),
+624,2024-04-29,-800.0,EUR,FACEBK *9K4BB2CXC2,EUR NÁKUP POS FACEBK *9K4BB2CXC2 / fb.me/ads / (POS 99999999),
+625,2024-04-29,-800.0,EUR,FACEBK *HD9N828XC2,EUR NÁKUP POS FACEBK *HD9N828XC2 / fb.me/ads / (POS 99999999),
+626,2024-04-29,-800.0,EUR,FACEBK *FYM6828XC2,EUR NÁKUP POS FACEBK *FYM6828XC2 / fb.me/ads / (POS 99999999),
+627,2024-04-27,150.0,EUR,Ondrej Garaj,Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60241
+VS60241/SS7/KS"
+628,2024-04-26,-2454.0,EUR,"SAKMAR, s. r. o.",Platba/produkcia eventu den europy 1.5.2024 zilina,"240800001
+VS240800001/SS/KS"
+629,2024-04-26,20.0,EUR,Magdalena Skokan,DE24042660607 BELADEBEXXX-E5D1/VARIABILNY SYMBOL 60236 SPECIFICKY Symbol 12,
+630,2024-04-26,10.0,EUR,Matus Havlik,Platba,"60237
+VS60237/SS6/KS"
+631,2024-04-26,-800.0,EUR,FACEBK *BXTMT24YC2,EUR NÁKUP POS FACEBK *BXTMT24YC2 / fb.me/ads / (POS 99999999),
+632,2024-04-26,-800.0,EUR,FACEBK *BPHLQ3LXC2,EUR NÁKUP POS FACEBK *BPHLQ3LXC2 / fb.me/ads / (POS 99999999),
+633,2024-04-25,6000.0,EUR,Ivan Hejda,PLATBA/Ivan Hejda dar MK,"7
+VS7/SS/KS"
+634,2024-04-25,100.0,EUR,Michal Svajda,Platba,"60235
+VS60235/SS/KS8"
+635,2024-04-25,30.0,EUR,NATALIA NASH,PLATBA/Darovacia zmluva na podporu kandidata Miroslav Koc,"60233
+VS60233/SS7/KS"
+636,2024-04-25,20.0,EUR,Ing. Erik Gebhardt,PLATBA/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60231
+VS60231/SS7/KS"
+637,2024-04-25,10.0,EUR,Monika Dorosenkova,Platba/Darovacia zmluva na podporu kandidata Sofia Karina Trommlerova v eurovolbach 2024,"60234
+VS60234/SS12/KS"
+638,2024-04-25,-61.5,EUR,Mall.sk,POS nákup Mall.sk / Bratislava / (POS MIPS7109),
+639,2024-04-25,-800.0,EUR,FACEBK *UK9QUZPXC2,EUR NÁKUP POS FACEBK *UK9QUZPXC2 / fb.me/ads / (POS 99999999),
+640,2024-04-24,-2279.5,EUR,MS Art Designe,Platba/ubytovanie kosice 24.4.-28.4,"2240072
+VS2240072/SS/KS308"
+641,2024-04-24,10.0,EUR,Matej Kalavsky,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60232
+VS60232/SS/KS"
+642,2024-04-24,-846.0,EUR,Rechtys spol. s r.o.,Platba/merch bublifuky,"20240543
+VS20240543/SS/KS"
+643,2024-04-24,-200.0,EUR,"HOTEL NARODNY DOM, S",Platba/prenajom priestorov diskusia banska bystrica,"2400053
+VS2400053/SS/KS"
+644,2024-04-24,10.0,EUR,Mieresova Jana,PLATBA/Prispevok na kampan do EP,"60226
+VS60226/SS/KS"
+645,2024-04-24,250.0,EUR,DOJCAK ROMAN,PLATBA/dar na kampan - volby do EP 2024,"60221
+VS60221/SS/KS"
+646,2024-04-24,-800.0,EUR,FACEBK *TKFVN2GXC2,EUR NÁKUP POS FACEBK *TKFVN2GXC2 / fb.me/ads / (POS 99999999),
+647,2024-04-23,100.0,EUR,"Kendra Pavel, Ing.",Platba/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60227
+VS60227/SS6/KS"
+648,2024-04-23,100.0,EUR,Rastislav Kocan,Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60224
+VS60224/SS7/KS"
+649,2024-04-23,300.0,EUR,Valeria Stefaniskova,Platba/Darovacia zmluva na podporu kandidata Marek Stefanisko v eurovolbach 2024,"60223
+VS60223/SS13/KS"
+650,2024-04-23,10.0,EUR,"Stopjaková Viera, Prof. Ing., PhD.",Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60222
+VS60222/SS7/KS"
+651,2024-04-23,15000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+652,2024-04-23,250.0,EUR,"Prostredník Ondrej, Mgr., PhD.",Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60219
+VS60219/SS7/KS"
+653,2024-04-23,25.0,EUR,FUSKOVA JANA,PLATBA/Darovacia zmluva na podporu kandidata Maria Kocnerova v eurovolbach 2024,"60216
+VS60216/SS14/KS0"
+654,2024-04-23,75.0,EUR,REINGRABER ERIK,PLATBA/Darovacia zmluva na podporu kandidata Martin Poliacik v eurovolbach 2024,"60215
+VS60215/SS15/KS"
+655,2024-04-23,30.0,EUR,PERDIKOVA ZUZANA,PLATBA/Darovacia zmluva na podporu kandidata Martin Hojsi,"60208
+VS60208/SS3/KS"
+656,2024-04-23,500.0,EUR,Martin Valko,Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60217
+VS60217/SS7/KS"
+657,2024-04-23,-46.54,EUR,KAPWING PRO PLAN,POS nákup zahr. KAPWING PRO PLAN / HTTPSWWW.KAPW / (POS M51SA49E),
+658,2024-04-23,-800.0,EUR,FACEBK *6NNDP24YC2,EUR NÁKUP POS FACEBK *6NNDP24YC2 / fb.me/ads / (POS 99999999),
+659,2024-04-23,-800.0,EUR,FACEBK *WZUYZZ7XC2,EUR NÁKUP POS FACEBK *WZUYZZ7XC2 / fb.me/ads / (POS 99999999),
+660,2024-04-22,75.0,EUR,Herzfeldová Petra,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60174
+VS60174/SS1/KS"
+661,2024-04-22,-276.0,EUR,CONFIDENCE MEDIA SR,Platba/varadi prenajom+produkcia,"2421092
+VS2421092/SS9/KS"
+662,2024-04-22,-2520.0,EUR,AFINITA s.r.o.,Platba/merch odznaky,"24010082
+VS24010082/SS/KS308"
+663,2024-04-22,25.0,EUR,Veronika Rohrbock,PLATBA/financna podpora kampane,"60198
+VS60198/SS/KS"
+664,2024-04-22,150.0,EUR,TOMAS CEKANAK,PLATBA/PLATBA,"60202
+VS0000060202/SS0000000001/KS"
+665,2024-04-22,150.0,EUR,TOMAS CEKANAK,PLATBA/PLATBA,"60200
+VS0000060200/SS0000000003/KS"
+666,2024-04-22,100.0,EUR,Mrava Frantisek,PLATBA/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60213
+VS60213/SS6/KS"
+667,2024-04-22,150.0,EUR,Ing. PETRONELA RUDZANOVA,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60185
+VS60185/SS/KS"
+668,2024-04-22,20.0,EUR,Jana Sovicova,Platba/Dar -Mgr. Lucia Francescato,"60212
+VS60212/SS010/KS"
+669,2024-04-22,10.0,EUR,"Sakáč Mikuláš, Ing.",Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60210
+VS60210/SS2/KS"
+670,2024-04-22,-800.0,EUR,FACEBK *AWTJWZ3XC2,EUR NÁKUP POS FACEBK *AWTJWZ3XC2 / fb.me/ads / (POS 99999999),
+671,2024-04-22,-800.0,EUR,FACEBK *ABNGYZ7XC2,EUR NÁKUP POS FACEBK *ABNGYZ7XC2 / fb.me/ads / (POS 99999999),
+672,2024-04-22,-800.0,EUR,FACEBK *QQMMS4UXC2,EUR NÁKUP POS FACEBK *QQMMS4UXC2 / fb.me/ads / (POS 99999999),
+673,2024-04-20,50.0,EUR,"Koterec Frelichová Denisa, Mgr.",Platba/6,"60207
+VS60207/SS6/KS"
+674,2024-04-20,250.0,EUR,"Havlík Miroslav, Ing.",Platba/Od Havlikovcov,"60206
+VS60206/SS6/KS"
+675,2024-04-20,10.0,EUR,Kotmanová Monika,Platba,"60205
+VS60205/SS/KS"
+676,2024-04-20,500.0,EUR,Pavlík Ján,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60204
+VS60204/SS/KS"
+677,2024-04-19,20.0,EUR,"Harvanová Emília, Mgr.",Platba,"60203
+VS60203/SS6/KS"
+678,2024-04-19,-4620.0,EUR,MatusBence s.r.o.,Platba/vizual eurovolby,"2024008
+VS2024008/SS/KS"
+679,2024-04-19,10000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+680,2024-04-19,-156.0,EUR,"GRYF REKLAMNÉ ŠTÚDIO, S. R. O.",Platba/varadi prenajom a realizacia reklamnej plochy,"24038
+VS24038/SS9/KS"
+681,2024-04-19,-1230.0,EUR,Kresky s.r.o.,Platba/merch docasne tetovacky zaloha,"12024007
+VS12024007/SS/KS"
+682,2024-04-19,-658.8,EUR,Delip s. r. o.,Platba/merch textilna stena,"2024050
+VS2024050/SS/KS"
+683,2024-04-19,-4472.4,EUR,"Pandan, s. r. o.","Platba/merch pera, beachflag,kapa","202404058
+VS202404058/SS/KS"
+684,2024-04-19,-35880.0,EUR,GROOW DIGITAL,Platba/media spend-DennikN,"2024052
+VS2024052/SS/KS"
+685,2024-04-19,-68172.0,EUR,GROOW DIGITAL,Platba/media spend-Siteelement,"2024051
+VS2024051/SS/KS"
+686,2024-04-19,-15069.6,EUR,GROOW DIGITAL,Platba/nakup medialneho priestoru-RAS banerovka,"2024050
+VS2024050/SS/KS"
+687,2024-04-19,50.0,EUR,Rastislav Ondro,PLATBA/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60188
+VS60188/SS2/KS"
+688,2024-04-19,700.0,EUR,BORIS ESSENDER,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA LUCIA YAR V EUROVOLBACH 2024,"60196
+VS0000060196/SS0000000006/KS"
+689,2024-04-19,150.0,EUR,TOMAS CHATRNUCH,PLATBA/MARTIN HOJSIK,"60194
+VS0000060194/SS0000000003/KS"
+690,2024-04-19,10.0,EUR,Ing. Henrieta Sutekova PhD.,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60133
+VS60133/SS/KS"
+691,2024-04-19,20.0,EUR,BILCIK MARIAN,PLATBA,"60179
+VS60179/SS3/KS0558"
+692,2024-04-19,20.0,EUR,Zuzana Kupcova,Platba/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60199
+VS60199/SS6/KS"
+693,2024-04-19,10.0,EUR,Charles Edouard Richard STENKER,DE24041959857 801b5bbb1bd343f8/Slovensko patri do EU,
+694,2024-04-19,15.0,EUR,Martin Magyar,Platba,"60187
+VS60187/SS/KS0298"
+695,2024-04-19,-800.0,EUR,FACEBK *RNE2YZBXC2,EUR NÁKUP POS FACEBK *RNE2YZBXC2 / fb.me/ads / (POS 99999999),
+696,2024-04-18,250.0,EUR,"Hlavačková Dana, Ing.",Platba/Darovacia zmluva na podporu kandidata Lubica Karvasova v eurovolbach 2024,"60195
+VS60195/SS2/KS"
+697,2024-04-18,500.0,EUR,Jan Glovicko,Platba/Michal Wiezik,"60193
+VS60193/SS5/KS"
+698,2024-04-18,500.0,EUR,Jan Glovicko,Platba/Martin Hojsik,"60192
+VS60192/SS3/KS"
+699,2024-04-18,10.0,EUR,Jana Ormandyova,Platba,
+700,2024-04-18,150.0,EUR,PETRONELA RUDZANOVA,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA PS V EUROVOLBACH 2024,"60185
+VS0000060185/SS/KS"
+701,2024-04-18,50.0,EUR,Zary Ivan,PLATBA/Do toho,"60181
+VS0000060181/SS0000000000/KS0000"
+702,2024-04-17,20.0,EUR,Katarina Durcanska,Platba/Podpora europskej buducnosti Hojsik,"60183
+VS60183/SS/KS298"
+703,2024-04-17,20.0,EUR,Katarina Durcanska,Platba/Podpora europskej buducnosti,"60183
+VS60183/SS/KS298"
+704,2024-04-17,40.0,EUR,Stanislav Hunka,Platba,"60182
+VS60182/SS/KS"
+705,2024-04-17,-432.0,EUR,OBCIANSKE ZDRUZENIE,Platba/prenajom zvukovej techniky podujatie KE 14.3.2024,"2024071
+VS2024071/SS/KS308"
+706,2024-04-17,-200.0,EUR,Knapík Slavomír,Platba/technicke zabezpecenie podujatia KE 14.3.2024,"20240011
+VS20240011/SS/KS"
+707,2024-04-17,-165.6,EUR,GROOW DIGITAL,Platba/agency fee boosting META 03 24,"2024047
+VS2024047/SS/KS"
+708,2024-04-17,-26493.6,EUR,GROOW DIGITAL,"Platba/agency fee 03/24, media spend Petit Press 03/24","2024046
+VS2024046/SS/KS"
+709,2024-04-17,-2000.0,EUR,Veronika Gulasova,Platba/gulasova manazovanie timu L.Odora eu volby,"22024
+VS22024/SS/KS"
+710,2024-04-17,-14146.8,EUR,"Pandan, s. r. o.","Platba/merch eu volby tricka, tasky, rollup","202404052
+VS202404052/SS/KS"
+711,2024-04-17,-379.2,EUR,NEVERENDING STORY s.,Platba/prenajom aut diskusia KE 03 24,"2401092
+VS2401092/SS/KS"
+712,2024-04-17,150000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+713,2024-04-17,500.0,EUR,"Mráz Dušan, Ing.",Platba/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60180
+VS60180/SS6/KS"
+714,2024-04-17,50.0,EUR,Henrieta Slavkovska,Platba/pre kampan pre eurovolieb: Martin Hojsik,"60178
+VS60178/SS3/KS"
+715,2024-04-17,20.0,EUR,"Kamil Dovciak, Anna Dovciakova",Platba/Eurovolby,"60177
+VS60177/SS/KS"
+716,2024-04-17,50.0,EUR,Kameniar Martin,Platba/Darovacia zmluva na podporu kandidata Andreas Rusnak v eurovolbach 2024,"60176
+VS60176/SS11/KS"
+717,2024-04-17,20.0,EUR,BABYLON WORLD s.r.o.,PLATBA/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60156
+VS60156/SS3/KS"
+718,2024-04-17,75.0,EUR,Ing.Rudolf Klein,"PLATBA PP24041764352129/RUDOLF KLEIN, PROGRESIVNE SLOVENSKO","60159
+VS60159/SS6307156691/KS0558"
+719,2024-04-17,10.0,EUR,MARTIN DURKO,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA MARTIN HOJSIK V EUROVOLBACH 2024,"60147
+VS0000060147/SS0000000003/KS"
+720,2024-04-17,10.0,EUR,ZUZANA MALIKOVA,PLATBA/PREVOD PROSTRIEDKOV,"60163
+VS0000060163/SS0000000003/KS"
+721,2024-04-17,20.0,EUR,RADOVAN DEMOCKO,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA MARTIN HOJSIK V EUROVOLBACH 2024,"60162
+VS0000060162/SS0000000003/KS"
+722,2024-04-17,20.0,EUR,RADOVAN DEMOCKO,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA LUDOVIT ODOR V EUROVOLBACH 2024,"60161
+VS0000060161/SS0000000001/KS"
+723,2024-04-17,75.0,EUR,MIROSLAV ROSKOS,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA PS V EUROVOLBACH 2024,"60129
+VS0000060129/SS/KS"
+724,2024-04-17,75.76,EUR,NÁRODNÁ BANKA SLOVEN,DT24041762713 FT266961997271/60173,
+725,2024-04-17,20.0,EUR,NATASA PETRENKOVA,PLATBA/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60155
+VS60155/SS3/KS"
+726,2024-04-17,150.0,EUR,Ing. Jan Gottweis,PLATBA,"60152
+VS60152/SS/KS"
+727,2024-04-17,10.0,EUR,Mgr. Lenka Prackova,PLATBA/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60131
+VS60131/SS0/KS"
+728,2024-04-17,10.0,EUR,Ivan Borcin,Platba,"60175
+VS60175/SS/KS"
+729,2024-04-17,250.0,EUR,KOLLAROVA ZUZANA,PLATBA,"60145
+VS60145/SS3/KS0968"
+730,2024-04-17,250.0,EUR,KOLLAROVA ZUZANA,PLATBA,"60144
+VS60144/SS1/KS0968"
+731,2024-04-17,10.0,EUR,NOVOTNY RASTISLAV,PLATBA/Rastislav Novotny,"60140
+VS60140/SS3/KS0306"
+732,2024-04-17,30.0,EUR,MiroslavaGrecmalova,PLATBA,"60167
+VS60167/SS0/KS"
+733,2024-04-17,20.0,EUR,Alena Vicenova,Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60170
+VS60170/SS/KS"
+734,2024-04-16,10.0,EUR,Kristina Pavelkova,Platba/Darovacia zmluva na podporu kandidata Michal Wiezik v eurovolbach 2024,"60169
+VS60169/SS5/KS"
+735,2024-04-16,10.0,EUR,Maria Vilimova,Platba,"60168
+VS60168/SS3/KS0298"
+736,2024-04-16,50.0,EUR,"Dravecká Moussa Zuzana, Mgr.",Platba/Darovacia zmluva na podporu kandidata ps v eurovolbach 2024,"60166
+VS60166/SS/KS"
+737,2024-04-16,30.0,EUR,Eva Gubova,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60165
+VS60165/SS3/KS"
+738,2024-04-16,100.0,EUR,"Kunsch Ivo, Ing.",Platba,"60164
+VS60164/SS3/KS"
+739,2024-04-16,250.0,EUR,"Balko Martin, MUDr.",Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60160
+VS60160/SS3/KS"
+740,2024-04-16,50.0,EUR,Maria Hapova,Platba,"60157
+VS60157/SS4/KS"
+741,2024-04-16,10.0,EUR,Lenka Hubinská,PLATBA/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60136
+VS60136/SS3/KS"
+742,2024-04-16,10.0,EUR,Zuzana Gubova,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60126
+VS60126/SS3/KS"
+743,2024-04-16,20.0,EUR,Milan Spac,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60153
+VS60153/SS3/KS"
+744,2024-04-16,50.0,EUR,Karol Halaszi,Platba,"60151
+VS60151/SS/KS"
+745,2024-04-16,-260.0,EUR,Ridzoňová Dušana,Platba/zmluva odielo ridzonova databaza miest obci,"202402
+VS202402/SS/KS"
+746,2024-04-16,900.0,EUR,"Miháliková Katarína, JUDr.",Platba/Martin Hojsik dar kampan volby do EP 2024,"60150
+VS60150/SS3/KS"
+747,2024-04-16,150.0,EUR,Richard Ziman,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60149
+VS60149/SS3/KS"
+748,2024-04-16,10.0,EUR,Nezvalová Ivana,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60148
+VS60148/SS3/KS"
+749,2024-04-16,20.0,EUR,Lucia Skrakova,Platba,"60143
+VS60143/SS/KS"
+750,2024-04-16,50.0,EUR,Martičeková Kamila,Platba,"60142
+VS60142/SS1/KS"
+751,2024-04-16,150.0,EUR,"Mráz Michal, Ing. arch.",Platba/Darovacia zmluva na podporu kandidata Lucia Yar v eurovolbach 2024,"60137
+VS60137/SS6/KS"
+752,2024-04-16,40.0,EUR,Sergej Valovic,Platba/Dar,"60130
+VS60130/SS/KS298"
+753,2024-04-16,75.0,EUR,Košíková Eva,Platba,"60132
+VS60132/SS20240416/KS0558"
+754,2024-04-16,20.0,EUR,Chovanová Ivana,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60135
+VS60135/SS3/KS"
+755,2024-04-16,10.0,EUR,Berešová Augustína,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60134
+VS60134/SS3/KS"
+756,2024-04-16,50.0,EUR,"Medovičová Monika, Ing.",Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60127
+VS60127/SS3/KS"
+757,2024-04-16,-800.0,EUR,FACEBK *WE4GB3LXC2,EUR NÁKUP POS FACEBK *WE4GB3LXC2 / fb.me/ads / (POS 99999999),
+758,2024-04-15,150.0,EUR,JAKUB VIKTORY,PLATBA/VANDA ROGOVSKA,"60124
+VS0000060124/SS0000000008/KS"
+759,2024-04-15,150.0,EUR,"Lifka Róbert, Ing.",Platba/Darovacia zmluva na podporu kandidata Martin Poliacik v eurovolbach 2024,"60125
+VS60125/SS15/KS"
+760,2024-04-15,-1022.0,EUR,GOPAY $KYTARY.SK,INT NÁKUP POS EUR GOPAY $KYTARY.SK / kytary.sk / (POS EE800019),
+761,2024-04-15,-1402.86,EUR,GOPAY $PROFI-DJ.SK,INT NÁKUP POS EUR GOPAY $PROFI-DJ.SK / profi-dj.sk / (POS EE800046),
+762,2024-04-12,10.0,EUR,Kudzia Viktor,Platba/Dar,"60123
+VS60123/SS/KS"
+763,2024-04-12,75.0,EUR,JAN MARAK,DE24041264727 RGHNAMO13741533X/60113,
+764,2024-04-12,500.0,EUR,Mgr. Denisa Lastovkova,PLATBA/Darovacia zmluva na podporu kandidata Lucia Francescato v eurovolbach2024,"60115
+VS60115/SS010/KS"
+765,2024-04-12,150.0,EUR,GLADISOVA KOPUNEKOV,PLATBA/Podpora kandidata Vanda Rogovska c. 8,"60120
+VS60120/SS8/KS"
+766,2024-04-11,200.0,EUR,Váradi Krisztián,Platba/Darovacia zmluva na podporu kandidata Krisztian Varadi v eurovolbach 2024,"60122
+VS60122/SS9/KS"
+767,2024-04-11,10.0,EUR,"Kečka Roman, PhDr.",Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60121
+VS60121/SS7/KS"
+768,2024-04-11,250.0,EUR,"Prostredník Ondrej, Mgr., PhD.",Platba/Darovacia zmluva na podporu kandidata Vanda Rogovska v eurovolbach 2024,"60118
+VS60118/SS8/KS"
+769,2024-04-11,3500.0,EUR,Andreas Rusnak,PLATBA/Andreas Rusnak dar,"11
+VS11/SS/KS"
+770,2024-04-11,150.0,EUR,Kurucova Katarina,PLATBA,"60111
+VS60111/SS9/KS"
+771,2024-04-11,250.0,EUR,Milan Sleziak,Platba/Darovacia zmluva na podporu kandidata Veronika Cifrova Ostrihonova v eurovolbach 2024,"60117
+VS60117/SS4/KS"
+772,2024-04-11,200.0,EUR,Rene Gladis,Platba/Darovacia zmluva na podporu kandidata Vanda Rogovska v eurovolbach 2024,"60116
+VS60116/SS8/KS"
+773,2024-04-10,10.0,EUR,Rogovská Vanda,Platba,"60114
+VS60114/SS8/KS"
+774,2024-04-10,-300.0,EUR,"Pavol Krajci Consulting, s.r.o.",Platba/organizacia diskusie zvolen 4.4.2024,"2024040501
+VS2024040501/SS/KS"
+775,2024-04-10,-300.0,EUR,PUKAR S.R.O.,Platba/maskerske prace fotenie eu kandidatky,"2240015
+VS2240015/SS/KS"
+776,2024-04-10,5000.0,EUR,JAROSKA MILOS,PLATBA/Darovacia zmluva,"3
+VS3/SS/KS"
+777,2024-04-10,-3.0,EUR,TWITTER PAID FEATURES,INT NÁKUP POS EUR TWITTER PAID FEATURES / HTTPSWWW.X.CO / (POS KWX1DVYY),
+778,2024-04-09,-1000.0,EUR,Hana Kobliskova,Platba/Kobliskova marketing 03 24,"2024003
+VS2024003/SS/KS"
+779,2024-04-09,-5772.0,EUR,More Design s. r. o.,"Platba/More Design kreativa,fotenie,web","202416
+VS202416/SS/KS"
+780,2024-04-09,-2000.0,EUR,Čifári Zuzana,VÝBER V HOTOVOSTI/vklad do pokladne,
+781,2024-04-09,500.0,EUR,Dusan Kocis,Platba/Darovacia zmluva na podporu kandidata Martin Hojsik v eurovolbach 2024,"60110
+VS60110/SS3/KS"
+782,2024-04-09,20.0,EUR,Baláž Siváková Beáta,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60109
+VS60109/SS1/KS"
+783,2024-04-09,-573.4,EUR,"NOLIS, s.r.o.",Platba/Parlamentka prenajom priestorov tlacova konferencia,"1124015
+VS1124015/SS/KS308"
+784,2024-04-09,250.0,EUR,MARIA KOCNEROVA,PLATBA/Darovacia zmluva na podporu kandidata Maria Kocnerova v eurovolbach 2024,"60104
+VS60104/SS14/KS"
+785,2024-04-09,20.0,EUR,Lucia Kruta,Platba/Darovacia zmluva na podporu kandidata Krisztian Varadi v eurovolbach 2024,"60108
+VS60108/SS9/KS"
+786,2024-04-09,-800.0,EUR,FACEBK *Q45XEZ3XC2,EUR NÁKUP POS FACEBK *Q45XEZ3XC2 / fb.me/ads / (POS 99999999),
+787,2024-04-08,25.0,EUR,Kristina Priecelova,Platba/Darovacia zmluva na podporu kandidata Ludovit Odor v eurovolbach 2024,"60107
+VS60107/SS1/KS"
+788,2024-04-08,300.0,EUR,Marek Stefanisko,Platba/Darovacia zmluva na podporu kandidata Marek Stefanisko v eurovolbach 2024,"60106
+VS60106/SS13/KS"
+789,2024-04-08,100.0,EUR,PATRIK BENKA,PLATBA/DAROVACIA ZMLUVA NA PODPORU KANDIDATA LUCIA FRANCESCATO V EUROVOLBACH 2024,"60102
+VS0000060102/SS0000000010/KS"
+790,2024-04-08,500.0,EUR,Advertic s. r. o.,Platba,"60105
+VS60105/SS/KS"
+791,2024-04-08,500.0,EUR,JACOBUS - ANDREA BOMHOFF,Platba PO24040781107756/60103,
+792,2024-04-04,-1700.0,EUR,Lea Maria Jassova,Platba/Jassova socialne siete 03 24,"12024
+VS012024/SS/KS"
+793,2024-04-04,50.0,EUR,"SLOVENSKÁ POŠTA, A.S.",PLATBA,"1009400001
+VS1009400001/SS6010000768/KS0998"
+794,2024-04-04,2500.0,EUR,YAR LUCIA,PLATBA/Lucia Yar dar,"6
+VS6/SS/KS"
+795,2024-04-03,50.0,EUR,Kubaň Jakub,Platba/Darovacia zmluva na podporu kandidata Sofia Karina Trommlerova v eurovolbach 2024,"60101
+VS60101/SS12/KS"
+796,2024-04-03,-504.0,EUR,DANIEL FERENCIK,Platba/Prenajom fotostudia a techniky,"2403002
+VS2403002/SS/KS"
+797,2024-04-03,-600.0,EUR,Seeya Creative,PLATBA VA24040309443/Livestream diskusia praha fa c.2024036,
+798,2024-04-03,-300.0,EUR,"GOKYO, S.R.O.",Platba/gokyo fotenie kandidatov,"20240010
+VS20240010/SS/KS"
+799,2024-04-03,-1000.0,EUR,Petrušková Michaela,Platba/Petruskova marketingove sluzby 03 24,"20240008
+VS20240008/SS/KS308"
+800,2024-04-03,-781.59,EUR,FACEBK *9C3GU2LXC2,EUR NÁKUP POS FACEBK *9C3GU2LXC2 / fb.me/ads / (POS 99999999),
+801,2024-03-30,-6.6,EUR,,Poplatky za transakcie,
+802,2024-03-30,-7.0,EUR,,Poplatok za balík,
+803,2024-03-30,20.0,EUR,"Kečka Roman, PhDr.",Platba/Dar pre Miroslava Kocura,"60100
+VS60100/SS007/KS"
+804,2024-03-28,5000.0,EUR,"Hojsík Martin, Mgr.",Platba/martin hojsik dar,"3
+VS3/SS/KS"
+805,2024-03-28,30.0,EUR,"Kubaňová Silvia, Mgr.",Platba/Kampan s.k.trommler,"60096
+VS60096/SS12/KS0308"
+806,2024-03-28,10.0,EUR,Ivan Kamenec,Platba,"60095
+VS60095/SS7/KS"
+807,2024-03-28,990.0,EUR,"Cifrová Ostrihoňová Veronika, Bc.",Platba/Darovacia zmluva na podporu kandidata Veronika Cifrova Ostrihonova v eurovolbach 2024,"60094
+VS60094/SS4/KS"
+808,2024-03-27,-1.0,EUR,MES POPLATOK VISA FIREMNA,Mesačný poplatok MES POPLATOK VISA FIREMNA,
+809,2024-03-27,8000.0,EUR,Ing. Michal Wiezik Ph.D.,PLATBA/Michal Wiezik,"5
+VS05/SS/KS"
+810,2024-03-26,-2582.2,EUR,VB MANAGEMENT S.R.O.,"Platba/Hotel Beigli prenajom priestoru, catering 25.3.2024","2400094
+VS2400094/SS/KS"
+811,2024-03-26,-480.0,EUR,PUKAR S.R.O.,Platba/maskerske prace fotenie eu kandidatky,"224008
+VS224008/SS/KS"
+812,2024-03-26,-558.29,EUR,NEVERENDING STORY s.,Platba/prenajom aut diskusia praha 03 24,"2401069
+VS2401069/SS/KS"
+813,2024-03-26,-800.0,EUR,Slovenská výtvarná únia,Platba/prenajom priestorov galeria umelka tlacova konferencia 6.3.2024,"2024010
+VS2024010/SS/KS"
+814,2024-03-26,-1000.0,EUR,MARATÓN s.r.o.,Platba/Kosice hotel maraton diskusia 03 24,"2024000052
+VS2024000052/SS/KS"
+815,2024-03-26,-144.0,EUR,ASGUARD SECURITY,Platba/Kosice diskusia sbs,"5024034
+VS5024034/SS/KS308"
+816,2024-03-26,-96.0,EUR,ARES SECURITY CORPOR,Platba/Banska Bystrica sbs diskusia 29.2.2024,"10240029
+VS10240029/SS/KS308"
+817,2024-03-26,-204.0,EUR,MESTO BANSKA BYSTRIC,Platba/Banska Bystrica prenajom priestorov diskusia 29.2.2024,"7420240035
+VS7420240035/SS62/KS3718"
+818,2024-03-26,-4500.0,EUR,"ENGRAMS, s.r.o.",Platba/Engrams poradenstvo pre kampan do eu volieb 02 24,"20240002
+VS20240002/SS/KS"
+819,2024-03-26,-4500.0,EUR,"ENGRAMS, s.r.o.",Platba/Engrams poradenstvo pre kampan do eu volieb 01 24,"20240001
+VS20240001/SS/KS"
+820,2024-03-26,-1603.96,EUR,NH COLLECTION BRUSSELS CE,EUR NÁKUP POS NH COLLECTION BRUSSELS CE / BRUXELLES / (POS 21720101),
+821,2024-03-25,-22.87,EUR,KAPWING PRO PLAN,POS nákup zahr. KAPWING PRO PLAN / HTTPSWWW.KAPW / (POS M51SA49E),
+822,2024-03-25,-22.87,EUR,KAPWING PRO PLAN,POS nákup zahr. KAPWING PRO PLAN / HTTPSWWW.KAPW / (POS M51SA49E),
+823,2024-03-22,180.0,EUR,Andreas Rusnak,PLATBA/Darovacia zmluva na podporu kandidata Andreas Rusnak v eurovolbach 2024,"60087
+VS60087/SS11/KS"
+824,2024-03-22,-858.48,EUR,NH COLLECTION BRUSSELS CE,EUR NÁKUP POS NH COLLECTION BRUSSELS CE / BRUXELLES / (POS 21720101),
+825,2024-03-22,-3007.44,EUR,NH COLLECTION BRUSSELS CE,EUR NÁKUP POS NH COLLECTION BRUSSELS CE / BRUXELLES / (POS 21720101),
+826,2024-03-21,30.0,EUR,FRIC JOZEF,PLATBA/PS Kocur,"60086
+VS60086/SS7/KS"
+827,2024-03-21,-8328.0,EUR,More Design s. r. o.,"Platba/More Design dizajn web, skolenie,dizajn eu kampan","202412
+VS202412/SS/KS"
+828,2024-03-20,10.0,EUR,Vladislav Pisancik,PLATBA/dar Miro K.,VS/SS007/KS
+829,2024-03-20,-7860.0,EUR,MatusBence s.r.o.,Platba/Eu volby vizual fotenie,"2024006
+VS2024006/SS/KS"
+830,2024-03-20,-250.0,EUR,BASEfactory s. r. o.,Platba/prenajom priestorov fotenie,"182024
+VS0182024/SS/KS"
+831,2024-03-20,-1404.0,EUR,ARTON s.r.o.,Platba/Arton tlac plagatov,"240114
+VS240114/SS/KS"
+832,2024-03-20,-2790.0,EUR,ARTON s.r.o.,Platba/Arton najom bilboard 15.3-31.3.2024,"240113
+VS240113/SS/KS"
+833,2024-03-20,40000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+834,2024-03-20,-45.7,EUR,ZELEZNICNA SPOLOCNOST,POS nákup ZELEZNICNA SPOLOCNOST / BRATISLAVA / (POS E3SB0001),
+835,2024-03-19,180.0,EUR,YAR LUCIA,PLATBA/Darovacia zmluva na podporu kandidata Lucia Yar v,"60082
+VS60082/SS6/KS"
+836,2024-03-18,100.0,EUR,David Marcel,Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60084
+VS60084/SS7/KS"
+837,2024-03-18,77.77,EUR,"Kocúr Miroslav, ThDr., PhD.",Platba/Darovacia zmluva na podporu kandidata Miroslav Kocur v eurovolbach 2024,"60083
+VS60083/SS7/KS"
+838,2024-03-18,-329.42,EUR,AUSTRIAN AIR2572163395725,EUR NÁKUP POS AUSTRIAN AIR2572163395725 / WWW.LUFTHANSA / (POS 28341049),
+839,2024-03-18,-751.11,EUR,AUSTRIAN AI 2572163418378,EUR NÁKUP POS AUSTRIAN AI 2572163418378 / TICKET MAILED / (POS 99999999),
+840,2024-03-18,-652.11,EUR,AUSTRIAN AI 2572163418337,EUR NÁKUP POS AUSTRIAN AI 2572163418337 / TICKET MAILED / (POS 99999999),
+841,2024-03-18,-800.11,EUR,AUSTRIAN AI 2572163418298,EUR NÁKUP POS AUSTRIAN AI 2572163418298 / TICKET MAILED / (POS 99999999),
+842,2024-03-18,-283.8,EUR,AUSTRIAN AIR2572163349657,EUR NÁKUP POS AUSTRIAN AIR2572163349657 / WWW.LUFTHANSA / (POS 28341049),
+843,2024-03-14,-759.35,EUR,BKG*HOTEL AT BOOKING.C,EUR NÁKUP POS BKG*HOTEL AT BOOKING.C / (888)850-3958 / (POS 37850189),
+844,2024-03-12,-298.8,EUR,LASA s.r.o.,Platba/prenajom podia tlacovka 6.3.2024,"2024014
+VS2024014/SS/KS"
+845,2024-03-12,-800.0,EUR,FACEBK MHU242LXC2,EUR NÁKUP POS FACEBK MHU242LXC2 / fb.me/ads / (POS 99999999),
+846,2024-03-11,-720.0,EUR,FACEBK *LR8F7YPXC2,EUR NÁKUP POS FACEBK *LR8F7YPXC2 / fb.me/ads / (POS 99999999),
+847,2024-03-08,-480.0,EUR,FACEBK *9KXGYYFXC2,EUR NÁKUP POS FACEBK *9KXGYYFXC2 / fb.me/ads / (POS 99999999),
+848,2024-03-07,-250.0,EUR,Ján Čief,"Platba/diskusia BB 29.2.2024 osvetlenie, ozvucenie","946
+VS0946/SS/KS"
+849,2024-03-07,-69.0,EUR,FRESH REPUBLIC s. r. o.,Platba/FRESH REPUBLIC obcerstvenie tlacova konferencia,"2024104
+VS2024104/SS/KS"
+850,2024-03-05,-3110.4,EUR,TrollWall AI,"Platba/TrollWall sluzby, 5uctov , 03-06 2024","20240304
+VS20240304/SS/KS"
+851,2024-03-05,-3600.0,EUR,JANA GOGH S. R. O.,Platba/Gogh reklamne a marketingove sluzby 02 24,"20240008
+VS20240008/SS/KS"
+852,2024-03-05,-420.0,EUR,"GOKYO, S.R.O.",Platba/kostymy ps fotenie,"20240006
+VS20240006/SS/KS"
+853,2024-03-05,-239472.9,EUR,"Unimedia spol. ,s.r.",Platba/UNIMEDIA OOH 04-06 2024,"720240012
+VS720240012/SS/KS"
+854,2024-03-05,240000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,
+855,2024-03-04,-45.01,EUR,SHELL 8257,POS nákup SHELL 8257 / EINSTEINOVA / (POS 33825702),
+856,2024-03-04,-161.85,EUR,FACEBK *SKL2XXPXC2,EUR NÁKUP POS FACEBK *SKL2XXPXC2 / fb.me/ads / (POS 99999999),
+857,2024-03-01,-1700.0,EUR,Ministerstvo vnútra Slovenskej republiky,Platba/volebna kaucia Progresivne Slovensko EU volby,"51224836
+VS51224836/SS/KS"
+858,2024-02-29,-2.6,EUR,,Poplatky za transakcie,
+859,2024-02-29,-7.0,EUR,,Poplatok za balík,
+860,2024-02-27,-1.0,EUR,MES POPLATOK VISA FIREMNA,Mesačný poplatok MES POPLATOK VISA FIREMNA,
+861,2024-02-26,-320.0,EUR,FACEBK *P4TNXX7XC2,EUR NÁKUP POS FACEBK *P4TNXX7XC2 / fb.me/ads / (POS 99999999),
+862,2024-02-22,-48.0,EUR,NEVERENDING STORY s.,Platba/dopravne sluzby tlacovka 20.2,"2401052
+VS2401052/SS/KS"
+863,2024-02-15,-210.0,EUR,FACEBK *QE9MGX3XC2,EUR NÁKUP POS FACEBK *QE9MGX3XC2 / fb.me/ads / (POS 99999999),
+864,2024-02-14,-140.0,EUR,FACEBK *CSBEFX3XC2,EUR NÁKUP POS FACEBK *CSBEFX3XC2 / fb.me/ads / (POS 99999999),
+865,2024-02-12,-100.0,EUR,FACEBK *5TWUGXBXC2,EUR NÁKUP POS FACEBK *5TWUGXBXC2 / fb.me/ads / (POS 99999999),
+866,2024-02-09,-230.6,EUR,ENERGO ZUGOV S.R.O.,Platba/Giselle tlacova konferencia,"20240002
+VS20240002/SS/KS"
+867,2024-02-09,-90.0,EUR,FACEBK *66L2AX3XC2,EUR NÁKUP POS FACEBK *66L2AX3XC2 / fb.me/ads / (POS 99999999),
+868,2024-02-08,-60.0,EUR,FACEBK *LARSBX7XC2,EUR NÁKUP POS FACEBK *LARSBX7XC2 / fb.me/ads / (POS 99999999),
+869,2024-02-07,-40.0,EUR,FACEBK *CMHV7XXXC2,EUR NÁKUP POS FACEBK *CMHV7XXXC2 / fb.me/ads / (POS 99999999),
+870,2024-02-06,-33.0,EUR,FACEBK *88UEZWPXC2,EUR NÁKUP POS FACEBK *88UEZWPXC2 / fb.me/ads / (POS 99999999),
+871,2024-02-06,-27.0,EUR,FACEBK *VMWJTYKXC2,EUR NÁKUP POS FACEBK *VMWJTYKXC2 / fb.me/ads / (POS 99999999),
+872,2024-02-06,-22.0,EUR,FACEBK *G3QBTYKXC2,EUR NÁKUP POS FACEBK *G3QBTYKXC2 / fb.me/ads / (POS 99999999),
+873,2024-02-06,-18.0,EUR,FACEBK *QB8RTXFXC2,EUR NÁKUP POS FACEBK *QB8RTXFXC2 / fb.me/ads / (POS 99999999),
+874,2024-02-06,-15.0,EUR,FACEBK *PNREUX3YC2,EUR NÁKUP POS FACEBK *PNREUX3YC2 / fb.me/ads / (POS 99999999),
+875,2024-02-06,-12.0,EUR,FACEBK *GYWPSYKXC2,EUR NÁKUP POS FACEBK *GYWPSYKXC2 / fb.me/ads / (POS 99999999),
+876,2024-02-06,-10.0,EUR,FACEBK *WBF9UX3YC2,EUR NÁKUP POS FACEBK *WBF9UX3YC2 / fb.me/ads / (POS 99999999),
+877,2024-02-06,-9.0,EUR,FACEBK *ZST6UX3YC2,EUR NÁKUP POS FACEBK *ZST6UX3YC2 / fb.me/ads / (POS 99999999),
+878,2024-02-06,-6.0,EUR,FACEBK *2UFD5XXXC2,EUR NÁKUP POS FACEBK *2UFD5XXXC2 / fb.me/ads / (POS 99999999),
+879,2024-02-06,-5.0,EUR,FACEBK *98478X7XC2,EUR NÁKUP POS FACEBK *98478X7XC2 / fb.me/ads / (POS 99999999),
+880,2024-02-06,-4.0,EUR,FACEBK *NG355X3XC2,EUR NÁKUP POS FACEBK *NG355X3XC2 / fb.me/ads / (POS 99999999),
+881,2024-02-06,-6.14,EUR,FACEBK *TCRX9XBXC2,EUR NÁKUP POS FACEBK *TCRX9XBXC2 / fb.me/ads / (POS 99999999),
+882,2024-02-05,-3.0,EUR,FACEBK *4HE64X3XC2,EUR NÁKUP POS FACEBK *4HE64X3XC2 / fb.me/ads / (POS 99999999),
+883,2024-02-05,-3.0,EUR,FACEBK *73B39XBXC2,EUR NÁKUP POS FACEBK *73B39XBXC2 / fb.me/ads / (POS 99999999),
+884,2024-02-05,-2.0,EUR,FACEBK *UKDBRYKXC2,EUR NÁKUP POS FACEBK *UKDBRYKXC2 / fb.me/ads / (POS 99999999),
+885,2024-02-05,-2.0,EUR,FACEBK *ZANARYKXC2,EUR NÁKUP POS FACEBK *ZANARYKXC2 / fb.me/ads / (POS 99999999),
+886,2024-02-05,-2.0,EUR,FACEBK *JVJ9RYKXC2,EUR NÁKUP POS FACEBK *JVJ9RYKXC2 / fb.me/ads / (POS 99999999),
+887,2024-02-05,-2.0,EUR,FACEBK *62FYRXFXC2,EUR NÁKUP POS FACEBK *62FYRXFXC2 / fb.me/ads / (POS 99999999),
+888,2024-02-05,-2.0,EUR,FACEBK *MCFXRXFXC2,EUR NÁKUP POS FACEBK *MCFXRXFXC2 / fb.me/ads / (POS 99999999),
+889,2024-02-05,-2.0,EUR,FACEBK *JZLV8XBXC2,EUR NÁKUP POS FACEBK *JZLV8XBXC2 / fb.me/ads / (POS 99999999),
+890,2024-02-05,-2.0,EUR,FACEBK *A4CDZZTXC2,EUR NÁKUP POS FACEBK *A4CDZZTXC2 / fb.me/ads / (POS 99999999),
+891,2024-02-05,-2.0,EUR,FACEBK *YQ4U8XBXC2,EUR NÁKUP POS FACEBK *YQ4U8XBXC2 / fb.me/ads / (POS 99999999),
+892,2024-02-02,-5.0,EUR,ZMENA DENNÉHO LIMITU,Zmena limitu/úv. rámca ZMENA DENNÉHO LIMITU,
+893,2024-02-02,-5.0,EUR,ZMENA DENNÉHO LIMITU,Zmena limitu/úv. rámca ZMENA DENNÉHO LIMITU,
+894,2024-02-01,-44850.0,EUR,"Unimedia spol. ,s.r.",Platba/UNIMEDIA OOH 02-03 2024,"720240006
+VS720240006/SS/KS"
+895,2024-01-31,-0.0,EUR,,Poplatok za balík,
+896,2024-01-31,70000.0,EUR,Progresívne Slovensko,Platba/prevod medzi uctami,

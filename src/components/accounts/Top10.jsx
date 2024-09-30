@@ -1,4 +1,4 @@
-import { dates } from '../../helpers/constants';
+import { dates, settings } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
 import {
     chartKeys,
@@ -15,11 +15,11 @@ import useAdsData, { csvConfig } from '../../hooks/AdsData';
 
 import TisBarChart from '../charts/TisBarChart';
 
-function Top10({ finalReport = false, maxItems = 10 }) {
+function Top10({ maxItems = 10 }) {
     const { findPartyByName, getAllPartiesNames, getPartyAdsData } =
         useAdsData();
 
-    if (finalReport) {
+    if (settings.finalReports) {
         const columns = (getAllPartiesNames() ?? []).map((name) => {
             const adsData = getPartyAdsData(name);
             return {
