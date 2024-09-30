@@ -1,4 +1,5 @@
-import { createContext, useContext, useMemo, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import useGoogleSheets from 'use-google-sheets';
 
 import {
     fixNumber,
@@ -211,8 +212,28 @@ export const AdsDataProvider = function ({ children }) {
     const [sheetsData, setSheetsData] = useState(initialState.sheetsData);
     const [metaApiData, setMetaApiData] = useState(initialState.metaApiData);
 
-    // selectors
+    // initial ads data load from google sheets
+    const {
+        data: gsData,
+        loading: gsLoading,
+        error: gsError,
+    } = useGoogleSheets({
+        apiKey: process.env.REACT_APP_SHEETS_API_KEY,
+        sheetId: sheetsId,
+    });
 
+    // store ads data in context provider once loaded
+    useEffect(() => {
+        if (gsError) {
+            const parsed = loadingErrorSheets(gsError);
+            setSheetsData(parsed);
+        } else if (!gsLoading && gsData) {
+            const parsed = processDataSheets(gsData);
+            setSheetsData(parsed);
+        }
+    }, [gsData, gsLoading, gsError]);
+
+    // selectors
     const getAllFbAccounts = () => {
         const all = [];
         Object.values(sheetsData.parties).forEach((party) => {

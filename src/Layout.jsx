@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
-import useGoogleSheets from 'use-google-sheets';
 import { useQuery } from '@tanstack/react-query';
 
 import { scrollToTop } from './helpers/browser';
@@ -10,45 +9,16 @@ import Footer from './components/structure/Footer';
 import DonateBanner from './components/general/DonateBanner';
 // import DonateModal from './components/general/DonateModal';
 
-import useAccountsData from './hooks/AccountsData';
+// import useAccountsData from './hooks/AccountsData';
 import useAdsData, {
     loadingErrorMetaApi,
-    loadingErrorSheets,
     metaApiUrl,
     processDataMetaApi,
-    processDataSheets,
-    sheetsId,
 } from './hooks/AdsData';
 
 function Layout() {
     const { pathname } = useLocation();
-    const { loadAccountsData } = useAccountsData();
-    const { metaApiData, setMetaApiData, setSheetsData } = useAdsData();
-
-    // load transparent accounts data on first apge load
-    useEffect(() => {
-        loadAccountsData();
-    }, []);
-
-    // load ads data from google sheet
-    const {
-        data: gsData,
-        loading: gsLoading,
-        error: gsError,
-    } = useGoogleSheets({
-        apiKey: process.env.REACT_APP_SHEETS_API_KEY,
-        sheetId: sheetsId,
-    });
-    // store ads data in context provider once loaded
-    useEffect(() => {
-        if (gsError) {
-            const parsed = loadingErrorSheets(gsError);
-            setSheetsData(parsed);
-        } else if (!gsLoading && gsData) {
-            const parsed = processDataSheets(gsData);
-            setSheetsData(parsed);
-        }
-    }, [gsData, gsLoading, gsError]);
+    const { metaApiData, setMetaApiData } = useAdsData();
 
     // load ads data from meta API & reload every 12 hours
     const d = new Date();

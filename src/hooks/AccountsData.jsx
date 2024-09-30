@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState } from 'react';
+import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { usePapaParse } from 'react-papaparse';
 
 import { settings } from '../helpers/constants';
@@ -162,14 +162,15 @@ export const AccountsDataProvider = function ({ children }) {
     const [accountsData, setAccountsData] = useState(initialState);
     const { readRemoteFile } = usePapaParse();
 
-    // selectors
-    const loadAccountsData = () => {
+    // initial accounts data load
+    useEffect(() => {
         readRemoteFile(
             accountsFile,
             buildParserConfig(processAccountsData, setAccountsData)
         );
-    };
+    }, []);
 
+    // selectors
     const getAllAccountsNames = () =>
         accountsData.loaded
             ? accountsData.data.map((row) => row[aggregatedKeys.name] ?? null)
@@ -184,7 +185,6 @@ export const AccountsDataProvider = function ({ children }) {
         () => ({
             accountsData,
             setAccountsData,
-            loadAccountsData,
             allAccountsNames: getAllAccountsNames(),
             getPartyAccountData,
         }),
