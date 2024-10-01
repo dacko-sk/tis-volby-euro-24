@@ -88,12 +88,12 @@ export const datePickerFormat = (timestamp) =>
               .split('T')[0]
         : '';
 
-export const getTimeFromDate = (string) => {
+export const getTimestampFromIsoDate = (string) => {
     const t = new Date(string).getTime();
     return Number.isNaN(t) ? 0 : t / 1000;
 };
 
-export const getTimestampFromDate = (date) => {
+export const getEodTimestampFromDate = (date) => {
     const dateParts = date.replaceAll('/', '.').replaceAll(' ', '').split('.');
     return dateParts.length === 3
         ? new Date(

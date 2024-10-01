@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import DownloadLink from '../../components/general/DownloadLink';
 import Loading from '../../components/general/Loading';
 
-import { partyData } from '../../helpers/constants';
+import { partyData } from '../../helpers/parties';
 
 import useAdsData, { csvConfig } from '../../hooks/AdsData';
 

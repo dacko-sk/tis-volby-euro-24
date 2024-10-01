@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 
-import { partyData } from '../../../helpers/constants';
 import { badgePctFormat } from '../../../helpers/helpers';
+import { partyData } from '../../../helpers/parties';
 import { routes, segments } from '../../../helpers/routes';
 import { transparencyClass } from '../../../helpers/wp';
 

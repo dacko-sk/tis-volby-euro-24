@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
-import { partyData } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
 import { sortByTextProp } from '../../helpers/helpers';
+import { partyData } from '../../helpers/parties';
 import { routes } from '../../helpers/routes';
 
 import useAccountsData from '../../hooks/AccountsData';

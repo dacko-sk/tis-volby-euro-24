@@ -1,13 +1,15 @@
-import { dates } from '../../helpers/constants';
+import { dates, finalReports } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
 import {
     chartKeys,
     columnVariants,
     partyChartLabel,
 } from '../../helpers/charts';
-import { getTimeFromDate, sortByNumericProp } from '../../helpers/helpers';
+import {
+    getTimestampFromIsoDate,
+    sortByNumericProp,
+} from '../../helpers/helpers';
 import { routes } from '../../helpers/routes';
-import { finalReports } from '../../helpers/settings';
 
 import useAccountsData, {
     aggregatedKeys as agk,
@@ -48,7 +50,7 @@ function Top10({ maxItems = 10 }) {
                     labels.charts.disclaimerClick
                 )}`}
                 title={t(labels.charts.finalReport.title)}
-                timestamp={getTimeFromDate(dates.monitoringEnd)}
+                timestamp={getTimestampFromIsoDate(dates.monitoringEnd)}
                 vertical
             />
         );

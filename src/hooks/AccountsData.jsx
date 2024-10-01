@@ -1,8 +1,8 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { usePapaParse } from 'react-papaparse';
 
+import { offlineMode } from '../helpers/constants';
 import { contains } from '../helpers/helpers';
-import { offlineMode } from '../helpers/settings';
 
 import aggregatedAcounts from '../../public/csv/transparent/aggregation_no_returns.csv';
 // import all csv files from the accounts folder via webpack

@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { NavLink, Outlet, useNavigate, useParams } from 'react-router-dom';
 
-import { partyData } from '../helpers/constants';
 import { labels, t } from '../helpers/dictionary';
+import { partyData } from '../helpers/parties';
 import { decodeSlug, routes, segments } from '../helpers/routes';
 
 import useAccountsData from '../hooks/AccountsData';

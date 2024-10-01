@@ -3,9 +3,9 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Table from 'react-bootstrap/Table';
 
-import { partyData } from '../../../helpers/constants';
 import { labels, t } from '../../../helpers/dictionary';
 import { badgePctFormat } from '../../../helpers/helpers';
+import { partyData } from '../../../helpers/parties';
 import { routes, segments } from '../../../helpers/routes';
 import {
     baseData as abd,

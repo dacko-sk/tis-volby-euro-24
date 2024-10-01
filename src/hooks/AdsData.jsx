@@ -1,14 +1,16 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import useGoogleSheets from 'use-google-sheets';
 import { usePapaParse } from 'react-papaparse';
+import { useQuery } from '@tanstack/react-query';
 
+import { dates, offlineMode } from '../helpers/constants';
 import {
     fixNumber,
-    getTimestampFromDate,
+    getEodTimestampFromDate,
+    getTimestampFromIsoDate,
     isNumeric,
     sortAlphabetically,
 } from '../helpers/helpers';
-import { offlineMode } from '../helpers/settings';
 
 import accounts from '../../public/csv/online/accounts.csv';
 import google from '../../public/csv/online/Google.csv';
@@ -54,7 +56,6 @@ export const csvConfig = {
             PAGE_NAME: 'Page name',
             SPENDING: 'Amount spent (EUR)',
         },
-        endDate: '21.1.2024',
         file: meta,
     },
 };
@@ -144,7 +145,7 @@ const parseGoogleSheet = (allData, sheetData) => ({
     googleAds: sheetData,
     lastUpdateGgl: Math.max(
         ...sheetData.map((pageData) =>
-            getTimestampFromDate(pageData[csvConfig.GOOGLE.columns.UPDATED])
+            getEodTimestampFromDate(pageData[csvConfig.GOOGLE.columns.UPDATED])
         )
     ),
 });
@@ -155,7 +156,7 @@ const parseMetaSheet = (allData, sheetData, date) => ({
         ...allData.metaAds,
         [date]: sheetData.filter(filterPoliticAccounts(allData.parties)),
     },
-    lastUpdateFb: getTimestampFromDate(date),
+    lastUpdateFb: date,
 });
 
 export const loadingErrorSheets = (error) => {
@@ -178,8 +179,8 @@ export const processDataSheets = (data) => {
                 default: {
                     const words = sheet.id.split(' ');
                     const date = words.length
-                        ? words[words.length - 1]
-                        : csvConfig.META.endDate;
+                        ? getEodTimestampFromDate(words[words.length - 1])
+                        : getTimestampFromIsoDate(dates.monitoringEnd);
                     pd = parseMetaSheet(pd, sheet.data, date);
                 }
             }
@@ -206,7 +207,7 @@ const processDataCsv = (filesData) => {
                     pd = parseMetaSheet(
                         pd,
                         filesData[key].data,
-                        csvConfig.META.endDate
+                        getTimestampFromIsoDate(dates.monitoringEnd)
                     );
                 }
             }
@@ -299,6 +300,31 @@ export const AdsDataProvider = function ({ children }) {
             }
         }, [gsData, gsLoading, gsError]);
     }
+
+    // load ads data from meta API & reload every 12 hours
+    const d = new Date();
+    const reloadKey = `${d.getMonth() + 1}${d.getDate()}${Math.floor(
+        d.getHours() / 12
+    )}`;
+    const {
+        isLoading: maLoading,
+        error: maError,
+        data: maData,
+    } = useQuery([`meta_api_all_${reloadKey}`], () =>
+        fetch(`${metaApiUrl}?${reloadKey}`).then((response) => response.json())
+    );
+    // store meta API data in context provider once loaded
+    useEffect(() => {
+        if (maError) {
+            const parsed = loadingErrorMetaApi(maError, metaApiData);
+            setMetaApiData(parsed);
+        } else if (!maLoading && maData) {
+            const parsed = processDataMetaApi(maData);
+            if (parsed.lastUpdate > metaApiData.lastUpdate) {
+                setMetaApiData(parsed);
+            }
+        }
+    }, [maData, maLoading, maError, reloadKey]);
 
     // selectors
     const getAllFbAccounts = () => {
