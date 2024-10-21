@@ -561,6 +561,7 @@ export const labels = {
         [el.n20]: ['Parlamentné\nvoľby 2020', 'Parliamentary\nelections 2020'],
         [el.s22]: ['Samosprávne\nvoľby 2022', 'Municipal\nelections 2022'],
         [el.n23]: ['Parlamentné\nvoľby 2023', 'Parliamentary\nelections 2023'],
+        [el.e24]: ['Európske\nvoľby 2024', 'European\nelections 2024'],
         [el.p24]: ['Prezidentské\nvoľby 2024', 'President\nelections 2024'],
         account: ['Transparentný účet', 'Transparent account'],
         date: ['Dátum konania volieb', 'Elections date'],
@@ -627,6 +628,7 @@ export const labels = {
     },
     privacy: ['Ochrana súkromia', 'Privacy Policy'],
     readMore: ['Čítať ďalej…', 'Read more…'],
+    root: ['Titulná stránka', 'Landing page'],
     tis: [
         'Transparency International Slovensko',
         'Transparency International Slovakia',

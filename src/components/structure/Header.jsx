@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import { elections } from '../../helpers/constants';
 import { labels, t } from '../../helpers/dictionary';
 import {
     getCurrentLanguage,
@@ -12,6 +13,7 @@ import {
     routes,
 } from '../../helpers/routes';
 
+import SiteSelector from './SiteSelector';
 import DonateButton from '../general/DonateButton';
 import SearchField from '../general/SearchField';
 
@@ -31,9 +33,7 @@ function Header() {
                         variant="pills"
                         className="me-auto"
                     >
-                        <Nav.Link as={NavLink} to={routes.home()} end>
-                            {t(labels.home.navTitle)}
-                        </Nav.Link>
+                        <SiteSelector site={elections.e24} />
                         <Nav.Link as={NavLink} to={routes.parties()}>
                             {t(labels.parties.navTitle)}
                         </Nav.Link>
