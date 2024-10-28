@@ -628,7 +628,7 @@ export const labels = {
     },
     privacy: ['Ochrana súkromia', 'Privacy Policy'],
     readMore: ['Čítať ďalej…', 'Read more…'],
-    root: ['Titulná stránka', 'Landing page'],
+    root: ['Monitoring volieb', 'Elections Monitoring'],
     tis: [
         'Transparency International Slovensko',
         'Transparency International Slovakia',
