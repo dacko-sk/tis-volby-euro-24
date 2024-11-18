@@ -641,6 +641,17 @@ export const labels = {
         ],
     },
     showMore: ['Zobraziť viac', 'Show more'],
+    sites: {
+        root: ['Financovanie\npolitiky', 'Political\nfinance'],
+        european: ['Európske\nvoľby', 'European\nelections'],
+        national: ['Parlamentné\nvoľby', 'Parliament\nelections'],
+        president: ['Prezidentské\nvoľby', 'President\nelections'],
+        regional: ['Samosprávne\nvoľby', 'Municipal\nelections'],
+    },
+    sitesTitle: [
+        'Ktorú oblasť politiky chcete preskúmať?',
+        'Which political topic are you interested in?',
+    ],
     sponsors: ['Donori projektu', 'Project donors'],
     supportTis: ['Podporte Transparency', 'Support Transparency'],
     usefulInfo: ['Užitočné informácie', 'Useful information'],

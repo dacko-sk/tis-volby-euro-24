@@ -147,6 +147,50 @@ th a {
   font-size: 24px;
 }
 
+#search-container {
+  @extend #{'.bg-success', '.my-4', '.p-3', '.p-sm-5'};
+  h2 {
+    color: white;
+  }
+  .btn {
+    --bs-btn-hover-border-color: white;
+  }
+}
+
+#site-navigator {
+  .row {
+    @extend #{'.g-2', '.g-sm-4'};
+  }
+  .dropdown-toggle::after {
+    content: none;
+  }
+  .dropdown-menu {
+    min-width: 100%;
+  }
+}
+.sn-icon {
+  @extend #{'.d-flex',
+    '.flex-column',
+    '.align-items-center',
+    '.justify-content-end',
+    '.h-100',
+    '.w-100',
+    '.p-2',
+    '.p-sm-3',
+    '.bg-primary',
+    '.text-white',
+    '.text-center',
+    '.text-uppercase'};
+  &:hover,
+  &:active,
+  &:focus {
+    @extend #{'.text-decoration-none', '.text-success'};
+  }
+  img {
+    @extend .mw-100;
+  }
+}
+
 .tiles {
   a {
     min-width: 140px;

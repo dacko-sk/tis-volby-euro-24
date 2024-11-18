@@ -38,6 +38,12 @@
   --bs-btn-hover-border-color: #{$tis-orange};
 }
 
+.btn-transparent {
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-border-width: 0;
+}
+
 .table {
   --bs-table-bg: transparent;
 }
