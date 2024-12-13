@@ -28,7 +28,7 @@ function SiteNavigator({ site }) {
             <h2 className="text-white mb-3">{t(labels.sitesTitle)}</h2>
             <Row>
                 <Col xs={6} sm={4} lg>
-                    <a href="/" className="sn-icon">
+                    <a href={links.financing} className="sn-icon">
                         <IconContent icon={iconL} label={labels.sites.root} />
                     </a>
                 </Col>

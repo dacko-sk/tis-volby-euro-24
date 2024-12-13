@@ -55,6 +55,7 @@ export const links = {
     [elections.p24]: '/prezident2024/',
     [elections.e24]: '/euro2024/',
     donateUrl: 'https://transparency.sk/volby',
+    financing: '/financovanie',
 };
 
 export const finalReports = true;
